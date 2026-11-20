@@ -1,0 +1,31 @@
+﻿case_id,status,solver_status,diagnostic,objective_minutes,lower_bound_minutes,gap,validated,completion,expected_status,expected_objective,expected_code,independent_check,verdict
+R0-15,OPTIMAL,OPTIMAL,,14880,14880,0.0,True,2027-01-14T16:00+01:00,OPTIMAL,14880,,per-minute check clean,PASS
+R0-5,OPTIMAL,OPTIMAL,,14850,14850,0.0,True,2027-01-14T15:30+01:00,OPTIMAL,14850,,per-minute check clean,PASS
+RC01,OPTIMAL,OPTIMAL,,1610,1610.0,0.0,True,2027-01-12T10:50+01:00,OPTIMAL,1610,,per-minute check clean,PASS
+RC02,OPTIMAL,OPTIMAL,,210,210.0,0.0,True,2027-01-11T11:30+01:00,OPTIMAL,210,,unique schedule matches,PASS
+RC03,OPTIMAL,OPTIMAL,,150,150.0,0.0,True,2027-01-11T10:30+01:00,OPTIMAL,150,,per-minute check clean,PASS
+RC04,OPTIMAL,OPTIMAL,,240,240.0,0.0,True,2027-01-11T12:00+01:00,OPTIMAL,240,,per-minute check clean,PASS
+RC05a,MODEL_INVALID,,UNSUPPORTED_CONSTRAINT,,,,False,,deferred (reject before solve),,,rejection names the deferred feature,PASS
+RC05b,MODEL_INVALID,,UNSUPPORTED_CONSTRAINT,,,,False,,deferred (reject before solve),,,rejection names the deferred feature,PASS
+RC06,OPTIMAL,OPTIMAL,,4520,4520,0.0,True,2027-01-14T11:20+01:00,OPTIMAL,4520,,unique schedule matches,PASS
+RC06-D,OPTIMAL,OPTIMAL,,4520,4520,0.0,True,2027-01-14T11:20+01:00,OPTIMAL,4520,,unique schedule matches,PASS
+RC07a,INFEASIBLE,INFEASIBLE,INFEASIBLE_DEADLINE,,,,False,,INFEASIBLE,,INFEASIBLE_DEADLINE,diagnostic INFEASIBLE_DEADLINE vs expected INFEASIBLE_DEADLINE,PASS
+RC07b,OPTIMAL,OPTIMAL,,1610,1610.0,0.0,True,2027-01-12T10:50+01:00,OPTIMAL,1610,,per-minute check clean,PASS
+RC07c,OPTIMAL,OPTIMAL,,1610,1610.0,0.0,True,2027-01-12T10:50+01:00,OPTIMAL,1610,,unique schedule matches,PASS
+RC08a,MODEL_INVALID,,MISSING_INPUT,,,,False,,MODEL_INVALID,,MISSING_INPUT,diagnostic MISSING_INPUT vs expected MISSING_INPUT,PASS
+RC08b,INFEASIBLE,,IMPOSSIBLE_CREW,,,,False,,INFEASIBLE,,IMPOSSIBLE_CREW,diagnostic IMPOSSIBLE_CREW vs expected IMPOSSIBLE_CREW,PASS
+RC08c,INFEASIBLE,,IMPOSSIBLE_CREW,,,,False,,INFEASIBLE,,IMPOSSIBLE_CREW,diagnostic IMPOSSIBLE_CREW vs expected IMPOSSIBLE_CREW,PASS
+RC08d,INFEASIBLE,,NO_FIT,,,,False,,INFEASIBLE,,NO_FIT,diagnostic NO_FIT vs expected NO_FIT,PASS
+RC09,OPTIMAL,OPTIMAL,,5850,5850.0,0.0,True,2027-01-18T09:30+01:00,OPTIMAL,5850,,per-minute check clean,PASS
+RC10a,MODEL_INVALID,,UNSUPPORTED_CONSTRAINT,,,,False,,deferred (reject before solve),,,rejection names the deferred feature,PASS
+RC10b,INFEASIBLE,,NO_FIT,,,,False,,INFEASIBLE,,NO_FIT,diagnostic NO_FIT vs expected NO_FIT,PASS
+RC10c,MODEL_INVALID,,UNSUPPORTED_CONSTRAINT,,,,False,,deferred (reject before solve),,,rejection names the deferred feature,PASS
+RC11a,MODEL_INVALID,,UNSUPPORTED_CONSTRAINT,,,,False,,deferred (reject before solve),,,rejection names the deferred feature,PASS
+RC11b,MODEL_INVALID,,UNSUPPORTED_CONSTRAINT,,,,False,,deferred (reject before solve),,,rejection names the deferred feature,PASS
+RC12a,MODEL_INVALID,,UNSUPPORTED_CONSTRAINT,,,,False,,deferred (reject before solve),,,rejection names the deferred feature,PASS
+RC12b,MODEL_INVALID,,UNSUPPORTED_CONSTRAINT,,,,False,,deferred (reject before solve),,,rejection names the deferred feature,PASS
+RC12c,MODEL_INVALID,,UNSUPPORTED_CONSTRAINT,,,,False,,deferred (reject before solve),,,rejection names the deferred feature,PASS
+RC12d,MODEL_INVALID,,UNSUPPORTED_CONSTRAINT,,,,False,,deferred (reject before solve),,,rejection names the deferred feature,PASS
+RC12e,MODEL_INVALID,,UNSUPPORTED_CONSTRAINT,,,,False,,deferred (reject before solve),,,rejection names the deferred feature,PASS
+RC13a,MODEL_INVALID,,UNSUPPORTED_CONSTRAINT,,,,False,,deferred (reject before solve),,,rejection names the deferred feature,PASS
+RC13b,MODEL_INVALID,,UNSUPPORTED_CONSTRAINT,,,,False,,deferred (reject before solve),,,rejection names the deferred feature,PASS

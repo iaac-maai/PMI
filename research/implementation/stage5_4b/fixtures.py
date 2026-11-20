@@ -66,6 +66,10 @@ def normalize_reference(case):
         resource = {"resource_id": rid, "display_name": name, "input_state": "hypothetical_fixture", **source}
         if isinstance(resource.get("calendar"), dict):
             resource["calendar"] = {"timezone": zone, **{k: v for k, v in resource["calendar"].items() if k != "note"}}
+        if resource["kind"] == "reservation":
+            resource.update(kind="reusable_asset", unit="set")
+        elif resource.get("unit") == "m3/h":
+            resource["kind"] = "supply_source"
         resources[rid] = resource
     problem["resources"] = resources
     if "deadlines" in problem:
@@ -74,6 +78,29 @@ def normalize_reference(case):
     problem["activities"] = [
         {**{k: v for k, v in task.items() if k != "derivation"}, "resources": remap(task["resources"])}
         for task in problem["activities"]]
+    for task in problem["activities"]:
+        if "split" in task:
+            policy = task["split"]
+            task["split"] = {k: v for k, v in policy.items() if k != "authorization"}
+            task["split"].update(authorization_ref=policy["authorization"], retention_during_gap="release",
+                                 restart_overhead_minutes=0, same_mode_on_restart=True, voluntary_pause=False)
+    if case.get("reservations"):
+        problem["reservations"] = [
+            {"reservation_id": row["id"], "resource_id": row["resource"], "quantity": row["demand"],
+             "occupancy_basis": "continuous_elapsed", "input_state": "hypothetical_fixture",
+             "start_event": {"kind": "activity_start", "activity_id": row["from_activity"]},
+             "release_condition": {
+                 "all_of": [{"kind": "activity_finish", "activity_id": row["to_activity"]}],
+                 "return_lead_minutes": 0, "reshoring": "not_permitted",
+             },
+             "covers_activities": [row["from_activity"], row["to_activity"]]}
+            for row in case["reservations"]
+        ]
+    if case["case_id"] == "RC13b":
+        problem["strength_events"] = [
+            {**row, "acceptance_criterion_ref": "Task 7 hypothetical planned-test criterion"}
+            for row in case["strength_events"]
+        ]
     addendum = read_json(REFERENCES / "resource_contract_R2_addendum.json")
     if case["case_id"] == "RC06":
         exception, = addendum["R2-1_calendar_policy"]["exception"]["registered"]

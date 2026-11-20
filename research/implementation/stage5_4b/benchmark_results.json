@@ -1,0 +1,126 @@
+{
+  "original": {
+    "unchanged_fixture": {
+      "status": "INFEASIBLE",
+      "solver_status": "INFEASIBLE",
+      "objective_minutes": null,
+      "lower_bound_minutes": null,
+      "optimality_gap": null,
+      "runtime_seconds": 0.0525467,
+      "validated": false,
+      "real_project_eligible": false,
+      "cpm_comparison": {
+        "makespan_minutes": 16310,
+        "completion_local": "2027-02-12T15:50+01:00",
+        "conflict_intervals": 29,
+        "over_capacity_pools": [
+          "BEAM_FORM_SET",
+          "BEAM_PROP",
+          "COL_FORM_SET",
+          "CONCRETE_SUPPLY",
+          "INSPECTOR",
+          "OF1_ENCOFRADOR",
+          "OF1_FERRALLISTA",
+          "OFICIAL_1",
+          "PEON_ESPECIAL",
+          "SLAB_PROP",
+          "VIBRADOR"
+        ]
+      }
+    },
+    "diagnostic_coverage_sensitivity": {
+      "status": "OPTIMAL",
+      "solver_status": "OPTIMAL",
+      "objective_minutes": 40445,
+      "lower_bound_minutes": 40445.0,
+      "optimality_gap": 0.0,
+      "runtime_seconds": 0.5471211,
+      "validated": true,
+      "real_project_eligible": false,
+      "completion_local": "2027-03-01T10:05+01:00",
+      "cost": {
+        "total_direct_reference_eur": 5103.32664
+      },
+      "cpm_comparison": {
+        "makespan_minutes": 16310,
+        "completion_local": "2027-02-12T15:50+01:00",
+        "conflict_intervals": 29,
+        "over_capacity_pools": [
+          "BEAM_FORM_SET",
+          "BEAM_PROP",
+          "COL_FORM_SET",
+          "CONCRETE_SUPPLY",
+          "INSPECTOR",
+          "OF1_ENCOFRADOR",
+          "OF1_FERRALLISTA",
+          "OFICIAL_1",
+          "PEON_ESPECIAL",
+          "SLAB_PROP",
+          "VIBRADOR"
+        ]
+      }
+    }
+  },
+  "holiday": {
+    "unchanged_fixture": {
+      "status": "INFEASIBLE",
+      "solver_status": "INFEASIBLE",
+      "objective_minutes": null,
+      "lower_bound_minutes": null,
+      "optimality_gap": null,
+      "runtime_seconds": 0.0476371,
+      "validated": false,
+      "real_project_eligible": false,
+      "cpm_comparison": {
+        "makespan_minutes": 16310,
+        "completion_local": "2027-02-12T15:50+01:00",
+        "conflict_intervals": 29,
+        "over_capacity_pools": [
+          "BEAM_FORM_SET",
+          "BEAM_PROP",
+          "COL_FORM_SET",
+          "CONCRETE_SUPPLY",
+          "INSPECTOR",
+          "OF1_ENCOFRADOR",
+          "OF1_FERRALLISTA",
+          "OFICIAL_1",
+          "PEON_ESPECIAL",
+          "SLAB_PROP",
+          "VIBRADOR"
+        ]
+      }
+    },
+    "diagnostic_coverage_sensitivity": {
+      "status": "OPTIMAL",
+      "solver_status": "OPTIMAL",
+      "objective_minutes": 41885,
+      "lower_bound_minutes": 41885.0,
+      "optimality_gap": 0.0,
+      "runtime_seconds": 0.5363611,
+      "validated": true,
+      "real_project_eligible": false,
+      "completion_local": "2027-03-02T10:05+01:00",
+      "cost": {
+        "total_direct_reference_eur": 5103.32664
+      },
+      "cpm_comparison": {
+        "makespan_minutes": 16310,
+        "completion_local": "2027-02-12T15:50+01:00",
+        "conflict_intervals": 29,
+        "over_capacity_pools": [
+          "BEAM_FORM_SET",
+          "BEAM_PROP",
+          "COL_FORM_SET",
+          "CONCRETE_SUPPLY",
+          "INSPECTOR",
+          "OF1_ENCOFRADOR",
+          "OF1_FERRALLISTA",
+          "OFICIAL_1",
+          "PEON_ESPECIAL",
+          "SLAB_PROP",
+          "VIBRADOR"
+        ]
+      }
+    }
+  }
+}

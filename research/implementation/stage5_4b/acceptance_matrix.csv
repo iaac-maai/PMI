@@ -1,82 +1,82 @@
 criterion_id,mandatory,status,evidence
-AC-G01,yes,DEFERRED,Applicable statuses matched. Deferred case inputs rejected before solving.
-AC-G02,yes,DEFERRED,Applicable optimal makespans matched.
-AC-G03,yes,DEFERRED,Timestamp validation passed. Applicable required activity dates matched.
+AC-G01,yes,PASSED,"All 30 small reference outcomes matched, including status on conditional projections."
+AC-G02,yes,PASSED,All applicable small-reference objectives matched. See benchmark-specific criteria.
+AC-G03,yes,PASSED,Small-reference dates and validator checks passed. RC13a uses R2 recorded-pass release finish.
 AC-G04,yes,PASSED,Durations verified by core input checks or regression coverage.
 AC-G05,yes,PASSED,Calendars verified by core input checks or regression coverage.
-AC-G06,yes,DEFERRED,Working-time cumulative and timestamp sweep passed. Continuous occupancy deferred.
+AC-G06,yes,PASSED,Cumulative constraints and timestamp sweeps cover working and continuous occupancy.
 AC-G07,yes,PASSED,Precedence verified by core input checks or regression coverage.
 AC-G08,yes,PASSED,Deadlines verified by core input checks or regression coverage.
-AC-G09,yes,DEFERRED,Single-segment schedules validated. Authorized split cases rejected before solving.
+AC-G09,yes,PASSED,"RC10a-c and restart, retention and cold-joint authorization tests passed."
 AC-G10,yes,PASSED,Resolution verified by core input checks or regression coverage.
 AC-G11,yes,PASSED,Default calendar policy verified by core input checks or regression coverage.
-AC-RC01,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC02,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC03,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC04,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC05a,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
-AC-RC05b,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
-AC-RC06,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC07a,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC07b,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC07c,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC08a,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC08b,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC08c,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC08d,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC09,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC10a,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
-AC-RC10b,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC10c,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
-AC-RC11a,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
-AC-RC11b,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
-AC-R0-15,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-R0-5,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC06-D,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
-AC-RC12a,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
-AC-RC12b,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
-AC-RC12c,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
-AC-RC12d,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
-AC-RC12e,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
-AC-RC13a,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
-AC-RC13b,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
-AC-DEMO-H1,no,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
-AC-C-P1,yes,DEFERRED,Core missing-input checks are active. Advanced construction inputs deferred.
-AC-C-P2,yes,DEFERRED,Working-time constraints active. Continuous occupancy deferred.
+AC-RC01,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC02,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC03,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC04,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC05a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC05b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC06,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC07a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC07b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC07c,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC08a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC08b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC08c,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC08d,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC09,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC10a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC10b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC10c,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC11a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC11b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-R0-15,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-R0-5,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC06-D,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC12a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC12b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC12c,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC12d,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC12e,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC13a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-RC13b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
+AC-DEMO-H1,no,FAILED,Unchanged holiday input proved infeasible. Adjusted diagnostic proved 41885 minutes.
+AC-C-P1,yes,DEFERRED,Required scheduling inputs checked. Full field-level input-state and evidence schema audit remains pending.
+AC-C-P2,yes,PASSED,RC05a/b continuous intervals and working-time capacity checked independently.
 AC-C-P3,yes,PASSED,P3 Durations are owned by Stage 5 verified by core input checks or regression coverage.
 AC-C-P4,yes,PASSED,P4 Cost is owned by Stage 5 verified by core input checks or regression coverage.
-AC-C-P5,yes,DEFERRED,No physical counts inferred. Reservation functionality deferred.
+AC-C-P5,yes,PASSED,Reservations require explicit physical quantities. No counts derived from costs.
 AC-C-P6,yes,PASSED,P6 Explicit none is distinct from missing verified by core input checks or regression coverage.
 AC-C-P7,yes,PASSED,P7 Blocking is conservative verified by core input checks or regression coverage.
-AC-C-V1,yes,DEFERRED,Working-time resource identities checked. Reservation and supply identities deferred.
+AC-C-V1,yes,PASSED,Activity and reservation resource identities are checked before modelling.
 AC-C-V2,yes,PASSED,V2 verified by core input checks or regression coverage.
-AC-C-V3,yes,DEFERRED,Working-time calendars required. Continuous assets deferred.
+AC-C-V3,yes,PASSED,Physical pools require continuous availability. Working resources require explicit calendars.
 AC-C-V4,yes,PASSED,V4 verified by core input checks or regression coverage.
 AC-C-V5,yes,PASSED,V5 verified by core input checks or regression coverage.
-AC-C-V6,yes,DEFERRED,Elapsed holds cannot demand resources. Strength event logic deferred.
-AC-C-V7,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
-AC-C-V8,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
-AC-C-V9,yes,DEFERRED,Working-time load enforced. Reservation capacities deferred.
-AC-C-V10,yes,DEFERRED,Inspector activity cannot carry cost. Supply and reservation features deferred.
-AC-C-V11,yes,DEFERRED,Core windows checked for alignment. Supply boundaries deferred.
-AC-C-MISSING_INPUT,yes,DEFERRED,RC08a passed. Advanced missing-field diagnostics deferred.
+AC-C-V6,yes,PASSED,Elapsed holds and strength-release activities reject working resource demands.
+AC-C-V7,yes,PASSED,Reservation release reachability checked. Unreachable extra event rejected in regression test.
+AC-C-V8,yes,PASSED,Model and timestamp checker enforce coverage. The strict benchmarks prove infeasible on inconsistent input.
+AC-C-V9,yes,DEFERRED,"Working, supply and continuous capacity tested. Optional date-specific capacity overrides are rejected in this version."
+AC-C-V10,yes,PASSED,Capacity and occupancy add no cost. Both diagnostic benchmarks preserve the frozen per-activity cost.
+AC-C-V11,yes,PASSED,Working and delivery calendars use the same local and UTC alignment checks.
+AC-C-MISSING_INPUT,yes,PASSED,"Missing capacity, quantity, release and supply declarations are rejected before solving."
 AC-C-EXPLICIT_NONE_REQUIRED,yes,PASSED,EXPLICIT_NONE_REQUIRED verified by core input checks or regression coverage.
 AC-C-IMPOSSIBLE_CREW,yes,PASSED,IMPOSSIBLE_CREW verified by core input checks or regression coverage.
-AC-C-NO_ELIGIBLE_MODE,yes,DEFERRED,Single fixed mode. Insufficient capacity rejects the entire input with IMPOSSIBLE_CREW. Add distinct contract diagnostic in 5.4B.2.
+AC-C-NO_ELIGIBLE_MODE,yes,PASSED,Single-mode capacity failure reports IMPOSSIBLE_CREW with NO_ELIGIBLE_MODE detail.
 AC-C-NO_FIT,yes,PASSED,NO_FIT verified by core input checks or regression coverage.
-AC-C-SPLIT_NOT_AUTHORIZED,yes,DEFERRED,Missing authorization or minimum segment rules rejected. Full R2 split validation deferred.
-AC-C-RESERVATION_UNRELEASED,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
-AC-C-RELEASE_CONDITIONAL,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
+AC-C-SPLIT_NOT_AUTHORIZED,yes,PASSED,Incomplete split authorization and split pour without a cold-joint reference are rejected.
+AC-C-RESERVATION_UNRELEASED,yes,PASSED,Invalid release endpoint reachability regression passed.
+AC-C-RELEASE_CONDITIONAL,yes,PASSED,RC12b and RC13b returned conditional projections.
 AC-C-TICK_MISALIGNED,yes,PASSED,TICK_MISALIGNED verified by core input checks or regression coverage.
-AC-C-INFEASIBLE_DEADLINE,yes,DEFERRED,RC07a passed with solver-proof and deadline diagnostics. Full implicated-chain reporting remains pending.
+AC-C-INFEASIBLE_DEADLINE,yes,PASSED,RC07a proved infeasible; labelled deadline scope and prerequisite IDs returned.
 AC-R2-1,yes,PASSED,R2-1_calendar_policy verified by core input checks or regression coverage.
 AC-R2-2,yes,PASSED,R2-2_mode_occupancy verified by core input checks or regression coverage.
-AC-R2-3,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
-AC-R2-4,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
-AC-D01,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
-AC-D02,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
-AC-D03,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
-AC-D04,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
+AC-R2-3,yes,PASSED,RC13a fixed recorded release verified. RC13b remained conditional.
+AC-R2-4,yes,PASSED,RC12a-e matched all applicable outcomes and dates.
+AC-D01,yes,FAILED,Unchanged input proved infeasible due to cage-first reservation coverage. Adjusted diagnostic proved 40445 minutes.
+AC-D02,yes,FAILED,Unchanged input yields no schedule; adjusted diagnostic validates all covered work and capacities.
+AC-D03,yes,PASSED,"Recomputed 16310 elapsed minutes, 29 conflicts and 11 affected pools on both inputs."
+AC-D04,yes,DEFERRED,Frozen and diagnostic schedules preserve EUR 5103.32664. Unchanged input yields no capacity-feasible schedule for comparison.
 AC-D05,no,NOT_APPLICABLE,Benchmark has alternative optima and representative dates are excluded.
 AC-P01,yes,PASSED,"Both registers read and validated as pending, with no tracked changes."
 AC-P02,yes,PASSED,Frozen R0-15 passed. Eight tracked export files unchanged against clean baseline.

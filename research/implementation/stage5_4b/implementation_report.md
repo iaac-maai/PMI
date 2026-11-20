@@ -1,24 +1,38 @@
-# Stage 5.4B.1 controlled CP-SAT core
+# Stage 5.4B.2 advanced construction constraints
 
-The implementation accepts fixed-duration, single-mode controlled inputs and preserves Stage 5.4A activity identities and elapsed finish-to-start edges when run from the frozen handover. It uses five-minute ticks by default and supports the fifteen-minute regression. CP-SAT minimizes elapsed makespan. After proving the minimum, it uses any remaining solve budget to prefer earlier starts at that makespan. The output reports the primary solver status, elapsed objective and lower bound in minutes, relative gap as a fraction, and combined solver wall time.
+Stage 5.4B.2 extends the fixed-duration CP-SAT scheduler and its timestamp validator. All 30 small references passed their applicable acceptance criteria, including the 22 original cases, RC06-D, five inspection cases and two strength cases. Both frozen R0 runs remain optimal at 14,850 and 14,880 elapsed minutes, with the original exclusions, full crew occupancy and EUR 1,172.5136 cost.
 
-The start domains intersect the project calendar, activity windows and demanded resource calendars. Authorized exceptions replace only the project component. RC06 starts N at 07:00 under its registered authorization, and RC06-D starts N at 08:00. A cumulative constraint per demanded pool enforces simultaneous working-time units. The timestamp validator independently checks feasibility using interval endpoints and a capacity sweep. Project and activity deadlines are hard constraints, with preflight diagnostics and labelled assumptions for capacity-driven conflicts.
+| Construction fixture | Unchanged input | Diagnostic coverage sensitivity |
+| --- | --- | --- |
+| Original | CP-SAT **INFEASIBLE** | CP-SAT **OPTIMAL**, 40,445 min, lower bound 40,445 |
+| 1 March holiday | CP-SAT **INFEASIBLE** | CP-SAT **OPTIMAL**, 41,885 min, lower bound 41,885 |
 
-The frozen R0 adapter preserves the full selected crew, including the column pour's official under AP-X-CREW-01, the 28 Stage 5.4A links, the EUR 1,172.5136 direct reference cost and all 88 pending approvals. Its outcomes are OPTIMAL at 14,850 minutes and 14,880 minutes for the 5- and 15-minute runs. The reported R0 scope uses the six R2 fixture exceptions, including hypothetical passes at minimum and reservations reported as unenforced. All optimizer output is restricted to controlled use.
+The four column reservations open at FORM start and list REBAR among their covered activities. The cage-first dependencies put REBAR finish at or before FORM start. A positive-duration REBAR activity cannot satisfy both constraints. The published demonstration checker computes FORM-to-STRIP occupancy without checking this coverage. The diagnostic runs exclude only the earlier cage work from column formwork coverage in memory, retain all capacities and dependencies, and pass the timestamp validator. The unchanged fixtures require a coverage decision from the reference owner before benchmark acceptance. The calendar/precedence-only comparison reproduced 16,310 minutes and 29 conflicts across 11 pools in both fixtures.
 
-The automated suite checks 17 applicable reference outcomes, 13 early rejections for deferred reference constraints, both frozen-handover regressions, and reference-package hashes. Stage 5.4B.2 covers continuous reservations, shared supply, authorized splits, inspection and strength event logic, and the larger benchmark and holiday sensitivity. The [acceptance matrix](acceptance_matrix.csv) records partial evidence for criteria spanning both parts. Full Stage 5.4B acceptance requires 82 mandatory criteria.
+## Model and validation
+
+- **Reusable equipment** occupies one continuous interval per reservation. The interval ends after the latest release event plus the explicit return lead. The model and validator both check covered work. Unsupported reshoring configurations are rejected.
+- **Concrete supply** uses exact rational scaling into integer rate pools. Daily limits integrate the declared rate over scheduled delivery ticks in each project-local day. For an authorized split pour, these ticks include restart overhead as a conservative planning allowance. Selected-mode productive durations and costs are carried through.
+- **Events** can gate subsequent activities at an inspection finish or a recorded pass. Failed releases block descendants. Missing and planned evidence gives a conditional projection. The output distinguishes the controlled schedule status from CP-SAT’s proof status and its scope.
+- **Authorized splits** use ordered optional intervals with a minimum length, fixed mode, restart time and declared gap policy. Without voluntary pauses, a segment that continues later fills the current intersection window and resumes in the next one. Retention holds crew and equipment across the gap. Split pours require separate cold-joint authorization.
+- **Reference interpretation** follows R2 for RC13a. The embedded release row ends at the elapsed minimum, while the normative event semantics finish the release at the later recorded pass. The test checks the fixed pass and the published POUR and STRIP dates.
+- **Scope** remains controlled. Normalized JSON declares supply as a `supply_source` resource with capacity in `m3/h` and per-activity draws in `resources`. Explicitly unsupported input structures are rejected. The acceptance matrix records benchmark failures and outstanding contract coverage.
 
 ## Reproduce from the repository root
 
 ```powershell
+.\.venv-planning\Scripts\python.exe -B -m unittest -v research.implementation.stage5_4b.test_engine research.implementation.stage5_4b.test_advanced
 .\.venv-planning\Scripts\python.exe -B -m research.implementation.stage5_4b --case RC06
-.\.venv-planning\Scripts\python.exe -B -m research.implementation.stage5_4b --case RC06-D
+.\.venv-planning\Scripts\python.exe -B -m research.implementation.stage5_4b --case RC12b
 .\.venv-planning\Scripts\python.exe -B -m research.implementation.stage5_4b --frozen-r0 5
 .\.venv-planning\Scripts\python.exe -B -m research.implementation.stage5_4b --frozen-r0 15
-.\.venv-planning\Scripts\python.exe -B -m unittest -v research.implementation.stage5_4b.test_engine
+.\.venv-planning\Scripts\python.exe -B -m research.implementation.stage5_4b --demo original
+.\.venv-planning\Scripts\python.exe -B -m research.implementation.stage5_4b --demo holiday
+.\.venv-planning\Scripts\python.exe -B -m research.implementation.stage5_4b --demo original --coverage-sensitivity
+.\.venv-planning\Scripts\python.exe -B -m research.implementation.stage5_4b --demo holiday --coverage-sensitivity
 ```
 
-The CLI also accepts `--input PATH` for normalized controlled JSON. Use the dictionary returned by `normalize_reference` or `frozen_r0` in [fixtures.py](fixtures.py) as the input shape. The CLI returns exit code 0 for a validated schedule and 1 for a diagnostic or an unverified outcome.
+The CLI also accepts `--input PATH` for normalized controlled JSON. Exit code 0 indicates a validated OPTIMAL or FEASIBLE schedule. Exit code 1 covers conditional, blocked, invalid, infeasible or unverified outcomes. The [benchmark results](benchmark_results.json) record the measured solver statuses and bounds. The [acceptance matrix](acceptance_matrix.csv) records criterion-level evidence. Full Stage 5.4B acceptance remains pending.
 
-Baseline was clean at `6384cd329bf9bb83d0e0ff56520cc0426c69e995`. The implementation adds files under this directory. No tracked fixture or approval file was changed.
+Stage 5.4B.2 started at `d8a8ccb04fffdc7d21b1847f87750760ea0f1990`. All 88 pending approvals, Agent 2 references and the frozen outputs were preserved.
 

@@ -1,0 +1,255 @@
+{
+  "head": "d8a8ccb04fffdc7d21b1847f87750760ea0f1990",
+  "ortools": "9.15.6755",
+  "cases_pass": 30,
+  "cases_total": 30,
+  "applicable_pass": 17,
+  "deferred_pass": 13,
+  "frozen_r0": {
+    "5": {
+      "status": "OPTIMAL",
+      "solver_status": "OPTIMAL",
+      "objective": 14850,
+      "lower_bound": 14850,
+      "gap": 0.0,
+      "completion": "2027-01-14T15:30+01:00",
+      "target": 14850,
+      "independent_errors": [],
+      "independent_cpm_makespan": 14850,
+      "makespan": 14850,
+      "independent_cost_sum": 1172.5136,
+      "cost_total": 1172.5136,
+      "cost_activity_sum": 1172.5136,
+      "dependencies": 28,
+      "approvals": 88,
+      "approvals_pending": 88,
+      "approval_ids_unique": 88,
+      "c_pour_resources": {
+        "PEON_ESPECIAL": 2,
+        "OFICIAL_1": 1,
+        "VIBRADOR": 1
+      },
+      "c_pour_reserved": {
+        "OFICIAL_1": 1
+      },
+      "real_project_eligible": false,
+      "fixture_exceptions": [
+        "FX-R0-01",
+        "FX-R0-02",
+        "FX-R0-03",
+        "FX-R0-04",
+        "FX-R0-05",
+        "FX-R0-06"
+      ]
+    },
+    "15": {
+      "status": "OPTIMAL",
+      "solver_status": "OPTIMAL",
+      "objective": 14880,
+      "lower_bound": 14880,
+      "gap": 0.0,
+      "completion": "2027-01-14T16:00+01:00",
+      "target": 14880,
+      "independent_errors": [],
+      "independent_cpm_makespan": 14880,
+      "makespan": 14880,
+      "independent_cost_sum": 1172.5136,
+      "cost_total": 1172.5136,
+      "cost_activity_sum": 1172.5136,
+      "dependencies": 28,
+      "approvals": 88,
+      "approvals_pending": 88,
+      "approval_ids_unique": 88,
+      "c_pour_resources": {
+        "PEON_ESPECIAL": 2,
+        "OFICIAL_1": 1,
+        "VIBRADOR": 1
+      },
+      "c_pour_reserved": {
+        "OFICIAL_1": 1
+      },
+      "real_project_eligible": false,
+      "fixture_exceptions": [
+        "FX-R0-01",
+        "FX-R0-02",
+        "FX-R0-03",
+        "FX-R0-04",
+        "FX-R0-05",
+        "FX-R0-06"
+      ]
+    }
+  },
+  "integrity": {
+    "tie_break_starved_RC01": {
+      "normal": [
+        "OPTIMAL",
+        1610,
+        1610.0
+      ],
+      "starved": [
+        "OPTIMAL",
+        1610,
+        1610.0,
+        true
+      ],
+      "same_status_objective_bound": true,
+      "secondary_changed_dates": true
+    },
+    "tie_break_starved_R0-5": {
+      "normal": [
+        "OPTIMAL",
+        14850,
+        14850
+      ],
+      "starved": [
+        "OPTIMAL",
+        14850,
+        14850,
+        true
+      ],
+      "same_status_objective_bound": true,
+      "secondary_changed_dates": true
+    },
+    "time_limit_R0-5_1e-06": {
+      "status": "UNKNOWN",
+      "objective": null,
+      "bound": 14850,
+      "gap": null,
+      "validated": false,
+      "consistent": true
+    },
+    "time_limit_R0-5_0.001": {
+      "status": "UNKNOWN",
+      "objective": null,
+      "bound": 14850,
+      "gap": null,
+      "validated": false,
+      "consistent": true
+    },
+    "time_limit_R0-5_0.02": {
+      "status": "OPTIMAL",
+      "objective": 14850,
+      "bound": 14850,
+      "gap": 0.0,
+      "validated": true,
+      "consistent": true
+    },
+    "time_limit_RC09_1e-06": {
+      "status": "UNKNOWN",
+      "objective": null,
+      "bound": 1830,
+      "gap": null,
+      "validated": false,
+      "consistent": true
+    },
+    "time_limit_RC09_0.001": {
+      "status": "UNKNOWN",
+      "objective": null,
+      "bound": 1830,
+      "gap": null,
+      "validated": false,
+      "consistent": true
+    },
+    "time_limit_RC09_0.02": {
+      "status": "OPTIMAL",
+      "objective": 5850,
+      "bound": 5850.0,
+      "gap": 0.0,
+      "validated": true,
+      "consistent": true
+    },
+    "time_limit_RC01_1e-06": {
+      "status": "UNKNOWN",
+      "objective": null,
+      "bound": 230,
+      "gap": null,
+      "validated": false,
+      "consistent": true
+    },
+    "time_limit_RC01_0.001": {
+      "status": "OPTIMAL",
+      "objective": 1610,
+      "bound": 1610.0,
+      "gap": 0.0,
+      "validated": true,
+      "consistent": true
+    },
+    "time_limit_RC01_0.02": {
+      "status": "OPTIMAL",
+      "objective": 1610,
+      "bound": 1610.0,
+      "gap": 0.0,
+      "validated": true,
+      "consistent": true
+    }
+  },
+  "deadlines": {
+    "RC07a": {
+      "status": "INFEASIBLE",
+      "solver_status": "INFEASIBLE",
+      "diagnostic": {
+        "code": "INFEASIBLE_DEADLINE",
+        "deadlines": [
+          {
+            "activity_id": "project",
+            "latest_finish": "2027-01-11T16:00+01:00",
+            "prerequisite_ids": [
+              "A",
+              "B",
+              "C"
+            ]
+          }
+        ]
+      }
+    },
+    "preflight_precedence": {
+      "status": "INFEASIBLE",
+      "solver_status": null,
+      "code": "INFEASIBLE_DEADLINE"
+    },
+    "capacity_driven_two_deadlines": {
+      "status": "INFEASIBLE",
+      "solver_status": "INFEASIBLE",
+      "diagnostic": {
+        "code": "INFEASIBLE_DEADLINE",
+        "deadlines": [
+          {
+            "activity_id": "A",
+            "latest_finish": "2027-01-11T11:50+01:00",
+            "prerequisite_ids": [
+              "A"
+            ]
+          },
+          {
+            "activity_id": "B",
+            "latest_finish": "2027-01-11T11:20+01:00",
+            "prerequisite_ids": [
+              "B"
+            ]
+          }
+        ]
+      }
+    },
+    "horizon_infeasible_no_deadline": {
+      "status": "INFEASIBLE",
+      "solver_status": "INFEASIBLE",
+      "diagnostic": null
+    }
+  },
+  "preservation": {
+    "register_sha256": "d86a26cea516c10a38d97c5d82b5ca03d4af940f01a9bdcdd359bdac3111ab23",
+    "register_sha256_task7": "d86a26cea516c10a38d97c5d82b5ca03d4af940f01a9bdcdd359bdac3111ab23",
+    "register_rows_pending": [
+      75,
+      75
+    ],
+    "addendum_rows_pending": [
+      13,
+      13
+    ],
+    "task7_manifest_files_changed": [],
+    "git_status_porcelain": [
+      "?? research/validation/stage5_4b_independent/"
+    ]
+  }
+}

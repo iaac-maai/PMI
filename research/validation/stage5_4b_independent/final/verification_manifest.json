@@ -1,0 +1,77 @@
+{
+  "verification": "Stage 5.4B.2 final independent verification",
+  "decision": "CONDITIONAL PASS (condition F01); Stage 5.4B.3 may proceed provided F01 lands before supply reports are exposed",
+  "reviewed_commit": "cf8f4581e65e027cd843ed42c81384a5d60224ef",
+  "git_status": [
+    "?? research/validation/stage5_4b_independent/final/"
+  ],
+  "stability": {
+    "start_head": "cf8f4581e65e027cd843ed42c81384a5d60224ef",
+    "end_head": "cf8f4581e65e027cd843ed42c81384a5d60224ef",
+    "implementation_unchanged": true,
+    "head_unchanged": true,
+    "status_start": [
+      "?? research/validation/stage5_4b_independent/final/"
+    ],
+    "status_end": [
+      "?? research/validation/stage5_4b_independent/final/"
+    ],
+    "implementation_files_tracked_and_unmodified_vs_reviewed_commit": true
+  },
+  "matrix": {
+    "criteria": 86,
+    "mandatory": 84,
+    "mandatory_accepted": 84,
+    "mandatory_flags_consistent": true,
+    "not_accepted": []
+  },
+  "implementation_files_sha256": {
+    "research/implementation/stage5_4b/__main__.py": "89276fdaa4cc895adb0b1c02b4f61dad44802980d389594e1395984a7d729fbd",
+    "research/implementation/stage5_4b/acceptance_matrix.csv": "6aad7e6d38770a6d4ebf0d07a61ab90ad081d6f99e73f5ddfeb2c6ee7b8b4b73",
+    "research/implementation/stage5_4b/acceptance_matrix_pre_C01.csv": "61d72fd3b65f6b8b953d764598fd769ffb774de788d35334a933d37cc2b0a87e",
+    "research/implementation/stage5_4b/advanced.py": "bfd5b5b795051f990805c3883d9938cc3a15426ff68f9318ecc671354a9518e9",
+    "research/implementation/stage5_4b/benchmark_exports/holiday_v1.0.json": "c669229e6ce41042d2c8c2701a4370c72bf8948e2cc09bcac0bc7db42ffee551",
+    "research/implementation/stage5_4b/benchmark_exports/holiday_v1.1.json": "37d7fccfd92ac90f60a02e6feeb5fa35917d42a2c87441a374fcc5e425b76d42",
+    "research/implementation/stage5_4b/benchmark_exports/original_v1.0.json": "b92c6685b8003ed92acfe3487d813f1fc2ceee98a805333606d6ec4ddb01663c",
+    "research/implementation/stage5_4b/benchmark_exports/original_v1.1.json": "d73c2845f2cad6f84575789f4a1b1dfadc2b692c47a319bec811028897a35e24",
+    "research/implementation/stage5_4b/benchmark_results.json": "d09a921b6077daf1616bab7660c257eed1846541a9555f919543fd273e25153e",
+    "research/implementation/stage5_4b/capacity_dates.py": "8482a161fc665c1452087462a919084f988851d6305ceba69ab6a9e3c5bc39cc",
+    "research/implementation/stage5_4b/controlled_metadata.py": "556b1dee4db763bd520f078fd3fef17e2ad289a48123a774a96da57440a18fc5",
+    "research/implementation/stage5_4b/demo.py": "aebc0e1a6bb5be3889922e96a11148a34ddf27d88d6cd434404c2743fd0aeb13",
+    "research/implementation/stage5_4b/engine.py": "649a62eb954f9ba30daefd4fc2245355c011f1eef5b650d0e4545b2a66ab5c1c",
+    "research/implementation/stage5_4b/export_benchmarks.py": "c29cea3eb227ea3aec81f02cc40e271cf6b9d7636505f3a0d84941ed4b34eef5",
+    "research/implementation/stage5_4b/fixtures.py": "b84fc6f535c1fa0139609a670e7c060c1320068f17315004d08282b4b4eef1c0",
+    "research/implementation/stage5_4b/implementation_report.md": "ff77956bf335872c5379d7728462fe1b94c9ca9718e4ebf820b904b7dec6b318",
+    "research/implementation/stage5_4b/input_states.py": "8ed8597acd21c8ce497c4f7591cf3564cfb42e1951356009cb71b424323000af",
+    "research/implementation/stage5_4b/test_advanced.py": "37be643b7f5107d62df7db05f2d41361ae8b68117e47a131b57dd3d5b59ad2a5",
+    "research/implementation/stage5_4b/test_closure.py": "af771ed4250e68518c028cfc63f47e2aab9d73e9d3507e8ee22ec38b9265b4ec",
+    "research/implementation/stage5_4b/test_engine.py": "8d648c7f3d4f34bcf1d93006f1e04d1123f025fce80492d423de7ed2b5b429de",
+    "research/implementation/stage5_4b/test_review.py": "b61ca90171a23c829eef933529f88dcaf7fa67a246e43833eed865e721b66010"
+  },
+  "reference_inputs_sha256": {
+    "research/validation/stage5_4a_independent_verification/cpsat_reference_cases.json": "236bbeca1426c3bbb8609a0e7310d29cacd091f3baed769375ecb47b5ddf78a4",
+    "research/validation/stage5_4a_independent_verification/task7_reference_cases.json": "d8416ac28f5e8faf1b03383b0f4cde2bd6bb2e83c6e49ccaf3b382697c2cbb7a",
+    "research/validation/stage5_4a_independent_verification/resource_contract.json": "b6bca6b47281cd62515ef85046c6035305984621e5129390eaf02725c6420b69",
+    "research/validation/stage5_4a_independent_verification/resource_contract_R2_addendum.json": "9c2fdefb0f961b193b40f9fdbd01ad06b670bef2227b2d994f95992e3a157164",
+    "research/validation/stage5_4a_independent_verification/acceptance_criteria.csv": "ca90b852790977dbb014b7bb8b80ad3ecfb97e3e4fc662c93e857ad321ba1a70",
+    "research/validation/stage5_4a_independent_verification/corrections/C01_column_reservation_coverage/acceptance_criteria_amendment_v1.1.csv": "7b3dccc88373b078b7d80a002ee3ef9e204c824ac67b1c9f6dac4dac77838a94",
+    "research/validation/stage5_4a_independent_verification/corrections/C01_column_reservation_coverage/correction_manifest.json": "ceaa82311a712a995108cfa7d1277f7bfb4db7166ea7fd954a99ef6c2657c1a6",
+    "research/validation/stage5_4a_independent_verification/corrections/C01_column_reservation_coverage/original/fixture_inputs_v1.1.json": "1d465b1e92667d23a956a6ebb3f1298912befae7fd3789e90cb0d9c6bab6f337",
+    "research/validation/stage5_4a_independent_verification/corrections/C01_column_reservation_coverage/holiday/fixture_inputs_v1.1.json": "0fa8b4fc7c3916bfaaa34298e31724cf5babf99e6f808c1936c3e69c101f2847",
+    "research/validation/stage5_4a_independent_verification/controlled_resource_demo/fixture_inputs.json": "1b9df094b09ba7236b76f1566f3fdf2ece3c30c28d64e5c696eb01cba5b47234",
+    "research/validation/stage5_4a_independent_verification/controlled_resource_demo_holiday_sensitivity/fixture_inputs.json": "4b166b4259f36701039ba76ef7d09d5e5c0909fabaf26c191877182b451aa100",
+    "research/validation/engineering_approval_review/priority_approval_register.csv": "d86a26cea516c10a38d97c5d82b5ca03d4af940f01a9bdcdd359bdac3111ab23",
+    "research/validation/stage5_4a_independent_verification/engineering_approval_addendum.csv": "fdc1e1ceac93b45adbf74ad06c724abcc83cffed8dc6812a6bbf71e81df92a90"
+  },
+  "deliverables_sha256": {
+    "discrepancy_register.csv": "03205e463e57459f49fa0dc160a31c51c1d2ad6c8142c2122dcfb994bf68ee96",
+    "final_acceptance_matrix.csv": "5adeec945372868ac554e790c4a8895dfc813caf1e54c99146f1ce63d6f0995a",
+    "final_verification_report.md": "c9167bb68bf6fef26f3be37129170535286ddc1b1302028ba0ff46773f404a40",
+    "independent_benchmark_results.csv": "9e9a3cb376c5d316dd583bd217b759354cb619c832388a20a198d5136a4e9dda",
+    "independent_case_results.csv": "b791fd2f3f68f2376bbd0aa3e98b6b18cb2340b6e771f8150af30a440ee3eddd",
+    "matrix_summary.json": "227c4912a29f483600ba9cd2a90958a19595a9f45eb8775fe7ac301b14d1895c",
+    "scripts/build_final_matrix.py": "d104355835ec3ce83441a35b630da7b1bb6b2983c83d3ced80f9a81d051ba584",
+    "scripts/verify_final.py": "36d223d91b3d8c2c745c829ac53b90ede686f9df439df58c524ad0a277edeb3c",
+    "verification_evidence.json": "cfbf285b6ee3a6d88206c09ae41b2fff75a627b4871129134462df0808a0fa23"
+  }
+}

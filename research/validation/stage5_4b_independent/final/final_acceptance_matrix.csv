@@ -1,0 +1,87 @@
+﻿criterion_id,mandatory,mandatory_agent1,mandatory_consistent,revision,agent1_status,independent_disposition,independent_evidence
+AC-G01,yes,yes,True,Task 7,PASSED,ACCEPTED,30/30 statuses; v1.1 OPTIMAL; v1.0 rejected
+AC-G02,yes,yes,True,Task 7,PASSED,ACCEPTED,all applicable makespans equal independent optima; benchmarks 40445/41885
+AC-G03,yes,yes,True,Task 7,DEFERRED,ACCEPTED,independent per-minute timestamp checks on all 30 source cases incl. 13 advanced; 350/350 per benchmark
+AC-G04,yes,yes,True,Task 7,PASSED,ACCEPTED,"durations, split segment sums and release spans re-derived from source minutes"
+AC-G05,yes,yes,True,Task 7,PASSED,ACCEPTED,"every occupied minute checked against project, resource, exception and allowed-hours calendars"
+AC-G06,yes,yes,True,Task 7,PASSED,ACCEPTED,per-minute load incl. continuous reservations and dated capacities
+AC-G07,yes,yes,True,Task 7,PASSED,ACCEPTED,FS lags and inspection gates checked from source
+AC-G08,yes,yes,True,Task 7,PASSED,ACCEPTED,RC07a-c
+AC-G09,yes,yes,True,Task 7,PASSED,ACCEPTED,"segment count/minimum, no voluntary pause, release between segments; unauthorized splits rejected"
+AC-G10,yes,yes,True,Task 7,PASSED,ACCEPTED,R0-5/R0-15 optima; tick and boundary misalignment rejected
+AC-G11,yes,yes,True,Task 7,PASSED,ACCEPTED,"RC06 exception, RC06-D default, unauthorized exception ignored and reported"
+AC-RC01,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC01
+AC-RC02,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC02
+AC-RC03,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC03
+AC-RC04,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC04
+AC-RC05a,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC05a
+AC-RC05b,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC05b
+AC-RC06,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC06
+AC-RC07a,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC07a
+AC-RC07b,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC07b
+AC-RC07c,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC07c
+AC-RC08a,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC08a
+AC-RC08b,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC08b
+AC-RC08c,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC08c
+AC-RC08d,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC08d
+AC-RC09,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC09
+AC-RC10a,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC10a
+AC-RC10b,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC10b
+AC-RC10c,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC10c
+AC-RC11a,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC11a
+AC-RC11b,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC11b
+AC-R0-15,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv R0-15
+AC-R0-5,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv R0-5
+AC-RC06-D,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC06-D
+AC-RC12a,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC12a
+AC-RC12b,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC12b
+AC-RC12c,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC12c
+AC-RC12d,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC12d
+AC-RC12e,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC12e
+AC-RC13a,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC13a
+AC-RC13b,yes,yes,True,Task 7,PASSED,ACCEPTED,independent_case_results.csv RC13b
+AC-DEMO-H1,no,no,True,C01 amended,PASSED,ACCEPTED,"holiday v1.1 OPTIMAL 41885, 350/350 checks"
+AC-C-P1,yes,yes,True,Task 7,PASSED,ACCEPTED,input-state audit and missing-input rejections
+AC-C-P2,yes,yes,True,Task 7,PASSED,ACCEPTED,working-time vs continuous occupancy checked per minute
+AC-C-P3,yes,yes,True,Task 7,PASSED,ACCEPTED,frozen R0 durations equal independent Stage 5.3A-derived durations
+AC-C-P4,yes,yes,True,Task 7,PASSED,ACCEPTED,costs 1172.5136 and 5103.32664 unchanged; no occupancy cost
+AC-C-P5,yes,yes,True,Task 7,PASSED,ACCEPTED,explicit integer quantity required; no derivation from cost coefficients (code review)
+AC-C-P6,yes,yes,True,Task 7,PASSED,ACCEPTED,"CD01, CD06"
+AC-C-P7,yes,yes,True,Task 7,PASSED,ACCEPTED,all invalid inputs rejected before solving; no relaxed schedule
+AC-C-V1,yes,yes,True,Task 7,PASSED,ACCEPTED,undeclared and misclassified resources rejected
+AC-C-V2,yes,yes,True,Task 7,PASSED,ACCEPTED,explicit-none demand -> MODEL_INVALID / MISSING_INPUT
+AC-C-V3,yes,yes,True,Task 7,PASSED,ACCEPTED,reusable assets continuous; working resources calendar
+AC-C-V4,yes,yes,True,Task 7,PASSED,ACCEPTED,inflated mode hours rejected
+AC-C-V5,yes,yes,True,Task 7,PASSED,ACCEPTED,C-POUR full HYP-CONC incl. OFICIAL_1; mode fields without mode rejected
+AC-C-V6,yes,yes,True,Task 7,PASSED,ACCEPTED,elapsed hold with working demand rejected
+AC-C-V7,yes,yes,True,Task 7,PASSED,ACCEPTED,unreachable release -> RESERVATION_UNRELEASED
+AC-C-V8,yes,yes,True,C01 amended,PASSED,ACCEPTED,108 coverage checks per v1.1; predecessor (v1.0) and successor contradictions rejected
+AC-C-V9,yes,yes,True,Task 7,PASSED,ACCEPTED,dated capacity scenarios equal independent enumeration; benchmarks within capacity
+AC-C-V10,yes,yes,True,Task 7,PASSED,ACCEPTED,no cost added by occupancy
+AC-C-V11,yes,yes,True,Task 7,PASSED,ACCEPTED,TICK_MISALIGNED; DST/London boundaries
+AC-C-MISSING_INPUT,yes,yes,True,Task 7,PASSED,ACCEPTED,"RC08a, audit, supply"
+AC-C-EXPLICIT_NONE_REQUIRED,yes,yes,True,Task 7,PASSED,ACCEPTED,R0 declarations; removal rejected
+AC-C-IMPOSSIBLE_CREW,yes,yes,True,Task 7,PASSED,ACCEPTED,RC08b/c
+AC-C-NO_ELIGIBLE_MODE,yes,yes,True,Task 7,PASSED,ACCEPTED,IMPOSSIBLE_CREW with NO_ELIGIBLE_MODE detail
+AC-C-NO_FIT,yes,yes,True,Task 7,PASSED,ACCEPTED,"RC08d, RC10b"
+AC-C-SPLIT_NOT_AUTHORIZED,yes,yes,True,Task 7,PASSED,ACCEPTED,injections
+AC-C-RESERVATION_UNRELEASED,yes,yes,True,Task 7,PASSED,ACCEPTED,injection
+AC-C-RELEASE_CONDITIONAL,yes,yes,True,Task 7,PASSED,ACCEPTED,"RC12b, RC13b conditional projections"
+AC-C-TICK_MISALIGNED,yes,yes,True,Task 7,PASSED,ACCEPTED,injections
+AC-C-INFEASIBLE_DEADLINE,yes,yes,True,Task 7,PASSED,ACCEPTED,RC07a
+AC-R2-1,yes,yes,True,Task 7,PASSED,ACCEPTED,"RC06, RC06-D, CD05"
+AC-R2-2,yes,yes,True,Task 7,PASSED,ACCEPTED,R0 reserved OFICIAL_1; CD02
+AC-R2-3,yes,yes,True,Task 7,PASSED,ACCEPTED,"RELEASE finish = max(minimum, recorded); planned test conditional"
+AC-R2-4,yes,yes,True,Task 7,PASSED,ACCEPTED,RC12a-e
+AC-D01,yes,yes,True,C01 amended,PASSED,ACCEPTED,"original v1.1 OPTIMAL 40445 = bound, 2027-03-01T10:05"
+AC-D02,yes,yes,True,C01 amended,PASSED,ACCEPTED,350/350 independent checks per fixture incl. 108 coverage
+AC-D03,yes,yes,True,C01 amended,PASSED,ACCEPTED,"CPM 16310 min, 29 conflicts, 11 pools"
+AC-D04,yes,yes,True,C01 amended,PASSED,ACCEPTED,5103.32664 EUR source sum = result cost
+AC-D05,no,no,True,Task 7,NOT_APPLICABLE,NOT_APPLICABLE,alternative optima; dates not compared (agreed)
+AC-P01,yes,yes,True,Task 7,PASSED,ACCEPTED,register unchanged; 88 PENDING; injected APPROVED rejected
+AC-P02,yes,yes,True,Task 7,PASSED,ACCEPTED,R0-15 14880; 8/8 exports
+AC-P03,yes,yes,True,Task 7,PASSED,ACCEPTED,R0-5 14850
+AC-P04,yes,yes,True,Task 7,PASSED,ACCEPTED,1172.5136 EUR in both R0 runs
+AC-P05,yes,yes,True,Task 7,PASSED,ACCEPTED,real_project_eligible false everywhere; real scope rejected
+AC-C01-H,yes,yes,True,C01 new,PASSED,ACCEPTED,both v1.0 rejected before solve; named C*-REBAR contradiction; hashes unchanged
+AC-C01-M,yes,yes,True,C01 new,PASSED,ACCEPTED,manifest hashes; coverage sensitivity off

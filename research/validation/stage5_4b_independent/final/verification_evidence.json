@@ -1,0 +1,503 @@
+{
+  "stability": {
+    "start_head": "cf8f4581e65e027cd843ed42c81384a5d60224ef",
+    "end_head": "cf8f4581e65e027cd843ed42c81384a5d60224ef",
+    "implementation_unchanged": true,
+    "head_unchanged": true,
+    "status_start": [
+      "?? research/validation/stage5_4b_independent/final/"
+    ],
+    "status_end": [
+      "?? research/validation/stage5_4b_independent/final/"
+    ]
+  },
+  "cases_pass": 30,
+  "cases_total": 30,
+  "benchmarks": [
+    {
+      "fixture": "original",
+      "version": "v1.1",
+      "verdict": "PASS"
+    },
+    {
+      "fixture": "original",
+      "version": "v1.0",
+      "verdict": "PASS"
+    },
+    {
+      "fixture": "holiday",
+      "version": "v1.1",
+      "verdict": "PASS"
+    },
+    {
+      "fixture": "holiday",
+      "version": "v1.0",
+      "verdict": "PASS"
+    }
+  ],
+  "frozen_r0": {
+    "5": {
+      "status": "OPTIMAL",
+      "objective": 14850,
+      "bound": 14850,
+      "target": 14850,
+      "independent_errors": [],
+      "independent_cpm_makespan": 14850,
+      "makespan": 14850,
+      "independent_cost_sum": 1172.5136,
+      "cost": 1172.5136,
+      "approvals": 88,
+      "c_pour_resources": {
+        "PEON_ESPECIAL": 2,
+        "OFICIAL_1": 1,
+        "VIBRADOR": 1
+      },
+      "real_project_eligible": false,
+      "pass": true
+    },
+    "15": {
+      "status": "OPTIMAL",
+      "objective": 14880,
+      "bound": 14880,
+      "target": 14880,
+      "independent_errors": [],
+      "independent_cpm_makespan": 14880,
+      "makespan": 14880,
+      "independent_cost_sum": 1172.5136,
+      "cost": 1172.5136,
+      "approvals": 88,
+      "c_pour_resources": {
+        "PEON_ESPECIAL": 2,
+        "OFICIAL_1": 1,
+        "VIBRADOR": 1
+      },
+      "real_project_eligible": false,
+      "pass": true
+    }
+  },
+  "targeted_corrections": {
+    "CD01 explicit-none demanded": [
+      "MODEL_INVALID",
+      "MISSING_INPUT",
+      true
+    ],
+    "CD02 mode fields without crew_mode": [
+      "MODEL_INVALID",
+      "MODE_MISMATCH",
+      true
+    ],
+    "CD03 approval/fixture metadata": [
+      [
+        "MODEL_INVALID",
+        "UNVERIFIED_APPROVAL"
+      ],
+      [
+        "MODEL_INVALID",
+        "UNVERIFIED_FIXTURE_EXCEPTION"
+      ],
+      true
+    ],
+    "CD04 horizon diagnostic": [
+      "INFEASIBLE",
+      {
+        "code": "HORIZON_EXHAUSTED",
+        "cause": "VERIFIED_EXTENDED_HORIZON_SCHEDULE",
+        "message": "A validated schedule exists beyond the declared horizon.",
+        "extended_horizon_status": "OPTIMAL",
+        "witness_completion": "2027-01-12T10:50+01:00"
+      },
+      true
+    ],
+    "CD05 ignored exception reported": [
+      [
+        {
+          "exception_id": "CAL-EXC-RC06",
+          "reason": "MISSING_AUTHORIZATION"
+        }
+      ],
+      "2027-01-12T08:00+01:00",
+      true
+    ],
+    "CD06 R0 explicit-none equipment": [
+      [
+        "CONCRETE_DELIVERY",
+        "CONCRETE_PUMP",
+        "CRANE"
+      ],
+      "EXPLICIT_NONE_REQUIRED",
+      true
+    ],
+    "CD07 validator independence": [
+      "validate() shares prepare(); acceptance uses this external checker",
+      null,
+      true
+    ],
+    "CD08 integer bounds": [
+      "int",
+      "int",
+      true
+    ],
+    "CD09 timestamp source": [
+      "secondary",
+      "OPTIMAL",
+      true
+    ]
+  },
+  "input_state_audit": {
+    "resource engineer_approved": {
+      "result": "UNVERIFIED_APPROVAL",
+      "expected": "UNVERIFIED_APPROVAL",
+      "evidence_preserved": null,
+      "pass": true
+    },
+    "activity engineer_approved": {
+      "result": "UNVERIFIED_APPROVAL",
+      "expected": "UNVERIFIED_APPROVAL",
+      "evidence_preserved": null,
+      "pass": true
+    },
+    "calendar engineer_approved": {
+      "result": "UNVERIFIED_APPROVAL",
+      "expected": "UNVERIFIED_APPROVAL",
+      "evidence_preserved": null,
+      "pass": true
+    },
+    "unregistered state string": {
+      "result": "INVALID_INPUT_STATE",
+      "expected": "INVALID_INPUT_STATE",
+      "evidence_preserved": null,
+      "pass": true
+    },
+    "activity input_state absent": {
+      "result": "MISSING_INPUT",
+      "expected": "MISSING_INPUT",
+      "evidence_preserved": null,
+      "pass": true
+    },
+    "resource evidence_ref absent": {
+      "result": "MISSING_INPUT",
+      "expected": "MISSING_INPUT",
+      "evidence_preserved": null,
+      "pass": true
+    },
+    "user_provided_project without evidence": {
+      "result": "MISSING_INPUT",
+      "expected": "MISSING_INPUT",
+      "evidence_preserved": null,
+      "pass": true
+    },
+    "independently_measured without evidence": {
+      "result": "MISSING_INPUT",
+      "expected": "MISSING_INPUT",
+      "evidence_preserved": null,
+      "pass": true
+    },
+    "user_provided_project with evidence": {
+      "result": "ACCEPT",
+      "expected": "ACCEPT",
+      "evidence_preserved": true,
+      "pass": true
+    },
+    "independently_measured with evidence": {
+      "result": "ACCEPT",
+      "expected": "ACCEPT",
+      "evidence_preserved": true,
+      "pass": true
+    },
+    "reservation release engineer_approved": {
+      "result": "UNVERIFIED_APPROVAL",
+      "expected": "UNVERIFIED_APPROVAL",
+      "pass": true
+    },
+    "hypothetical pass with missing state": {
+      "result": "MISSING_INPUT",
+      "expected": "MISSING_INPUT",
+      "pass": true
+    }
+  },
+  "contract_diagnostics": {
+    "V7 release not reachable from start": {
+      "result": "RESERVATION_UNRELEASED",
+      "expected": "RESERVATION_UNRELEASED",
+      "pass": true
+    },
+    "V8 covered activity succeeds release": {
+      "result": "STRUCTURAL_INFEASIBILITY",
+      "expected": "STRUCTURAL_INFEASIBILITY",
+      "pass": true
+    },
+    "reservation quantity missing": {
+      "result": "MISSING_INPUT",
+      "expected": "MISSING_INPUT",
+      "pass": true
+    },
+    "reshoring requested": {
+      "result": "UNSUPPORTED_CONSTRAINT",
+      "expected": "UNSUPPORTED_CONSTRAINT",
+      "pass": true
+    },
+    "reservation on working resource": {
+      "result": "MODEL_INVALID",
+      "expected": "MODEL_INVALID",
+      "pass": true
+    },
+    "split without authorization": {
+      "result": "SPLIT_NOT_AUTHORIZED",
+      "expected": "SPLIT_NOT_AUTHORIZED",
+      "pass": true
+    },
+    "split pour without cold-joint ref": {
+      "result": "SPLIT_NOT_AUTHORIZED",
+      "expected": "SPLIT_NOT_AUTHORIZED",
+      "pass": true
+    },
+    "supply rate missing": {
+      "result": "MISSING_INPUT",
+      "expected": "MISSING_INPUT",
+      "pass": true
+    },
+    "NO_ELIGIBLE_MODE detail": {
+      "result": [
+        "IMPOSSIBLE_CREW",
+        "NO_ELIGIBLE_MODE"
+      ],
+      "expected": "IMPOSSIBLE_CREW + NO_ELIGIBLE_MODE",
+      "pass": true
+    }
+  },
+  "date_capacity": [
+    {
+      "scenario": "reduction to zero (crew)",
+      "expected_status": "OPTIMAL",
+      "expected_makespan": 3050,
+      "status": "OPTIMAL",
+      "makespan": 3050,
+      "independent_errors": "",
+      "pass": true
+    },
+    {
+      "scenario": "increase (crew 1->2)",
+      "expected_status": "OPTIMAL",
+      "expected_makespan": 370,
+      "status": "OPTIMAL",
+      "makespan": 370,
+      "independent_errors": "",
+      "pass": true
+    },
+    {
+      "scenario": "equipment outage (crane)",
+      "expected_status": "OPTIMAL",
+      "expected_makespan": 1650,
+      "status": "OPTIMAL",
+      "makespan": 1650,
+      "independent_errors": "",
+      "pass": true
+    },
+    {
+      "scenario": "continuous reservation crossing a zero day",
+      "expected_status": "OPTIMAL",
+      "expected_makespan": 6000,
+      "status": "OPTIMAL",
+      "makespan": 6000,
+      "independent_errors": "",
+      "pass": true
+    },
+    {
+      "scenario": "supply rate increase 6->12",
+      "expected_status": "OPTIMAL",
+      "expected_makespan": 330,
+      "status": "OPTIMAL",
+      "makespan": 330,
+      "independent_errors": "",
+      "pass": true
+    },
+    {
+      "scenario": "supply rate reduction 6->3",
+      "expected_status": "OPTIMAL",
+      "expected_makespan": 1575,
+      "status": "OPTIMAL",
+      "makespan": 1575,
+      "independent_errors": "",
+      "pass": true
+    },
+    {
+      "scenario": "non-ISO date key",
+      "expected_status": "INVALID_CAPACITY_OVERRIDE",
+      "expected_makespan": null,
+      "status": "INVALID_CAPACITY_OVERRIDE",
+      "makespan": null,
+      "independent_errors": "",
+      "pass": true
+    },
+    {
+      "scenario": "negative value",
+      "expected_status": "INVALID_CAPACITY_OVERRIDE",
+      "expected_makespan": null,
+      "status": "INVALID_CAPACITY_OVERRIDE",
+      "makespan": null,
+      "independent_errors": "",
+      "pass": true
+    },
+    {
+      "scenario": "fractional value",
+      "expected_status": "INVALID_CAPACITY_OVERRIDE",
+      "expected_makespan": null,
+      "status": "INVALID_CAPACITY_OVERRIDE",
+      "makespan": null,
+      "independent_errors": "",
+      "pass": true
+    },
+    {
+      "scenario": "missing unit",
+      "expected_status": "INVALID_CAPACITY_OVERRIDE",
+      "expected_makespan": null,
+      "status": "INVALID_CAPACITY_OVERRIDE",
+      "makespan": null,
+      "independent_errors": "",
+      "pass": true
+    },
+    {
+      "scenario": "explicit-none acquiring capacity",
+      "expected_status": "INVALID_CAPACITY_OVERRIDE",
+      "expected_makespan": null,
+      "status": "INVALID_CAPACITY_OVERRIDE",
+      "makespan": null,
+      "independent_errors": "",
+      "pass": true
+    },
+    {
+      "scenario": "explicit-none zero override",
+      "expected_status": "ACCEPT",
+      "expected_makespan": null,
+      "status": "ACCEPT",
+      "makespan": 1610,
+      "independent_errors": "",
+      "pass": true
+    },
+    {
+      "scenario": "not an object",
+      "expected_status": "INVALID_CAPACITY_OVERRIDE",
+      "expected_makespan": null,
+      "status": "INVALID_CAPACITY_OVERRIDE",
+      "makespan": null,
+      "independent_errors": "",
+      "pass": true
+    },
+    {
+      "scenario": "conflicting duplicate key via CLI",
+      "expected_status": "INVALID_JSON_INPUT",
+      "expected_makespan": null,
+      "status": "INVALID_JSON_INPUT",
+      "makespan": null,
+      "independent_errors": "",
+      "pass": true
+    },
+    {
+      "scenario": "timezone semantics (London resource; Madrid DST day continuous)",
+      "expected_status": "boundaries",
+      "expected_makespan": null,
+      "status": "computed",
+      "makespan": null,
+      "independent_errors": "",
+      "pass": true
+    },
+    {
+      "scenario": "schedule on a zero-capacity day is rejected",
+      "expected_status": "rejected by both",
+      "expected_makespan": null,
+      "status": "SUT rejects=True; independent=['capacity CREW_F at 2027-01-11 08:00']",
+      "makespan": null,
+      "independent_errors": "",
+      "pass": true
+    }
+  ],
+  "timezone_checks": {
+    "resource_local_london": [
+      [
+        30101700,
+        30104580,
+        2
+      ],
+      [
+        30104580,
+        30106020,
+        0
+      ],
+      [
+        30106020,
+        30107400,
+        2
+      ]
+    ],
+    "expected_zero_window_london": [
+      30104580,
+      30106020
+    ],
+    "london_pass": true,
+    "continuous_project_local_dst_day": [
+      [
+        30101700,
+        30103140,
+        2
+      ],
+      [
+        30103140,
+        30104520,
+        0
+      ],
+      [
+        30104520,
+        30107400,
+        2
+      ]
+    ],
+    "expected_zero_window_madrid": [
+      30103140,
+      30104520
+    ],
+    "dst_day_minutes": 1380,
+    "continuous_pass": true
+  },
+  "split_pour_supply": {
+    "status": "OPTIMAL",
+    "segments_minutes": [
+      240,
+      390
+    ],
+    "productive_minutes": 600,
+    "physical_volume_m3": 60.0,
+    "reported_draw_m3": 63.0,
+    "fields": [
+      "cap_m3_exact",
+      "daily_limit_status",
+      "date",
+      "draw_m3_exact",
+      "resource_id"
+    ],
+    "occupancy_basis": [
+      "working_time"
+    ]
+  },
+  "preservation": {
+    "tests_historical": [
+      "Ran 43 tests in 0.990s",
+      "",
+      "OK"
+    ],
+    "tests_historical_ok": true,
+    "tests_optimizer": [
+      "Ran 27 tests in 5.823s",
+      "",
+      "OK"
+    ],
+    "tests_optimizer_ok": true,
+    "stage5_4a_exports_identical": "8/8",
+    "register_sha256": "d86a26cea516c10a38d97c5d82b5ca03d4af940f01a9bdcdd359bdac3111ab23",
+    "register_expected": "d86a26cea516c10a38d97c5d82b5ca03d4af940f01a9bdcdd359bdac3111ab23",
+    "approvals": 88,
+    "approvals_pending": 88,
+    "task7_manifest_changed": [],
+    "c01_manifest_changed": [],
+    "c01_historical_hashes_ok": true
+  }
+}

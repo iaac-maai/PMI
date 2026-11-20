@@ -22,7 +22,8 @@ class AdvancedTests(unittest.TestCase):
                 self.assertEqual(baseline["conflict_intervals"], 29)
                 self.assertEqual(len(baseline["over_capacity_pools"]), 11)
                 strict = solve(problem, time_limit=20)
-                self.assertEqual(strict["solver_status"], "INFEASIBLE")
+                self.assertEqual(strict["status"], "INFEASIBLE")
+                self.assertIsNone(strict["solver_status"])
                 self.assertFalse(strict["activities"])
                 adjusted = solve(construction_demo(holiday, coverage_sensitivity=True), time_limit=20)
                 self.assertEqual(adjusted["solver_status"], "OPTIMAL")
@@ -80,16 +81,16 @@ class AdvancedTests(unittest.TestCase):
         problem = case("RC12d")
         problem["resources"]["PANELS"] = {
             "resource_id": "PANELS", "display_name": "Panels", "kind": "reusable_asset",
-            "unit": "piece", "capacity": 1, "calendar": "continuous",
+            "unit": "piece", "capacity": 1, "calendar": "continuous", "input_state": "hypothetical_fixture", "evidence_ref": "test",
         }
         problem["reservations"] = [{
             "reservation_id": "SET", "resource_id": "PANELS", "quantity": 1,
-            "occupancy_basis": "continuous_elapsed",
+            "occupancy_basis": "continuous_elapsed", "input_state": "hypothetical_fixture",
             "start_event": {"kind": "activity_start", "activity_id": "R"},
             "release_condition": {
                 "all_of": [{"kind": "activity_finish", "activity_id": "I"},
                            {"kind": "inspection_pass", "event_id": "EV-I"}],
-                "return_lead_minutes": 30, "reshoring": "not_permitted",
+                "return_lead_minutes": 30, "reshoring": "not_permitted", "input_state": "hypothetical_fixture",
             },
             "covers_activities": ["R", "I"],
         }]

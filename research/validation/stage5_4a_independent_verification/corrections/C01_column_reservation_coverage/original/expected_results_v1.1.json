@@ -1,0 +1,36 @@
+{
+  "fixture": "original/fixture_inputs_v1.1.json",
+  "fixture_sha256": "1d465b1e92667d23a956a6ebb3f1298912befae7fd3789e90cb0d9c6bab6f337",
+  "status": "OPTIMAL (proven: equals lower bound)",
+  "makespan_minutes": 40445,
+  "completion_local": "2027-03-01T10:05+01:00",
+  "lower_bound_minutes": 40445,
+  "lower_bound_completion": "2027-03-01T10:05+01:00",
+  "cpm_makespan_minutes": 16310,
+  "cpm_completion_local": "2027-02-12T15:50+01:00",
+  "cpm_conflict_intervals": 29,
+  "cpm_over_capacity_pools": [
+    "BEAM_FORM_SET",
+    "BEAM_PROP",
+    "COL_FORM_SET",
+    "CONCRETE_SUPPLY",
+    "INSPECTOR",
+    "OF1_ENCOFRADOR",
+    "OF1_FERRALLISTA",
+    "OFICIAL_1",
+    "PEON_ESPECIAL",
+    "SLAB_PROP",
+    "VIBRADOR"
+  ],
+  "direct_reference_cost_eur": 5103.32664,
+  "checks": 350,
+  "checks_failed": 0,
+  "coverage_checks": 108,
+  "lower_bound_choices": {
+    "choices_evaluated": 1440,
+    "choices_cyclic_or_infeasible": 1320,
+    "column_chain_structures": 60,
+    "beam_ordered_pairs": 12,
+    "slab_orders": 2
+  }
+}

@@ -19,7 +19,7 @@ def split_policy(task, tick):
             "Missing split policy.", "SPLIT_NOT_AUTHORIZED")
     supported(policy, {"authorization_ref", "max_segments", "min_segment_minutes",
                        "retention_during_gap", "restart_overhead_minutes", "same_mode_on_restart",
-                       "voluntary_pause", "cold_joint_authorization_ref"})
+                       "voluntary_pause", "cold_joint_authorization_ref", "input_state", "evidence_ref"})
     require(all(key in policy for key in ("authorization_ref", "max_segments", "min_segment_minutes",
                                          "retention_during_gap", "restart_overhead_minutes",
                                          "same_mode_on_restart", "voluntary_pause"))
@@ -57,7 +57,7 @@ def event_constraints(problem, zone, tick):
     links = problem["dependencies"]
     recorded, strength, named, conditional, blocked = {}, {}, {}, set(), {}
     for row in problem.get("release_events", []):
-        supported(row, {"event_id", "activity_id", "status", "at", "input_state"})
+        supported(row, {"event_id", "activity_id", "status", "at", "input_state", "evidence_ref"})
         event, activity = row["event_id"], row["activity_id"]
         require(event and event not in named and activity in tasks
                 and row["status"] in {"recorded_pass", "hypothetical_recorded_pass"},
@@ -67,7 +67,7 @@ def event_constraints(problem, zone, tick):
         latest = parse_minute(row["at"], zone, tick, upper=True)
         recorded[activity] = min(recorded.get(activity, latest), latest)
     for row in problem.get("inspection_pass_events", []):
-        supported(row, {"event_id", "inspection_activity", "status", "gates", "at", "input_state"})
+        supported(row, {"event_id", "inspection_activity", "status", "gates", "at", "input_state", "evidence_ref"})
         key, event, status = row["inspection_activity"], row["event_id"], row["status"]
         require(event and event not in named and key in tasks and tasks[key]["kind"] == "inspection",
                 "Invalid inspection event identity.")
@@ -90,7 +90,7 @@ def event_constraints(problem, zone, tick):
                 blocked[gate] = "INSPECTION_FAILED"
     for row in problem.get("strength_events", []):
         supported(row, {"event_id", "release_activity", "pour_activity", "kind", "status", "at",
-                        "test_age_hours_after_pour", "acceptance_criterion_ref", "input_state"})
+                        "test_age_hours_after_pour", "acceptance_criterion_ref", "input_state", "evidence_ref"})
         key, event, status = row["release_activity"], row["event_id"], row["status"]
         require(event and event not in named and key in tasks and key not in strength
                 and tasks[key]["kind"] == "elapsed_hold", "Invalid strength release identity.")
@@ -156,7 +156,7 @@ def asset_reservations(problem, named, blocked, tick):
     for row in problem.get("reservations", []):
         supported(row, {"reservation_id", "resource_id", "quantity", "element_ids", "start_event",
                         "release_condition", "occupancy_basis", "covers_activities", "input_state",
-                        "approval_required"})
+                        "approval_required", "evidence_ref"})
         key, rid, quantity = row["reservation_id"], row["resource_id"], row["quantity"]
         resource = problem["resources"].get(rid, {})
         require(resource, f"Missing reusable resource {rid}.", "MISSING_INPUT")
@@ -166,7 +166,7 @@ def asset_reservations(problem, named, blocked, tick):
                 f"Missing or invalid physical quantity for {key}.", "MISSING_INPUT")
         seen.add(key)
         condition = row["release_condition"]
-        supported(condition, {"all_of", "return_lead_minutes", "reshoring", "input_state"})
+        supported(condition, {"all_of", "return_lead_minutes", "reshoring", "input_state", "evidence_ref"})
         require(condition.get("input_state") != "missing", "Missing release condition.", "MISSING_INPUT")
         require(condition["reshoring"] == "not_permitted", "Unsupported reshoring configuration.",
                 "UNSUPPORTED_CONSTRAINT")

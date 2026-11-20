@@ -1,14 +1,23 @@
 {
   "original": {
-    "unchanged_fixture": {
+    "v1.0": {
       "status": "INFEASIBLE",
-      "solver_status": "INFEASIBLE",
+      "solver_status": null,
       "objective_minutes": null,
       "lower_bound_minutes": null,
+      "optimality_gap_minutes": null,
       "optimality_gap": null,
-      "runtime_seconds": 0.0525467,
-      "validated": false,
+      "runtime_seconds": 0.0,
+      "timestamp_source": null,
       "real_project_eligible": false,
+      "validated": false,
+      "diagnostic": {
+        "code": "STRUCTURAL_INFEASIBILITY",
+        "cause": "RESERVATION_COVERAGE_PREDECESSOR",
+        "reservation_id": "R-COLSET-C1",
+        "covered_activity_id": "C1-REBAR",
+        "start_activity_id": "C1-FORM"
+      },
       "cpm_comparison": {
         "makespan_minutes": 16310,
         "completion_local": "2027-02-12T15:50+01:00",
@@ -26,17 +35,26 @@
           "SLAB_PROP",
           "VIBRADOR"
         ]
-      }
+      },
+      "benchmark_input": {
+        "version": "v1.0",
+        "path": "controlled_resource_demo/fixture_inputs.json",
+        "sha256": "1b9df094b09ba7236b76f1566f3fdf2ece3c30c28d64e5c696eb01cba5b47234",
+        "coverage_sensitivity": false
+      },
+      "export": "benchmark_exports/original_v1.0.json"
     },
-    "diagnostic_coverage_sensitivity": {
+    "v1.1": {
       "status": "OPTIMAL",
       "solver_status": "OPTIMAL",
       "objective_minutes": 40445,
-      "lower_bound_minutes": 40445.0,
+      "lower_bound_minutes": 40445,
+      "optimality_gap_minutes": 0,
       "optimality_gap": 0.0,
-      "runtime_seconds": 0.5471211,
-      "validated": true,
+      "runtime_seconds": 0.6324591,
+      "timestamp_source": "primary",
       "real_project_eligible": false,
+      "validated": true,
       "completion_local": "2027-03-01T10:05+01:00",
       "cost": {
         "total_direct_reference_eur": 5103.32664
@@ -58,19 +76,37 @@
           "SLAB_PROP",
           "VIBRADOR"
         ]
-      }
+      },
+      "covered_activity_checks": 108,
+      "benchmark_input": {
+        "version": "v1.1",
+        "path": "corrections/C01_column_reservation_coverage/original/fixture_inputs_v1.1.json",
+        "sha256": "1d465b1e92667d23a956a6ebb3f1298912befae7fd3789e90cb0d9c6bab6f337",
+        "coverage_sensitivity": false
+      },
+      "resource_conflict_count": 0,
+      "export": "benchmark_exports/original_v1.1.json"
     }
   },
   "holiday": {
-    "unchanged_fixture": {
+    "v1.0": {
       "status": "INFEASIBLE",
-      "solver_status": "INFEASIBLE",
+      "solver_status": null,
       "objective_minutes": null,
       "lower_bound_minutes": null,
+      "optimality_gap_minutes": null,
       "optimality_gap": null,
-      "runtime_seconds": 0.0476371,
-      "validated": false,
+      "runtime_seconds": 0.0,
+      "timestamp_source": null,
       "real_project_eligible": false,
+      "validated": false,
+      "diagnostic": {
+        "code": "STRUCTURAL_INFEASIBILITY",
+        "cause": "RESERVATION_COVERAGE_PREDECESSOR",
+        "reservation_id": "R-COLSET-C1",
+        "covered_activity_id": "C1-REBAR",
+        "start_activity_id": "C1-FORM"
+      },
       "cpm_comparison": {
         "makespan_minutes": 16310,
         "completion_local": "2027-02-12T15:50+01:00",
@@ -88,17 +124,26 @@
           "SLAB_PROP",
           "VIBRADOR"
         ]
-      }
+      },
+      "benchmark_input": {
+        "version": "v1.0",
+        "path": "controlled_resource_demo_holiday_sensitivity/fixture_inputs.json",
+        "sha256": "4b166b4259f36701039ba76ef7d09d5e5c0909fabaf26c191877182b451aa100",
+        "coverage_sensitivity": false
+      },
+      "export": "benchmark_exports/holiday_v1.0.json"
     },
-    "diagnostic_coverage_sensitivity": {
+    "v1.1": {
       "status": "OPTIMAL",
       "solver_status": "OPTIMAL",
       "objective_minutes": 41885,
-      "lower_bound_minutes": 41885.0,
+      "lower_bound_minutes": 41885,
+      "optimality_gap_minutes": 0,
       "optimality_gap": 0.0,
-      "runtime_seconds": 0.5363611,
-      "validated": true,
+      "runtime_seconds": 0.5934138,
+      "timestamp_source": "primary",
       "real_project_eligible": false,
+      "validated": true,
       "completion_local": "2027-03-02T10:05+01:00",
       "cost": {
         "total_direct_reference_eur": 5103.32664
@@ -120,7 +165,16 @@
           "SLAB_PROP",
           "VIBRADOR"
         ]
-      }
+      },
+      "covered_activity_checks": 108,
+      "benchmark_input": {
+        "version": "v1.1",
+        "path": "corrections/C01_column_reservation_coverage/holiday/fixture_inputs_v1.1.json",
+        "sha256": "0fa8b4fc7c3916bfaaa34298e31724cf5babf99e6f808c1936c3e69c101f2847",
+        "coverage_sensitivity": false
+      },
+      "resource_conflict_count": 0,
+      "export": "benchmark_exports/holiday_v1.1.json"
     }
   }
 }

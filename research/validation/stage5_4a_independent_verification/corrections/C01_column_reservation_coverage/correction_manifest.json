@@ -1,0 +1,59 @@
+{
+  "correction": "C01",
+  "fixture_version": "v1.1",
+  "historical_preserved": {
+    "original": {
+      "path": "controlled_resource_demo/fixture_inputs.json",
+      "sha256": "1b9df094b09ba7236b76f1566f3fdf2ece3c30c28d64e5c696eb01cba5b47234",
+      "matches_task7_manifest": true
+    },
+    "holiday": {
+      "path": "controlled_resource_demo_holiday_sensitivity/fixture_inputs.json",
+      "sha256": "4b166b4259f36701039ba76ef7d09d5e5c0909fabaf26c191877182b451aa100",
+      "matches_task7_manifest": true
+    },
+    "original_schedule": {
+      "path": "controlled_resource_demo/resource_feasible_schedule.csv",
+      "sha256": "65ab25cb79da09bb13ee8f86d39cd326852e74c572038dbc02f36fd4a3b00f36",
+      "matches_task7_manifest": true
+    },
+    "holiday_schedule": {
+      "path": "controlled_resource_demo_holiday_sensitivity/resource_feasible_schedule.csv",
+      "sha256": "83984c50cd246f1f552bd2d67e946727bdb4ab65e0e26d1789f269d03b259ea7",
+      "matches_task7_manifest": true
+    }
+  },
+  "corrected": {
+    "original": {
+      "path": "corrections/C01_column_reservation_coverage/original/fixture_inputs_v1.1.json",
+      "sha256": "1d465b1e92667d23a956a6ebb3f1298912befae7fd3789e90cb0d9c6bab6f337",
+      "supersedes": "controlled_resource_demo/fixture_inputs.json"
+    },
+    "holiday": {
+      "path": "corrections/C01_column_reservation_coverage/holiday/fixture_inputs_v1.1.json",
+      "sha256": "0fa8b4fc7c3916bfaaa34298e31724cf5babf99e6f808c1936c3e69c101f2847",
+      "supersedes": "controlled_resource_demo_holiday_sensitivity/fixture_inputs.json"
+    }
+  },
+  "benchmark_inputs_for_acceptance": {
+    "original": "corrections/C01_column_reservation_coverage/original/fixture_inputs_v1.1.json",
+    "holiday": "corrections/C01_column_reservation_coverage/holiday/fixture_inputs_v1.1.json"
+  },
+  "files": {
+    "acceptance_criteria_amendment_v1.1.csv": "7b3dccc88373b078b7d80a002ee3ef9e204c824ac67b1c9f6dac4dac77838a94",
+    "checker_results.csv": "f120859fa390dfeb07e5aa7c6126e3ffcca3c312eaa85ac0eb92eb4daccaceb1",
+    "coverage_analysis.csv": "4171fd7b342e451d1603f8ec452823e0cdf7385008b3da4ce35cbbbc221cd859",
+    "discrepancy_register_C01.csv": "ef69ccc69d9edfe7c06552fa3aa1e19b8901e55156154e8c880456bfaef381a6",
+    "discrepancy_report.md": "7b8f45f97241d708d81a3cac309992b92d5d1b5430fa4a81415af5db576d1b33",
+    "fixture_diff.json": "35b26000b1c643bf31799d7c854f4ed8fa3b36bb9607269bdf1dc312b3a34f4f",
+    "holiday/expected_results_v1.1.json": "20f872626da5c131189b8fc86ad904f8fef938fc5652294ae813d4228b4abd6f",
+    "holiday/feasibility_checks_v1.1.csv": "c1b50a9c9a792dea16a64102aa392fcd3a4728e23c0d03c11b38d309e36a4f1c",
+    "holiday/fixture_inputs_v1.1.json": "0fa8b4fc7c3916bfaaa34298e31724cf5babf99e6f808c1936c3e69c101f2847",
+    "holiday/resource_feasible_schedule_v1.1.csv": "f348effbb62ee2fdfef48d5588e96bc2f0b8a42d4ac46a961e2a70013d34b65f",
+    "original/expected_results_v1.1.json": "b7103556ecf20a6a54f3bbacfa07d6f58290a3e02102a6f9ae62748679375638",
+    "original/feasibility_checks_v1.1.csv": "c1b50a9c9a792dea16a64102aa392fcd3a4728e23c0d03c11b38d309e36a4f1c",
+    "original/fixture_inputs_v1.1.json": "1d465b1e92667d23a956a6ebb3f1298912befae7fd3789e90cb0d9c6bab6f337",
+    "original/resource_feasible_schedule_v1.1.csv": "ce9ac51d1cfffb6029ff81f5165b3b87124ee4cd26a6c3d4159809e1aae5507e",
+    "scripts/correct_and_verify.py": "0e2ae90b2b83bb82ddb140455dc867f19198f97965c7e393e5dcc1862d3f5f9b"
+  }
+}

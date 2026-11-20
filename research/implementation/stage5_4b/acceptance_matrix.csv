@@ -1,85 +1,87 @@
-criterion_id,mandatory,status,evidence
-AC-G01,yes,PASSED,"All 30 small reference outcomes matched, including status on conditional projections."
-AC-G02,yes,PASSED,All applicable small-reference objectives matched. See benchmark-specific criteria.
-AC-G03,yes,PASSED,Small-reference dates and validator checks passed. RC13a uses R2 recorded-pass release finish.
-AC-G04,yes,PASSED,Durations verified by core input checks or regression coverage.
-AC-G05,yes,PASSED,Calendars verified by core input checks or regression coverage.
-AC-G06,yes,PASSED,Cumulative constraints and timestamp sweeps cover working and continuous occupancy.
-AC-G07,yes,PASSED,Precedence verified by core input checks or regression coverage.
-AC-G08,yes,PASSED,Deadlines verified by core input checks or regression coverage.
-AC-G09,yes,PASSED,"RC10a-c and restart, retention and cold-joint authorization tests passed."
-AC-G10,yes,PASSED,Resolution verified by core input checks or regression coverage.
-AC-G11,yes,PASSED,Default calendar policy verified by core input checks or regression coverage.
-AC-RC01,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC02,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC03,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC04,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC05a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC05b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC06,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC07a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC07b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC07c,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC08a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC08b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC08c,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC08d,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC09,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC10a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC10b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC10c,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC11a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC11b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-R0-15,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-R0-5,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC06-D,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC12a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC12b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC12c,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC12d,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC12e,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC13a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-RC13b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic."
-AC-DEMO-H1,no,FAILED,Unchanged holiday input proved infeasible. Adjusted diagnostic proved 41885 minutes.
-AC-C-P1,yes,DEFERRED,Required scheduling inputs checked. Full field-level input-state and evidence schema audit remains pending.
-AC-C-P2,yes,PASSED,RC05a/b continuous intervals and working-time capacity checked independently.
-AC-C-P3,yes,PASSED,P3 Durations are owned by Stage 5 verified by core input checks or regression coverage.
-AC-C-P4,yes,PASSED,P4 Cost is owned by Stage 5 verified by core input checks or regression coverage.
-AC-C-P5,yes,PASSED,Reservations require explicit physical quantities. No counts derived from costs.
-AC-C-P6,yes,PASSED,P6 Explicit none is distinct from missing verified by core input checks or regression coverage.
-AC-C-P7,yes,PASSED,P7 Blocking is conservative verified by core input checks or regression coverage.
-AC-C-V1,yes,PASSED,Activity and reservation resource identities are checked before modelling.
-AC-C-V2,yes,PASSED,V2 verified by core input checks or regression coverage.
-AC-C-V3,yes,PASSED,Physical pools require continuous availability. Working resources require explicit calendars.
-AC-C-V4,yes,PASSED,V4 verified by core input checks or regression coverage.
-AC-C-V5,yes,PASSED,V5 verified by core input checks or regression coverage.
-AC-C-V6,yes,PASSED,Elapsed holds and strength-release activities reject working resource demands.
-AC-C-V7,yes,PASSED,Reservation release reachability checked. Unreachable extra event rejected in regression test.
-AC-C-V8,yes,PASSED,Model and timestamp checker enforce coverage. The strict benchmarks prove infeasible on inconsistent input.
-AC-C-V9,yes,DEFERRED,"Working, supply and continuous capacity tested. Optional date-specific capacity overrides are rejected in this version."
-AC-C-V10,yes,PASSED,Capacity and occupancy add no cost. Both diagnostic benchmarks preserve the frozen per-activity cost.
-AC-C-V11,yes,PASSED,Working and delivery calendars use the same local and UTC alignment checks.
-AC-C-MISSING_INPUT,yes,PASSED,"Missing capacity, quantity, release and supply declarations are rejected before solving."
-AC-C-EXPLICIT_NONE_REQUIRED,yes,PASSED,EXPLICIT_NONE_REQUIRED verified by core input checks or regression coverage.
-AC-C-IMPOSSIBLE_CREW,yes,PASSED,IMPOSSIBLE_CREW verified by core input checks or regression coverage.
-AC-C-NO_ELIGIBLE_MODE,yes,PASSED,Single-mode capacity failure reports IMPOSSIBLE_CREW with NO_ELIGIBLE_MODE detail.
-AC-C-NO_FIT,yes,PASSED,NO_FIT verified by core input checks or regression coverage.
-AC-C-SPLIT_NOT_AUTHORIZED,yes,PASSED,Incomplete split authorization and split pour without a cold-joint reference are rejected.
-AC-C-RESERVATION_UNRELEASED,yes,PASSED,Invalid release endpoint reachability regression passed.
-AC-C-RELEASE_CONDITIONAL,yes,PASSED,RC12b and RC13b returned conditional projections.
-AC-C-TICK_MISALIGNED,yes,PASSED,TICK_MISALIGNED verified by core input checks or regression coverage.
-AC-C-INFEASIBLE_DEADLINE,yes,PASSED,RC07a proved infeasible; labelled deadline scope and prerequisite IDs returned.
-AC-R2-1,yes,PASSED,R2-1_calendar_policy verified by core input checks or regression coverage.
-AC-R2-2,yes,PASSED,R2-2_mode_occupancy verified by core input checks or regression coverage.
-AC-R2-3,yes,PASSED,RC13a fixed recorded release verified. RC13b remained conditional.
-AC-R2-4,yes,PASSED,RC12a-e matched all applicable outcomes and dates.
-AC-D01,yes,FAILED,Unchanged input proved infeasible due to cage-first reservation coverage. Adjusted diagnostic proved 40445 minutes.
-AC-D02,yes,FAILED,Unchanged input yields no schedule; adjusted diagnostic validates all covered work and capacities.
-AC-D03,yes,PASSED,"Recomputed 16310 elapsed minutes, 29 conflicts and 11 affected pools on both inputs."
-AC-D04,yes,DEFERRED,Frozen and diagnostic schedules preserve EUR 5103.32664. Unchanged input yields no capacity-feasible schedule for comparison.
-AC-D05,no,NOT_APPLICABLE,Benchmark has alternative optima and representative dates are excluded.
-AC-P01,yes,PASSED,"Both registers read and validated as pending, with no tracked changes."
-AC-P02,yes,PASSED,Frozen R0-15 passed. Eight tracked export files unchanged against clean baseline.
-AC-P03,yes,PASSED,Frozen R0-5 passed.
-AC-P04,yes,PASSED,Frozen handover cost retained in both R0 runs.
-AC-P05,yes,PASSED,Controlled scope enforced and real_project_eligible is false.
+criterion_id,mandatory,status,evidence,requirement,source,revision
+AC-G01,yes,PASSED,All 30 small reference outcomes matched. Corrected C01 runs proved OPTIMAL and both historical fixtures stopped before solve.,"Expected status: OPTIMAL cases must return OPTIMAL (FEASIBLE with the same objective is reported as 'feasible, optimality not proven' and fails the case). INFEASIBLE cases must return INFEASIBLE or a preflight rejection with the stated code, never UNKNOWN or a relaxed schedule. MODEL_INVALID cases must be rejected before the solver is invoked.",cpsat_reference_cases.json#general_acceptance_criteria,original
+AC-G02,yes,PASSED,All applicable small makespans and both corrected C01 makespans matched.,Objective: makespan in minutes from project_start equals optimal_makespan_minutes exactly.,cpsat_reference_cases.json#general_acceptance_criteria,original
+AC-G03,yes,DEFERRED,All local timestamp checks passed. Agent 2 core checker rerun on 17 core cases and both R0 runs. Agent 2 C01 checker passed 350 checks per benchmark. Final independent review of all advanced small-case timestamps is pending.,Schedule: dates may differ from reference_schedule only where unique_optimal_schedule is false. Any returned schedule must be validated independently against all constraints below.,cpsat_reference_cases.json#general_acceptance_criteria,original
+AC-G04,yes,PASSED,Durations verified by core input checks or regression coverage.,Durations: every productive or inspection activity occupies exactly ceil(duration_minutes / tick) ticks of working time; elapsed holds occupy exactly ceil(duration_minutes / tick) ticks of elapsed time.,cpsat_reference_cases.json#general_acceptance_criteria,original
+AC-G05,yes,PASSED,Calendars verified by core input checks or regression coverage.,Calendars: every occupied tick lies inside the calendar of every resource the activity uses (or the project calendar when it uses none) and inside allowed_hours where declared.,cpsat_reference_cases.json#general_acceptance_criteria,original
+AC-G06,yes,PASSED,"Timestamp sweep and model enforce working and continuous capacity, including dated boundaries. C01 independent checker passed.","Capacity: at every tick, the sum of demands on each resource is at most its capacity on that tick (capacity is 0 outside the resource calendar). Reservations count from from_activity start to to_activity finish, continuously.",cpsat_reference_cases.json#general_acceptance_criteria,original
+AC-G07,yes,PASSED,Precedence verified by core input checks or regression coverage.,"Precedence: successor start >= predecessor finish + lag (FS, elapsed).",cpsat_reference_cases.json#general_acceptance_criteria,original
+AC-G08,yes,PASSED,Deadlines verified by core input checks or regression coverage.,Deadlines: every finish is at or before its latest_finish.,cpsat_reference_cases.json#general_acceptance_criteria,original
+AC-G09,yes,PASSED,"RC10a-c and restart, retention and cold-joint authorization tests passed.","Interruption: only split_allowed activities may have more than one segment, with at most max_segments segments each of at least min_segment_minutes; resources are held only during segments.",cpsat_reference_cases.json#general_acceptance_criteria,original
+AC-G10,yes,PASSED,Resolution verified by core input checks or regression coverage.,5-minute tick for new cases; 15-minute tick retained for R0-15 regression; ticks must divide 60 and every boundary (TICK_MISALIGNED otherwise),Task 3; Agent 1 N3,original
+AC-G11,yes,PASSED,Default calendar policy verified by core input checks or regression coverage.,Every occupied tick lies in project AND allowed_hours AND every demanded resource calendar unless a registered exception names the activity,resource_contract_R2_addendum.json#R2-1,original
+AC-RC01,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 1610 min; completion 2027-01-12T10:50+01:00,cpsat_reference_cases.json,original
+AC-RC02,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 210 min; completion 2027-01-11T11:30+01:00; schedule must equal reference_schedule,cpsat_reference_cases.json,original
+AC-RC03,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 150 min; completion 2027-01-11T10:30+01:00,cpsat_reference_cases.json,original
+AC-RC04,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 240 min; completion 2027-01-11T12:00+01:00,cpsat_reference_cases.json,original
+AC-RC05a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 3120 min; completion 2027-01-13T12:00+01:00,cpsat_reference_cases.json,original
+AC-RC05b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 1620 min; completion 2027-01-12T11:00+01:00,cpsat_reference_cases.json,original
+AC-RC06,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 4520 min; completion 2027-01-14T11:20+01:00; schedule must equal reference_schedule,cpsat_reference_cases.json,original
+AC-RC07a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status INFEASIBLE; diagnostic INFEASIBLE_DEADLINE,cpsat_reference_cases.json,original
+AC-RC07b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 1610 min; completion 2027-01-12T10:50+01:00,cpsat_reference_cases.json,original
+AC-RC07c,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 1610 min; completion 2027-01-12T10:50+01:00; schedule must equal reference_schedule,cpsat_reference_cases.json,original
+AC-RC08a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status MODEL_INVALID; diagnostic MISSING_INPUT,cpsat_reference_cases.json,original
+AC-RC08b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status INFEASIBLE; diagnostic IMPOSSIBLE_CREW,cpsat_reference_cases.json,original
+AC-RC08c,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status INFEASIBLE; diagnostic IMPOSSIBLE_CREW,cpsat_reference_cases.json,original
+AC-RC08d,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status INFEASIBLE; diagnostic NO_FIT,cpsat_reference_cases.json,original
+AC-RC09,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 5850 min; completion 2027-01-18T09:30+01:00,cpsat_reference_cases.json,original
+AC-RC10a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 4680 min; completion 2027-01-18T14:00+01:00; schedule must equal reference_schedule,cpsat_reference_cases.json,original
+AC-RC10b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status INFEASIBLE; diagnostic NO_FIT,cpsat_reference_cases.json,original
+AC-RC10c,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 6060 min; completion 2027-01-19T13:00+01:00; schedule must equal reference_schedule,cpsat_reference_cases.json,original
+AC-RC11a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 1485 min; completion 2027-01-12T08:45+01:00; schedule must equal reference_schedule,cpsat_reference_cases.json,original
+AC-RC11b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 330 min; completion 2027-01-11T13:30+01:00; schedule must equal reference_schedule,cpsat_reference_cases.json,original
+AC-R0-15,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 14880 min; completion 2027-01-14T16:00+01:00,cpsat_reference_cases.json,original
+AC-R0-5,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status OPTIMAL; makespan 14850 min; completion 2027-01-14T15:30+01:00,cpsat_reference_cases.json,original
+AC-RC06-D,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.","status OPTIMAL; makespan 4520 min; completion 2027-01-14T11:20+01:00; dates P 01-11T08:00 to 01-11T13:00, L 01-12T08:00 to 01-12T10:30, N 01-12T08:00 to 01-12T10:30, M 01-14T08:00 to 01-14T11:20",task7_reference_cases.json,original
+AC-RC12a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.","status OPTIMAL; makespan 195 min; completion 2027-01-11T11:15+01:00; dates R 01-11T08:00 to 01-11T09:00, I 01-11T10:00 to 01-11T10:30, P 01-11T10:30 to 01-11T11:15",task7_reference_cases.json,original
+AC-RC12b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.","status CONDITIONAL; makespan 195 min; completion 2027-01-11T11:15+01:00; dates R 01-11T08:00 to 01-11T09:00, I 01-11T10:00 to 01-11T10:30, P 01-11T10:30 to 01-11T11:15",task7_reference_cases.json,original
+AC-RC12c,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.","status BLOCKED; diagnostic INSPECTION_FAILED; dates R 01-11T08:00 to 01-11T09:00, I 01-11T10:00 to 01-11T10:30",task7_reference_cases.json,original
+AC-RC12d,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.","status OPTIMAL; makespan 265 min; completion 2027-01-11T12:25+01:00; dates R 01-11T08:00 to 01-11T09:00, I 01-11T10:00 to 01-11T10:30, P 01-11T11:40 to 01-11T12:25",task7_reference_cases.json,original
+AC-RC12e,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.",status MODEL_INVALID; diagnostic EVENT_BEFORE_ACTIVITY_FINISH,task7_reference_cases.json,original
+AC-RC13a,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.","status OPTIMAL; makespan 5970 min; completion 2027-01-15T11:30+01:00; dates POUR 01-11T08:00 to 01-11T09:00, STRIP 01-15T10:30 to 01-15T11:30",task7_reference_cases.json,original
+AC-RC13b,yes,PASSED,"Matched expected status and applicable objective, dates and diagnostic.","status CONDITIONAL; makespan 5880 min; completion 2027-01-15T10:00+01:00; dates POUR 01-11T08:00 to 01-11T09:00, STRIP 01-15T09:00 to 01-15T10:00",task7_reference_cases.json,original
+AC-DEMO-H1,no,PASSED,"Manifest-listed holiday v1.1 proved OPTIMAL with objective and bound 41885, zero gap, and completion 2027-03-02T10:05+01:00.",Input corrections/C01_column_reservation_coverage/holiday/fixture_inputs_v1.1.json; status OPTIMAL; makespan 41885 min; completion 2027-03-02T10:05+01:00,holiday/expected_results_v1.1.json,amended
+AC-C-P1,yes,PASSED,Required normalized entity provenance audited against the five registered states. Missing inputs and unsupported approval claims rejected. Conditional evidence retained.,"P1 No engineering defaults. Every capacity, calendar, demand, crew mode, release condition, throughput, segment rule and lead time is an explicit input carrying an input_state. An absent value is MISSING, never zero, never unlimited and never a library default.",resource_contract.json#principles,original
+AC-C-P2,yes,PASSED,RC05a/b continuous intervals and working-time capacity checked independently.,"P2 Two occupancy bases. working_time occupancy exists only during an activity's working segments. continuous_elapsed reservations run without a calendar from a start event to a release event and include nights, weekends, holidays, curing and every other hold.",resource_contract.json#principles,original
+AC-C-P3,yes,PASSED,P3 Durations are owned by Stage 5 verified by core input checks or regression coverage.,P3 Durations are owned by Stage 5.3A. A crew mode's duration is the 5.3A productive estimate for that exact mode. Stage 5.4B never rescales a duration from a different crew size.,resource_contract.json#principles,original
+AC-C-P4,yes,PASSED,P4 Cost is owned by Stage 5 verified by core input checks or regression coverage.,"P4 Cost is owned by Stage 5.3A. Resource occupancy and reservations add no cost. BCCA already prices formwork timber and props as amortised material coefficients, so reservations must not create a second cost line.",resource_contract.json#principles,original
+AC-C-P5,yes,PASSED,Reservations require explicit physical quantities. No counts derived from costs.,P5 Counts are not derived from cost coefficients. BCCA per_unit amortisation values (for example CE00200 prop 0.01 u/m2) are not physical piece counts and must not be used to size reusable-asset demand.,resource_contract.json#principles,original
+AC-C-P6,yes,PASSED,P6 Explicit none is distinct from missing verified by core input checks or regression coverage.,P6 Explicit none is distinct from missing. A resource declared with capacity 0 and the explicit_none flag means the method does not use it; an undeclared resource that a reference requires blocks the activity (5.3A behaviour).,resource_contract.json#principles,original
+AC-C-P7,yes,PASSED,P7 Blocking is conservative verified by core input checks or regression coverage.,P7 Blocking is conservative. A missing or insufficient input blocks the affected activity and every successor; the solver is not invoked with relaxed or substituted values.,resource_contract.json#principles,original
+AC-C-V1,yes,PASSED,Activity and reservation resource identities are checked before modelling.,"Every resource_id named by a mode, inspection, reservation or pour demand exists in Resource. -> MISSING_INPUT",resource_contract.json#validation_rules,original
+AC-C-V2,yes,PASSED,CD01 regression verifies explicit-none demand and inconsistent nonzero declarations return MODEL_INVALID / MISSING_INPUT before solving.,"explicit_none = true implies capacity = 0, and such a resource is never demanded. -> MISSING_INPUT",resource_contract.json#validation_rules,original
+AC-C-V3,yes,PASSED,Physical pools require continuous availability. Working resources require explicit calendars.,reusable_asset resources use availability continuous; all others use calendar with an explicit calendar_ref. -> MODEL_INVALID,resource_contract.json#validation_rules,original
+AC-C-V4,yes,PASSED,Selected-mode hours are checked. CD02 injections verify mode fields are rejected if a selected mode is missing.,For each activity and mode: units[trade] x scheduled_hours >= worker_hours_by_trade[trade] and units[class] x scheduled_hours >= machine_hours_by_class[class] (5.3A reserved hours consistency). -> MODEL_INVALID,resource_contract.json#validation_rules,original
+AC-C-V5,yes,PASSED,Frozen R0 retains full declared mode including the official. CD02 rejects all mode-specific fields on mode-free tasks.,"mode units == worker_capacity_by_trade + equipment_capacity_by_class + reserved_without_bcca_demand, exactly; anything else is MODEL_INVALID (MODE_MISMATCH). -> MODEL_INVALID",resource_contract.json#validation_rules (V5 replaced by R2),original
+AC-C-V6,yes,PASSED,Elapsed holds and strength-release activities reject working resource demands.,"Elapsed holds (curing, strength release) demand no working_time resource (5.4A rule). -> MODEL_INVALID",resource_contract.json#validation_rules,original
+AC-C-V7,yes,PASSED,Reservation release reachability checked. Unreachable extra event rejected in regression test.,Reservation start_event precedes every event in release_condition.all_of in the dependency graph. -> RESERVATION_UNRELEASED,resource_contract.json#validation_rules,original
+AC-C-V8,yes,PASSED,Pre-solve predecessor and release-successor contradictions tested. Agent 2 C01 checker passed 108 reservation coverage checks per corrected fixture.,"Every working segment of each covered activity lies inside [start_event, release]. In addition, before solving, no covered activity may be a precedence predecessor of the start-event activity or a successor of a release activity (static contradiction); report it as a coverage contradiction and do not solve",coverage_analysis.csv,amended
+AC-C-V9,yes,PASSED,"Date override tests pass for reductions, zero days, equipment outages, increases, split and continuous occupancy across dates, conflicts and insufficient capacity.",At every tick: sum of working_time demands <= capacity on that tick (0 off calendar); sum of reservation quantities <= reusable_asset capacity. -> solver constraint,resource_contract.json#validation_rules,original
+AC-C-V10,yes,PASSED,Capacity and occupancy add no cost. Both diagnostic benchmarks preserve the frozen per-activity cost.,"No reservation, inspector occupancy or supply draw produces a cost line (P4). -> MODEL_INVALID",resource_contract.json#validation_rules,original
+AC-C-V11,yes,PASSED,Working and delivery calendars use the same local and UTC alignment checks.,Tick divides 60 and every calendar and supply boundary. -> TICK_MISALIGNED,resource_contract.json#validation_rules,original
+AC-C-MISSING_INPUT,yes,PASSED,"Missing capacity, quantity, release and supply declarations are rejected before solving.","When A demanded resource, capacity, calendar, crew mode, reservation quantity, release condition or supply rate is absent or has input_state missing. -> MODEL_INVALID; Block the activity and its successors. Do not invoke the solver for them.",resource_contract.json#CapacityPolicy,original
+AC-C-EXPLICIT_NONE_REQUIRED,yes,PASSED,CD06 verifies the frozen R0 declarations at both resolutions and pre-solve rejection when the delivery declaration is removed.,"When A reference requires CRANE, CONCRETE_PUMP or CONCRETE_DELIVERY and the input neither declares it nor declares explicit none. -> MODEL_INVALID; Block (5.3A raises 'Missing compatible ... supply or explicit none').",resource_contract.json#CapacityPolicy,original
+AC-C-IMPOSSIBLE_CREW,yes,PASSED,IMPOSSIBLE_CREW verified by core input checks or regression coverage.,"When A mode demands more units than the pool's maximum capacity on every tick of the horizon, or capacity is 0 for a demanded non-none resource. -> INFEASIBLE; Reject the mode; if no mode remains, NO_ELIGIBLE_MODE.",resource_contract.json#CapacityPolicy,original
+AC-C-NO_ELIGIBLE_MODE,yes,PASSED,Single-mode capacity failure reports IMPOSSIBLE_CREW with NO_ELIGIBLE_MODE detail.,When Every declared mode of an activity is rejected. -> INFEASIBLE; Block the activity and successors.,resource_contract.json#CapacityPolicy,original
+AC-C-NO_FIT,yes,PASSED,NO_FIT verified by core input checks or regression coverage.,"When A non_interruptible activity exceeds every window of the intersected calendar, or a resource calendar is never open in the horizon. -> INFEASIBLE; Report; never split silently.",resource_contract.json#CapacityPolicy,original
+AC-C-SPLIT_NOT_AUTHORIZED,yes,PASSED,Incomplete split authorization and split pour without a cold-joint reference are rejected.,When split_allowed without authorization_ref or segment rules. -> MODEL_INVALID; Treat as non_interruptible and report.,resource_contract.json#CapacityPolicy,original
+AC-C-RESERVATION_UNRELEASED,yes,PASSED,Invalid release endpoint reachability regression passed.,"When A release condition names an activity or event that does not exist, or that cannot follow the start event. -> MODEL_INVALID; Block the reservation and every covered activity.",resource_contract.json#CapacityPolicy,original
+AC-C-RELEASE_CONDITIONAL,yes,PASSED,RC12b and RC13b returned conditional projections.,When A release depends on a strength or inspection event with status missing. -> CONDITIONAL; Project the schedule with the condition flagged; it is not a releasable schedule.,resource_contract.json#CapacityPolicy,original
+AC-C-TICK_MISALIGNED,yes,PASSED,TICK_MISALIGNED verified by core input checks or regression coverage.,"When A calendar boundary, duration grid or tick does not align. -> MODEL_INVALID; Reject before solving.",resource_contract.json#CapacityPolicy,original
+AC-C-INFEASIBLE_DEADLINE,yes,PASSED,RC07a proved infeasible; labelled deadline scope and prerequisite IDs returned.,When No schedule meets a declared deadline. -> INFEASIBLE; Report the deadline and the implicated chain; never return a relaxed schedule.,resource_contract.json#CapacityPolicy,original
+AC-R2-1,yes,PASSED,RC06 and RC06-D pass. CD05 verifies missing or unregistered authorization is reported and the default calendar applies.,Implemented exactly as specified,resource_contract_R2_addendum.json,original
+AC-R2-2,yes,PASSED,R0 selected-mode and reserved-unit occupancy pass. Mode-free metadata injections return MODE_MISMATCH.,Implemented exactly as specified,resource_contract_R2_addendum.json,original
+AC-R2-3,yes,PASSED,RC13a fixed recorded release verified. RC13b remained conditional.,Implemented exactly as specified,resource_contract_R2_addendum.json,original
+AC-R2-4,yes,PASSED,RC12a-e matched all applicable outcomes and dates.,Implemented exactly as specified,resource_contract_R2_addendum.json,original
+AC-D01,yes,PASSED,"Manifest-listed original v1.1 proved OPTIMAL with objective and bound 40445, zero gap, and completion 2027-03-01T10:05+01:00.",Input corrections/C01_column_reservation_coverage/original/fixture_inputs_v1.1.json; status OPTIMAL; makespan 40445 min; completion 2027-03-01T10:05+01:00,original/expected_results_v1.1.json,amended
+AC-D02,yes,PASSED,"Agent 2 C01 coverage-aware checker passed 350 of 350 checks on each actual exported result, including 108 V8 checks per fixture.","Returned schedule passes every check type in feasibility_checks_v1.1.csv, including 108 reservation_covers_activity (V8) checks per fixture: each declared covered activity lies within [start event, latest release + return lead]",original/feasibility_checks_v1.1.csv; holiday/feasibility_checks_v1.1.csv,amended
+AC-D03,yes,PASSED,Original v1.1 CPM finishes 2027-02-12T15:50+01:00 at 16310 minutes with 29 conflicts on 11 pools.,"completion 2027-02-12T15:50+01:00; 16310 min; 29 conflict intervals on 11 pools (unchanged values, v1.1 input)",original/expected_results_v1.1.json,amended
+AC-D04,yes,PASSED,The same fixed input cost of EUR 5103.32664 is preserved through CPM and both capacity-feasible v1.1 runs.,direct reference cost 5103.32664 EUR identical for CPM and capacity-feasible schedules (unchanged value),original/expected_results_v1.1.json,amended
+AC-D05,no,NOT_APPLICABLE,Benchmark has alternative optima and representative dates are excluded.,Not compared: alternative optima exist (RD01),remaining_deficiencies.csv#RD01,original
+AC-P01,yes,PASSED,"88 registered PENDING rows retained. CD03 rejects injected APPROVED rows, unregistered references and unauthorized fixture metadata.",75 approvals in priority_approval_register.csv unchanged and PENDING,preservation_verification.json,original
+AC-P02,yes,PASSED,Frozen R0-15 matched 14880 min. Fresh Stage 5.4A run reproduced 8 of 8 exports byte-for-byte.,"completion 2027-01-14T16:00+01:00; 14,880 min; 8 exports byte-identical",research/implementation/stage5_4a,original
+AC-P03,yes,PASSED,Frozen R0-5 passed.,"completion 2027-01-14T15:30+01:00; 14,850 min",cpsat_reference_cases.json#R0-5,original
+AC-P04,yes,PASSED,Frozen handover cost retained in both R0 runs.,"1,172.5136 EUR unchanged",scheduling_handover.json,original
+AC-P05,yes,PASSED,Controlled-only scope enforced. Approval and exception injections cannot grant eligibility.,real_project_eligible = false for every output,all,original
+AC-C01-H,yes,PASSED,Both manifest-verified v1.0 fixtures stopped before solving with a named C*-REBAR coverage contradiction and no timestamps.,Must not return OPTIMAL or FEASIBLE. Expected: a static coverage contradiction on R-COLSET-C1..C4 (C*-REBAR) or a proven INFEASIBLE; never a schedule,checker_results.csv,new
+AC-C01-M,yes,PASSED,Both normal CLI acceptance runs loaded manifest-listed v1.1 hashes without a coverage sensitivity.,Acceptance runs use the v1.1 fixtures listed in correction_manifest.json benchmark_inputs_for_acceptance; v1.0 files are retained as historical evidence only,correction_manifest.json,new

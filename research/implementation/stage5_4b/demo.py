@@ -4,6 +4,7 @@ from collections import defaultdict
 from copy import deepcopy
 from decimal import Decimal
 from graphlib import TopologicalSorter
+from hashlib import sha256
 
 from pmi_core.scheduling.calendar import display, round_duration
 
@@ -12,9 +13,27 @@ from .engine import prepare
 from .fixtures import REFERENCES, approvals, read_json, remap
 
 
-def construction_demo(holiday=False, *, coverage_sensitivity=False):
-    folder = "controlled_resource_demo_holiday_sensitivity" if holiday else "controlled_resource_demo"
-    source = read_json(REFERENCES / folder / "fixture_inputs.json")
+CORRECTION = REFERENCES / "corrections/C01_column_reservation_coverage"
+
+
+def benchmark_path(holiday, version):
+    label = "holiday" if holiday else "original"
+    manifest = read_json(CORRECTION / "correction_manifest.json")
+    if version not in {"v1.0", "v1.1"}:
+        raise ValueError(f"Unknown benchmark version: {version}.")
+    record = manifest["corrected" if version == "v1.1" else "historical_preserved"][label]
+    if version == "v1.1" and record["path"] != manifest["benchmark_inputs_for_acceptance"][label]:
+        raise ValueError("Inconsistent corrected benchmark source in the manifest.")
+    path = REFERENCES / record["path"]
+    if sha256(path.read_bytes()).hexdigest() != record["sha256"]:
+        raise ValueError(f"Benchmark input hash mismatch: {path}.")
+    return path
+
+
+def construction_demo(holiday=False, *, version="v1.0", coverage_sensitivity=False):
+    if coverage_sensitivity and version != "v1.0":
+        raise ValueError("Coverage sensitivity applies only to historical v1.0.")
+    source = read_json(benchmark_path(holiday, version))
     project = source["project"]
     calendars = {
         row["calendar_id"]: {k: v for k, v in row.items() if k not in {"calendar_id", "note"}}
@@ -24,7 +43,7 @@ def construction_demo(holiday=False, *, coverage_sensitivity=False):
     for row in source["resources"]:
         rid = row["resource_id"]
         resources[rid] = {
-            **{k: row[k] for k in ("resource_id", "display_name", "unit", "capacity", "input_state", "explicit_none")},
+            **{k: row[k] for k in ("resource_id", "display_name", "unit", "capacity", "input_state", "explicit_none", "evidence_ref")},
             "kind": row["resource_class"],
             "calendar": ("continuous" if row["availability"] == "continuous"
                          else calendars[row["calendar_ref"]]),
@@ -56,7 +75,7 @@ def construction_demo(holiday=False, *, coverage_sensitivity=False):
             excess = {k: v for k, v in working.items() if k not in hours}
             if excess and (row["work_item"] != "COL-CONC" or excess != {"OFICIAL_1": 1}):
                 raise ValueError(f"Undeclared zero-demand occupation for {key}.")
-            task.update(crew_mode=row["mode"], positive_capacity={k: working[k] for k in hours},
+            task.update(crew_mode=row["mode"], crew_mode_input_state=mode["input_state"], positive_capacity={k: working[k] for k in hours},
                         demand_hours=hours)
             if excess:
                 task.update(reserved_without_bcca_demand=excess,
@@ -66,6 +85,7 @@ def construction_demo(holiday=False, *, coverage_sensitivity=False):
             event = row["pass_event"]
             inspections.append({
                 "event_id": event["id"], "status": event["status"], "inspection_activity": key,
+                "input_state": event.get("input_state", row["input_state"]),
                 "gates": [edge["successor"] for edge in source["dependencies"]
                           if edge["predecessor"] == key and edge["condition"] == "inspection pass"],
                 **({"at": event["at"]} if "at" in event else {}),
@@ -76,7 +96,8 @@ def construction_demo(holiday=False, *, coverage_sensitivity=False):
             if basis != "finish":
                 raise ValueError(f"Unsupported demo strength anchor for {key}.")
             strength.append({"event_id": event["id"], "status": event["status"],
-                             "pour_activity": anchor, "release_activity": key})
+                             "pour_activity": anchor, "release_activity": key,
+                             "input_state": event.get("input_state", row["input_state"])})
         tasks.append(task)
     reservations = deepcopy(source["reservations"])
     fixture_notes = []
@@ -110,7 +131,7 @@ def construction_demo(holiday=False, *, coverage_sensitivity=False):
 def cpm_comparison(problem):
     """Calendar/precedence-only baseline and its nominal occupancy conflicts."""
     zone, origin, _, tick, tasks, capacities, domains, durations, _, links, _, _, advanced = prepare(problem)
-    recorded, strength, _, _, reservations, _, splits = advanced
+    recorded, strength, _, _, reservations, _, splits, _ = advanced
     if recorded or splits or any(fixed is not None for _, _, fixed in strength.values()):
         raise ValueError("The demonstration CPM comparison requires fixed intervals and at-minimum releases.")
     incoming = defaultdict(list)

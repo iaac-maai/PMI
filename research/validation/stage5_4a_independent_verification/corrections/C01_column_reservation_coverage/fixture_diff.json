@@ -1,0 +1,288 @@
+{
+  "diff_excluding_correction_block": {
+    "original": [
+      {
+        "path": "/reservations[0]/covers_activities",
+        "before": [
+          "C1-FORM",
+          "C1-REBAR",
+          "C1-INSP",
+          "C1-POUR",
+          "C1-CURE",
+          "C1-STRIKE",
+          "C1-STRIP"
+        ],
+        "after": [
+          "C1-FORM",
+          "C1-INSP",
+          "C1-POUR",
+          "C1-CURE",
+          "C1-STRIKE",
+          "C1-STRIP"
+        ]
+      },
+      {
+        "path": "/reservations[1]/covers_activities",
+        "before": [
+          "C2-FORM",
+          "C2-REBAR",
+          "C2-INSP",
+          "C2-POUR",
+          "C2-CURE",
+          "C2-STRIKE",
+          "C2-STRIP"
+        ],
+        "after": [
+          "C2-FORM",
+          "C2-INSP",
+          "C2-POUR",
+          "C2-CURE",
+          "C2-STRIKE",
+          "C2-STRIP"
+        ]
+      },
+      {
+        "path": "/reservations[2]/covers_activities",
+        "before": [
+          "C3-FORM",
+          "C3-REBAR",
+          "C3-INSP",
+          "C3-POUR",
+          "C3-CURE",
+          "C3-STRIKE",
+          "C3-STRIP"
+        ],
+        "after": [
+          "C3-FORM",
+          "C3-INSP",
+          "C3-POUR",
+          "C3-CURE",
+          "C3-STRIKE",
+          "C3-STRIP"
+        ]
+      },
+      {
+        "path": "/reservations[3]/covers_activities",
+        "before": [
+          "C4-FORM",
+          "C4-REBAR",
+          "C4-INSP",
+          "C4-POUR",
+          "C4-CURE",
+          "C4-STRIKE",
+          "C4-STRIP"
+        ],
+        "after": [
+          "C4-FORM",
+          "C4-INSP",
+          "C4-POUR",
+          "C4-CURE",
+          "C4-STRIKE",
+          "C4-STRIP"
+        ]
+      }
+    ],
+    "holiday": [
+      {
+        "path": "/reservations[0]/covers_activities",
+        "before": [
+          "C1-FORM",
+          "C1-REBAR",
+          "C1-INSP",
+          "C1-POUR",
+          "C1-CURE",
+          "C1-STRIKE",
+          "C1-STRIP"
+        ],
+        "after": [
+          "C1-FORM",
+          "C1-INSP",
+          "C1-POUR",
+          "C1-CURE",
+          "C1-STRIKE",
+          "C1-STRIP"
+        ]
+      },
+      {
+        "path": "/reservations[1]/covers_activities",
+        "before": [
+          "C2-FORM",
+          "C2-REBAR",
+          "C2-INSP",
+          "C2-POUR",
+          "C2-CURE",
+          "C2-STRIKE",
+          "C2-STRIP"
+        ],
+        "after": [
+          "C2-FORM",
+          "C2-INSP",
+          "C2-POUR",
+          "C2-CURE",
+          "C2-STRIKE",
+          "C2-STRIP"
+        ]
+      },
+      {
+        "path": "/reservations[2]/covers_activities",
+        "before": [
+          "C3-FORM",
+          "C3-REBAR",
+          "C3-INSP",
+          "C3-POUR",
+          "C3-CURE",
+          "C3-STRIKE",
+          "C3-STRIP"
+        ],
+        "after": [
+          "C3-FORM",
+          "C3-INSP",
+          "C3-POUR",
+          "C3-CURE",
+          "C3-STRIKE",
+          "C3-STRIP"
+        ]
+      },
+      {
+        "path": "/reservations[3]/covers_activities",
+        "before": [
+          "C4-FORM",
+          "C4-REBAR",
+          "C4-INSP",
+          "C4-POUR",
+          "C4-CURE",
+          "C4-STRIKE",
+          "C4-STRIP"
+        ],
+        "after": [
+          "C4-FORM",
+          "C4-INSP",
+          "C4-POUR",
+          "C4-CURE",
+          "C4-STRIKE",
+          "C4-STRIP"
+        ]
+      }
+    ]
+  },
+  "invariants_equal": {
+    "original": {
+      "resources": true,
+      "crew_modes": true,
+      "calendars": true,
+      "activities": true,
+      "dependencies": true,
+      "elements": true,
+      "supports": true,
+      "work_packages": true,
+      "supply": true,
+      "holds": true,
+      "split_policy": true,
+      "project": true,
+      "reservations_except_column_covers": true
+    },
+    "holiday": {
+      "resources": true,
+      "crew_modes": true,
+      "calendars": true,
+      "activities": true,
+      "dependencies": true,
+      "elements": true,
+      "supports": true,
+      "work_packages": true,
+      "supply": true,
+      "holds": true,
+      "split_policy": true,
+      "project": true,
+      "reservations_except_column_covers": true
+    }
+  },
+  "other_reference_files": {
+    "controlled_resource_demo/expected_results.json": {
+      "mentions_reservations": true,
+      "declares_covers_activities": false
+    },
+    "controlled_resource_demo/fixture_inputs.json": {
+      "mentions_reservations": true,
+      "declares_covers_activities": true
+    },
+    "controlled_resource_demo/lower_bound_proof.json": {
+      "mentions_reservations": true,
+      "declares_covers_activities": false
+    },
+    "controlled_resource_demo_holiday_sensitivity/expected_results.json": {
+      "mentions_reservations": true,
+      "declares_covers_activities": false
+    },
+    "controlled_resource_demo_holiday_sensitivity/fixture_inputs.json": {
+      "mentions_reservations": true,
+      "declares_covers_activities": true
+    },
+    "controlled_resource_demo_holiday_sensitivity/lower_bound_proof.json": {
+      "mentions_reservations": true,
+      "declares_covers_activities": false
+    },
+    "cpsat_reference_cases.json": {
+      "mentions_reservations": true,
+      "declares_covers_activities": false
+    },
+    "deliverable_manifest.json": {
+      "mentions_reservations": true,
+      "declares_covers_activities": false
+    },
+    "preservation_verification.json": {
+      "mentions_reservations": true,
+      "declares_covers_activities": false
+    },
+    "resource_contract.json": {
+      "mentions_reservations": true,
+      "declares_covers_activities": true
+    },
+    "resource_contract_R2_addendum.json": {
+      "mentions_reservations": true,
+      "declares_covers_activities": false
+    },
+    "scripts/out/summary.json": {
+      "mentions_reservations": false,
+      "declares_covers_activities": false
+    },
+    "task7_reference_cases.json": {
+      "mentions_reservations": false,
+      "declares_covers_activities": false
+    },
+    "verification_summary.json": {
+      "mentions_reservations": false,
+      "declares_covers_activities": false
+    }
+  },
+  "task4_rc05_reservations": [
+    {
+      "case": "RC05a",
+      "reservation": "SET-E1",
+      "from": "E1-FORM",
+      "to": "E1-STRIP",
+      "covers_activities": "not declared"
+    },
+    {
+      "case": "RC05a",
+      "reservation": "SET-E2",
+      "from": "E2-FORM",
+      "to": "E2-STRIP",
+      "covers_activities": "not declared"
+    },
+    {
+      "case": "RC05b",
+      "reservation": "SET-E1",
+      "from": "E1-FORM",
+      "to": "E1-STRIP",
+      "covers_activities": "not declared"
+    },
+    {
+      "case": "RC05b",
+      "reservation": "SET-E2",
+      "from": "E2-FORM",
+      "to": "E2-STRIP",
+      "covers_activities": "not declared"
+    }
+  ]
+}

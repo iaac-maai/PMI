@@ -1,0 +1,5 @@
+﻿fixture,fixture_version,schedule,checks,failed,failed_subjects,static_contradictions,verdict
+original,historical v1.0,historical committed schedule,354,4,R-COLSET-C1:C1-REBAR R-COLSET-C2:C2-REBAR R-COLSET-C3:C3-REBAR R-COLSET-C4:C4-REBAR,4,REJECTED
+original,corrected v1.1,historical committed schedule,350,0,,0,ACCEPTED
+holiday,historical v1.0,historical committed schedule,354,4,R-COLSET-C1:C1-REBAR R-COLSET-C2:C2-REBAR R-COLSET-C3:C3-REBAR R-COLSET-C4:C4-REBAR,4,REJECTED
+holiday,corrected v1.1,historical committed schedule,350,0,,0,ACCEPTED

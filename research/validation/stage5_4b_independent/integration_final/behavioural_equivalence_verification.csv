@@ -1,0 +1,37 @@
+﻿case,group,independent_expected_status,relocated_status,objective_minutes,lower_bound_minutes,independent_expected_objective,diagnostic,independent_evidence,agent1_equivalent,independent_verdict
+R0-15,small reference,OPTIMAL,OPTIMAL,14880,14880,14880,,per-minute check clean,True,PASS
+R0-5,small reference,OPTIMAL,OPTIMAL,14850,14850,14850,,per-minute check clean,True,PASS
+RC01,small reference,OPTIMAL,OPTIMAL,1610,1610,1610,,per-minute check clean,True,PASS
+RC02,small reference,OPTIMAL,OPTIMAL,210,210,210,,reference dates match,True,PASS
+RC03,small reference,OPTIMAL,OPTIMAL,150,150,150,,per-minute check clean,True,PASS
+RC04,small reference,OPTIMAL,OPTIMAL,240,240,240,,per-minute check clean,True,PASS
+RC05a,small reference,OPTIMAL,OPTIMAL,3120,3120,3120,,per-minute check clean,True,PASS
+RC05b,small reference,OPTIMAL,OPTIMAL,1620,1620,1620,,per-minute check clean,True,PASS
+RC06,small reference,OPTIMAL,OPTIMAL,4520,4520,4520,,reference dates match,True,PASS
+RC06-D,small reference,OPTIMAL,OPTIMAL,4520,4520,4520,,reference dates match,True,PASS
+RC07a,small reference,INFEASIBLE,INFEASIBLE,,,,INFEASIBLE_DEADLINE,diagnostic INFEASIBLE_DEADLINE vs INFEASIBLE_DEADLINE,True,PASS
+RC07b,small reference,OPTIMAL,OPTIMAL,1610,1610,1610,,per-minute check clean,True,PASS
+RC07c,small reference,OPTIMAL,OPTIMAL,1610,1610,1610,,reference dates match,True,PASS
+RC08a,small reference,MODEL_INVALID,MODEL_INVALID,,,,MISSING_INPUT,diagnostic MISSING_INPUT vs MISSING_INPUT,True,PASS
+RC08b,small reference,INFEASIBLE,INFEASIBLE,,,,IMPOSSIBLE_CREW,diagnostic IMPOSSIBLE_CREW vs IMPOSSIBLE_CREW,True,PASS
+RC08c,small reference,INFEASIBLE,INFEASIBLE,,,,IMPOSSIBLE_CREW,diagnostic IMPOSSIBLE_CREW vs IMPOSSIBLE_CREW,True,PASS
+RC08d,small reference,INFEASIBLE,INFEASIBLE,,,,NO_FIT,diagnostic NO_FIT vs NO_FIT,True,PASS
+RC09,small reference,OPTIMAL,OPTIMAL,5850,5850,5850,,per-minute check clean,True,PASS
+RC10a,small reference,OPTIMAL,OPTIMAL,4680,4680,4680,,reference dates match,True,PASS
+RC10b,small reference,INFEASIBLE,INFEASIBLE,,,,NO_FIT,diagnostic NO_FIT vs NO_FIT,True,PASS
+RC10c,small reference,OPTIMAL,OPTIMAL,6060,6060,6060,,reference dates match,True,PASS
+RC11a,small reference,OPTIMAL,OPTIMAL,1485,1485,1485,,reference dates match,True,PASS
+RC11b,small reference,OPTIMAL,OPTIMAL,330,330,330,,reference dates match,True,PASS
+RC12a,small reference,OPTIMAL,OPTIMAL,195,195,195,,reference dates match,True,PASS
+RC12b,small reference,CONDITIONAL,CONDITIONAL,195,195,195,RELEASE_CONDITIONAL,reference dates match; conditional ['P'] scope conditional_projection,True,PASS
+RC12c,small reference,BLOCKED,BLOCKED,150,150,,INSPECTION_FAILED,reference dates match; blocked {'P': 'INSPECTION_FAILED'} scope unblocked_subset,True,PASS
+RC12d,small reference,OPTIMAL,OPTIMAL,265,265,265,,reference dates match,True,PASS
+RC12e,small reference,MODEL_INVALID,MODEL_INVALID,,,,EVENT_BEFORE_ACTIVITY_FINISH,diagnostic EVENT_BEFORE_ACTIVITY_FINISH vs EVENT_BEFORE_ACTIVITY_FINISH,True,PASS
+RC13a,small reference,OPTIMAL,OPTIMAL,5970,5970,5970,,"reference dates match; RELEASE finish 2027-01-15T10:30+01:00 (R2-3 max(minimum, recorded))",True,PASS
+RC13b,small reference,CONDITIONAL,CONDITIONAL,5880,5880,5880,RELEASE_CONDITIONAL,"reference dates match; conditional ['RELEASE', 'STRIP'] scope conditional_projection",True,PASS
+frozen_R0_5,frozen R0,OPTIMAL,OPTIMAL,14850,14850,14850,,independent Stage 5.4A model errors=[]; cost 1172.5136,True,PASS
+frozen_R0_15,frozen R0,OPTIMAL,OPTIMAL,14880,14880,14880,,independent Stage 5.4A model errors=[]; cost 1172.5136,True,PASS
+original_v1.1,C01 benchmark,OPTIMAL,OPTIMAL,40445,40445,40445,,"350-check C01 oracle failed=0, coverage 108, conflicts 0, cost 5103.32664, CPM 16310/29/11",True,PASS
+original_v1.0,C01 benchmark,INFEASIBLE,INFEASIBLE,,,,STRUCTURAL_INFEASIBILITY,rejected before solve; contradictions reported: all four R-COLSET-C1..C4; static analysis 4,True,PASS
+holiday_v1.1,C01 benchmark,OPTIMAL,OPTIMAL,41885,41885,41885,,"350-check C01 oracle failed=0, coverage 108, conflicts 0, cost 5103.32664, CPM 16310/29/11",True,PASS
+holiday_v1.0,C01 benchmark,INFEASIBLE,INFEASIBLE,,,,STRUCTURAL_INFEASIBILITY,rejected before solve; contradictions reported: all four R-COLSET-C1..C4; static analysis 4,True,PASS

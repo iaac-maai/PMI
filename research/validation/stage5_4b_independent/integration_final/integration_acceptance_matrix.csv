@@ -1,0 +1,113 @@
+﻿criterion_id,set,mandatory,independent_disposition,evidence
+AC-G01,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/30/30 statuses; v1.1 OPTIMAL; v1.0 rejected
+AC-G02,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/all applicable makespans equal independent optima; benchmarks 40445/41885
+AC-G03,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent per-minute timestamp checks on all 30 source cases incl. 13 advanced; 350/350 per benchmark
+AC-G04,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,"regression/durations, split segment sums and release spans re-derived from source minutes"
+AC-G05,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,"regression/every occupied minute checked against project, resource, exception and allowed-hours calendars"
+AC-G06,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/per-minute load incl. continuous reservations and dated capacities
+AC-G07,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/FS lags and inspection gates checked from source
+AC-G08,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/RC07a-c
+AC-G09,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,"regression/segment count/minimum, no voluntary pause, release between segments; unauthorized splits rejected"
+AC-G10,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/R0-5/R0-15 optima; tick and boundary misalignment rejected
+AC-G11,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,"regression/RC06 exception, RC06-D default, unauthorized exception ignored and reported"
+AC-RC01,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC01
+AC-RC02,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC02
+AC-RC03,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC03
+AC-RC04,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC04
+AC-RC05a,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC05a
+AC-RC05b,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC05b
+AC-RC06,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC06
+AC-RC07a,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC07a
+AC-RC07b,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC07b
+AC-RC07c,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC07c
+AC-RC08a,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC08a
+AC-RC08b,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC08b
+AC-RC08c,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC08c
+AC-RC08d,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC08d
+AC-RC09,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC09
+AC-RC10a,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC10a
+AC-RC10b,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC10b
+AC-RC10c,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC10c
+AC-RC11a,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC11a
+AC-RC11b,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC11b
+AC-R0-15,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv R0-15
+AC-R0-5,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv R0-5
+AC-RC06-D,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC06-D
+AC-RC12a,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC12a
+AC-RC12b,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC12b
+AC-RC12c,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC12c
+AC-RC12d,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC12d
+AC-RC12e,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC12e
+AC-RC13a,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC13a
+AC-RC13b,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/independent_case_results.csv RC13b
+AC-DEMO-H1,"Stage 5.4B (86, C01-amended)",no,ACCEPTED,"regression/holiday v1.1 OPTIMAL 41885, 350/350 checks"
+AC-C-P1,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/input-state audit and missing-input rejections
+AC-C-P2,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/working-time vs continuous occupancy checked per minute
+AC-C-P3,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/frozen R0 durations equal independent Stage 5.3A-derived durations
+AC-C-P4,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/costs 1172.5136 and 5103.32664 unchanged; no occupancy cost
+AC-C-P5,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/explicit integer quantity required; no derivation from cost coefficients (code review)
+AC-C-P6,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,"regression/CD01, CD06"
+AC-C-P7,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/all invalid inputs rejected before solving; no relaxed schedule
+AC-C-V1,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/undeclared and misclassified resources rejected
+AC-C-V2,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/explicit-none demand -> MODEL_INVALID / MISSING_INPUT
+AC-C-V3,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/reusable assets continuous; working resources calendar
+AC-C-V4,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/inflated mode hours rejected
+AC-C-V5,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/C-POUR full HYP-CONC incl. OFICIAL_1; mode fields without mode rejected
+AC-C-V6,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/elapsed hold with working demand rejected
+AC-C-V7,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/unreachable release -> RESERVATION_UNRELEASED
+AC-C-V8,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/108 coverage checks per v1.1; predecessor (v1.0) and successor contradictions rejected
+AC-C-V9,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/dated capacity scenarios equal independent enumeration; benchmarks within capacity
+AC-C-V10,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/no cost added by occupancy
+AC-C-V11,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/TICK_MISALIGNED; DST/London boundaries
+AC-C-MISSING_INPUT,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,"regression/RC08a, audit, supply"
+AC-C-EXPLICIT_NONE_REQUIRED,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/R0 declarations; removal rejected
+AC-C-IMPOSSIBLE_CREW,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/RC08b/c
+AC-C-NO_ELIGIBLE_MODE,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/IMPOSSIBLE_CREW with NO_ELIGIBLE_MODE detail
+AC-C-NO_FIT,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,"regression/RC08d, RC10b"
+AC-C-SPLIT_NOT_AUTHORIZED,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/injections
+AC-C-RESERVATION_UNRELEASED,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/injection
+AC-C-RELEASE_CONDITIONAL,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,"regression/RC12b, RC13b conditional projections"
+AC-C-TICK_MISALIGNED,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/injections
+AC-C-INFEASIBLE_DEADLINE,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/RC07a
+AC-R2-1,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,"regression/RC06, RC06-D, CD05"
+AC-R2-2,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/R0 reserved OFICIAL_1; CD02
+AC-R2-3,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,"regression/RELEASE finish = max(minimum, recorded); planned test conditional"
+AC-R2-4,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/RC12a-e
+AC-D01,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,"regression/original v1.1 OPTIMAL 40445 = bound, 2027-03-01T10:05"
+AC-D02,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/350/350 independent checks per fixture incl. 108 coverage
+AC-D03,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,"regression/CPM 16310 min, 29 conflicts, 11 pools"
+AC-D04,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/5103.32664 EUR source sum = result cost
+AC-D05,"Stage 5.4B (86, C01-amended)",no,NOT_APPLICABLE,regression/alternative optima; dates not compared (agreed)
+AC-P01,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/register unchanged; 88 PENDING; injected APPROVED rejected
+AC-P02,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/R0-15 14880; 8/8 exports
+AC-P03,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/R0-5 14850
+AC-P04,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/1172.5136 EUR in both R0 runs
+AC-P05,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/real_project_eligible false everywhere; real scope rejected
+AC-C01-H,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/both v1.0 rejected before solve; named C*-REBAR contradiction; hashes unchanged
+AC-C01-M,"Stage 5.4B (86, C01-amended)",yes,ACCEPTED,regression/manifest hashes; coverage sensitivity off
+AC-F01-1,5.4B.3 integration amendment (12),yes,ACCEPTED,planned 60 m3 declared; null when evidence absent; daily 24/36
+AC-F01-2,5.4B.3 integration amendment (12),yes,ACCEPTED,"restart allowance 3 (A) / 0 (B), Monday only"
+AC-F01-3,5.4B.3 integration amendment (12),yes,ACCEPTED,"total capacity allowance 63 / 60, labelled as allowance"
+AC-F01-4,5.4B.3 integration amendment (12),yes,ACCEPTED,no measured/actual labels; not independently_measured
+AC-F01-5,5.4B.3 integration amendment (12),yes,ACCEPTED,restart_capacity_allowance occupancy Mon 08:00-08:30
+AC-F01-6,5.4B.3 integration amendment (12),yes,ACCEPTED,EUR 7114.20 both; engineering quantity untouched
+AC-F01-7,5.4B.3 integration amendment (12),yes,ACCEPTED,4710 / 4680 min; segments as specified
+AC-RC13b,5.4B.3 integration amendment (12),yes,ACCEPTED,C02 ref carried from hash-verified v1.1 case
+AC-C03-1,5.4B.3 integration amendment (12),yes,ACCEPTED,London midnight boundaries
+AC-C03-2,5.4B.3 integration amendment (12),yes,ACCEPTED,DST-length days
+AC-C03-3,5.4B.3 integration amendment (12),yes,ACCEPTED,invalid overrides rejected; dated scenarios equal independent enumeration
+INT-ARCH-1,5.4B.3 integration task,yes,ACCEPTED,INT-ARCH-1 optimizer in pmi_core/optimization; single CP-SAT model builder
+INT-ARCH-2,5.4B.3 integration task,yes,ACCEPTED,INT-ARCH-2 research CLI delegates (runtime probe)
+INT-ARCH-3,5.4B.3 integration task,yes,ACCEPTED,INT-ARCH-3 no research imports or fixture paths in pmi_core optimization/application
+INT-ARCH-4,5.4B.3 integration task,yes,ACCEPTED,INT-ARCH-4 authority only via trusted registry; solve requires registry; defaults deny exceptions
+INT-ARCH-5,5.4B.3 integration task,yes,ACCEPTED,INT-ARCH-5 approval/scope gates not bypassable via normalized input
+INT-ARCH-6,5.4B.3 integration task,yes,ACCEPTED,INT-ARCH-6 separate IFC and planning interpreters; orchestrator loads neither
+INT-E2E-1,5.4B.3 integration task,yes,ACCEPTED,"INT-E2E-1 R0 5-min from IFC: OPTIMAL 14850, identities, mappings, cost, exclusions"
+INT-E2E-2,5.4B.3 integration task,yes,ACCEPTED,INT-E2E-2 R0 15-min from IFC: OPTIMAL 14880
+INT-E2E-3,5.4B.3 integration task,yes,ACCEPTED,INT-E2E-3 stable package and activity IDs across resolutions
+INT-E2E-4,5.4B.3 integration task,yes,ACCEPTED,INT-E2E-4 derived from IFC handover (tamper rejected) and IFC hash gate
+INT-BEQ-1,5.4B.3 integration task,yes,ACCEPTED,INT-BEQ-1 36 behavioural cases independently verified
+INT-SAFE-1,5.4B.3 integration task,yes,ACCEPTED,INT-SAFE-1 complete / conditional / unblocked / invalid scopes; no partial project makespan
+INT-SAFE-2,5.4B.3 integration task,yes,ACCEPTED,INT-SAFE-2 larger benchmark has no IFC identity
+AC-INT-P1,5.4B.3 integration amendment (12),yes,ACCEPTED,preservation_verification.json
+INT-REG-1,5.4B.3 integration task,yes,ACCEPTED,43 + 32 tests; 8/8 exports; manifests unchanged

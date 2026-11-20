@@ -1,0 +1,31 @@
+{
+  "git_head": "e14057e06149f60b66e2c44b2a3b84fba98d045b",
+  "git_status": [
+    "?? research/validation/stage5_4b_independent/integration_final/"
+  ],
+  "regression_run_stability": {
+    "start_head": "e14057e06149f60b66e2c44b2a3b84fba98d045b",
+    "end_head": "e14057e06149f60b66e2c44b2a3b84fba98d045b",
+    "implementation_unchanged": true,
+    "head_unchanged": true,
+    "status_start": [
+      "?? research/validation/stage5_4b_independent/integration_final/"
+    ],
+    "status_end": [
+      "?? research/validation/stage5_4b_independent/integration_final/"
+    ]
+  },
+  "tests_historical": "43/43 OK (.venv)",
+  "tests_optimizer_and_integration": "32/32 OK (.venv-planning, incl. stage5_4b_integration.test_integration)",
+  "stage5_4a_exports_byte_identical": "8/8",
+  "approval_register_sha256": "d86a26cea516c10a38d97c5d82b5ca03d4af940f01a9bdcdd359bdac3111ab23",
+  "approval_register_matches_task7": true,
+  "approvals_pending": 88,
+  "task7_manifest_changed": [],
+  "c01_manifest_changed": [],
+  "c01_historical_hashes_ok": true,
+  "final_package_changed": [],
+  "integration_prep_files_changed": [],
+  "real_project_eligible_everywhere_false": true,
+  "all_preserved": true
+}

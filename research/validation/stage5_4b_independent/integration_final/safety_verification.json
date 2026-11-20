@@ -1,0 +1,154 @@
+{
+  "no_research_imports_in_pmi_core_optimization_application": true,
+  "application_has_no_research_or_fixture_paths": true,
+  "cp_sat_model_builders": [
+    "pmi_core/optimization/model.py"
+  ],
+  "single_optimizer_implementation": true,
+  "research_wrappers_line_counts": {
+    "advanced.py": 2,
+    "capacity_dates.py": 2,
+    "engine.py": 18,
+    "input_states.py": 2
+  },
+  "research_solve_delegates_to_pmi_core_optimization": true,
+  "solve_requires_registry": true,
+  "default_registry_denies_calendar_exception": [
+    [
+      {
+        "exception_id": "CAL-EXC-RC06",
+        "reason": "UNREGISTERED_AUTHORIZATION"
+      }
+    ],
+    "2027-01-12T08:00+01:00"
+  ],
+  "default_registry_denies_fixture_exceptions": [
+    "MODEL_INVALID",
+    "UNVERIFIED_FIXTURE_EXCEPTION"
+  ],
+  "registry_with_approved_row_rejected": [
+    "MODEL_INVALID",
+    "UNVERIFIED_APPROVAL"
+  ],
+  "gate: request supplies a registry field": {
+    "result": "UNSUPPORTED_CONSTRAINT",
+    "expected": "UNSUPPORTED_CONSTRAINT",
+    "eligible": false,
+    "pass": true
+  },
+  "gate: request marks an approval APPROVED": {
+    "result": "UNVERIFIED_APPROVAL",
+    "expected": "UNVERIFIED_APPROVAL",
+    "eligible": false,
+    "pass": true
+  },
+  "gate: request claims real-project scope": {
+    "result": "MODEL_INVALID",
+    "expected": "MODEL_INVALID",
+    "eligible": false,
+    "pass": true
+  },
+  "gate: request sets real_project_eligible": {
+    "result": "UNSUPPORTED_CONSTRAINT",
+    "expected": "UNSUPPORTED_CONSTRAINT",
+    "eligible": false,
+    "pass": true
+  },
+  "gate: request adds fixture exceptions": {
+    "result": "UNVERIFIED_FIXTURE_EXCEPTION",
+    "expected": "UNVERIFIED_FIXTURE_EXCEPTION",
+    "eligible": false,
+    "pass": true
+  },
+  "gate: engineer_approved input state": {
+    "result": "UNVERIFIED_APPROVAL",
+    "expected": "UNVERIFIED_APPROVAL",
+    "eligible": false,
+    "pass": true
+  },
+  "orchestrator_loads_neither_ifcopenshell_nor_ortools": true,
+  "output_safety": {
+    "RC12b": {
+      "status": "CONDITIONAL",
+      "schedule_scope": "conditional_projection",
+      "project_makespan_minutes": null,
+      "makespan_by_scope_minutes": {
+        "conditional_projection": 195
+      },
+      "internal_validated": true,
+      "safe": true
+    },
+    "RC13b": {
+      "status": "CONDITIONAL",
+      "schedule_scope": "conditional_projection",
+      "project_makespan_minutes": null,
+      "makespan_by_scope_minutes": {
+        "conditional_projection": 5880
+      },
+      "internal_validated": true,
+      "safe": true
+    },
+    "RC12c": {
+      "status": "BLOCKED",
+      "schedule_scope": "unblocked_subset",
+      "project_makespan_minutes": null,
+      "makespan_by_scope_minutes": {
+        "unblocked_subset": 150
+      },
+      "internal_validated": true,
+      "safe": true
+    },
+    "RC07a": {
+      "status": "INFEASIBLE",
+      "schedule_scope": null,
+      "project_makespan_minutes": null,
+      "makespan_by_scope_minutes": {},
+      "internal_validated": false,
+      "safe": true
+    },
+    "RC08a": {
+      "status": "MODEL_INVALID",
+      "schedule_scope": null,
+      "project_makespan_minutes": null,
+      "makespan_by_scope_minutes": {},
+      "internal_validated": false,
+      "safe": true
+    },
+    "RC01": {
+      "status": "OPTIMAL",
+      "schedule_scope": "complete_project",
+      "project_makespan_minutes": 1610,
+      "makespan_by_scope_minutes": {
+        "complete_project": 1610
+      },
+      "internal_validated": true,
+      "safe": true
+    }
+  },
+  "application_exit_requires_complete_project": true,
+  "benchmark_no_ifc_identity": {
+    "fresh": {
+      "source_ifc_sha256": null,
+      "any_ifc_global_id": false,
+      "any_canonical_element_id": false
+    },
+    "committed_export": {
+      "source_ifc_sha256": null,
+      "any_ifc_global_id": false,
+      "any_canonical_element_id": false
+    }
+  },
+  "C02": {
+    "hash_ok": true,
+    "output_ref": [
+      "HYP-RC13B-PLANNED-STRENGTH-TEST-CRITERION"
+    ],
+    "status": "CONDITIONAL",
+    "projection": 5880
+  },
+  "C03": {
+    "london_zero_window": true,
+    "madrid_spring_1380": true,
+    "madrid_autumn_1500": true
+  }
+}

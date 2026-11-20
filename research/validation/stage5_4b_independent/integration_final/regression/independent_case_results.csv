@@ -1,0 +1,31 @@
+﻿case_id,expected_status,status,solver_status,solver_scope,expected_objective,objective,lower_bound,timestamp_source,diagnostic,segments,independent_evidence,verdict
+R0-15,OPTIMAL,OPTIMAL,OPTIMAL,controlled,14880,14880,14880,secondary,,21,per-minute check clean,PASS
+R0-5,OPTIMAL,OPTIMAL,OPTIMAL,controlled,14850,14850,14850,secondary,,21,per-minute check clean,PASS
+RC01,OPTIMAL,OPTIMAL,OPTIMAL,controlled,1610,1610,1610,secondary,,3,per-minute check clean,PASS
+RC02,OPTIMAL,OPTIMAL,OPTIMAL,controlled,210,210,210,secondary,,3,reference dates match,PASS
+RC03,OPTIMAL,OPTIMAL,OPTIMAL,controlled,150,150,150,secondary,,3,per-minute check clean,PASS
+RC04,OPTIMAL,OPTIMAL,OPTIMAL,controlled,240,240,240,secondary,,6,per-minute check clean,PASS
+RC05a,OPTIMAL,OPTIMAL,OPTIMAL,controlled,3120,3120,3120,secondary,,8,per-minute check clean,PASS
+RC05b,OPTIMAL,OPTIMAL,OPTIMAL,controlled,1620,1620,1620,secondary,,8,per-minute check clean,PASS
+RC06,OPTIMAL,OPTIMAL,OPTIMAL,controlled,4520,4520,4520,secondary,,4,reference dates match,PASS
+RC06-D,OPTIMAL,OPTIMAL,OPTIMAL,controlled,4520,4520,4520,secondary,,4,reference dates match,PASS
+RC07a,INFEASIBLE,INFEASIBLE,INFEASIBLE,controlled,,,,,INFEASIBLE_DEADLINE,0,diagnostic INFEASIBLE_DEADLINE vs INFEASIBLE_DEADLINE,PASS
+RC07b,OPTIMAL,OPTIMAL,OPTIMAL,controlled,1610,1610,1610,secondary,,3,per-minute check clean,PASS
+RC07c,OPTIMAL,OPTIMAL,OPTIMAL,controlled,1610,1610,1610,secondary,,3,reference dates match,PASS
+RC08a,MODEL_INVALID,MODEL_INVALID,,controlled,,,,,MISSING_INPUT,0,diagnostic MISSING_INPUT vs MISSING_INPUT,PASS
+RC08b,INFEASIBLE,INFEASIBLE,,controlled,,,,,IMPOSSIBLE_CREW,0,diagnostic IMPOSSIBLE_CREW vs IMPOSSIBLE_CREW,PASS
+RC08c,INFEASIBLE,INFEASIBLE,,controlled,,,,,IMPOSSIBLE_CREW,0,diagnostic IMPOSSIBLE_CREW vs IMPOSSIBLE_CREW,PASS
+RC08d,INFEASIBLE,INFEASIBLE,,controlled,,,,,NO_FIT,0,diagnostic NO_FIT vs NO_FIT,PASS
+RC09,OPTIMAL,OPTIMAL,OPTIMAL,controlled,5850,5850,5850,secondary,,8,per-minute check clean,PASS
+RC10a,OPTIMAL,OPTIMAL,OPTIMAL,controlled,4680,4680,4680,secondary,,3,reference dates match,PASS
+RC10b,INFEASIBLE,INFEASIBLE,,controlled,,,,,NO_FIT,0,diagnostic NO_FIT vs NO_FIT,PASS
+RC10c,OPTIMAL,OPTIMAL,OPTIMAL,controlled,6060,6060,6060,secondary,,3,reference dates match,PASS
+RC11a,OPTIMAL,OPTIMAL,OPTIMAL,controlled,1485,1485,1485,secondary,,2,reference dates match,PASS
+RC11b,OPTIMAL,OPTIMAL,OPTIMAL,controlled,330,330,330,secondary,,2,reference dates match,PASS
+RC12a,OPTIMAL,OPTIMAL,OPTIMAL,controlled,195,195,195,secondary,,3,reference dates match,PASS
+RC12b,CONDITIONAL,CONDITIONAL,OPTIMAL,conditional_projection,195,195,195,secondary,RELEASE_CONDITIONAL,3,reference dates match; conditional ['P'] scope conditional_projection,PASS
+RC12c,BLOCKED,BLOCKED,OPTIMAL,unblocked_subset,,150,150,secondary,INSPECTION_FAILED,2,reference dates match; blocked {'P': 'INSPECTION_FAILED'} scope unblocked_subset,PASS
+RC12d,OPTIMAL,OPTIMAL,OPTIMAL,controlled,265,265,265,secondary,,3,reference dates match,PASS
+RC12e,MODEL_INVALID,MODEL_INVALID,,controlled,,,,,EVENT_BEFORE_ACTIVITY_FINISH,0,diagnostic EVENT_BEFORE_ACTIVITY_FINISH vs EVENT_BEFORE_ACTIVITY_FINISH,PASS
+RC13a,OPTIMAL,OPTIMAL,OPTIMAL,controlled,5970,5970,5970,secondary,,3,"reference dates match; RELEASE finish 2027-01-15T10:30+01:00 (R2-3 max(minimum, recorded))",PASS
+RC13b,CONDITIONAL,CONDITIONAL,OPTIMAL,conditional_projection,5880,5880,5880,secondary,RELEASE_CONDITIONAL,3,"reference dates match; conditional ['RELEASE', 'STRIP'] scope conditional_projection",PASS

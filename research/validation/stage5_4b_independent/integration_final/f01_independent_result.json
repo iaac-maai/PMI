@@ -1,0 +1,471 @@
+{
+  "decision": "F01 CLOSED",
+  "path": "research CLI --input (delegates to pmi_core.optimization.solve with the trusted registry)",
+  "field_map": {
+    "placed_volume": "aggregate_planned_placed_volume_m3",
+    "restart_allowance": "aggregate_restart_capacity_allowance_m3",
+    "total_allowance": "aggregate_total_capacity_allowance_m3",
+    "occupancy_basis_for_restart": [
+      "restart_capacity_allowance"
+    ]
+  },
+  "declaration_added_for_declared_variants": {
+    "planned_placed_volume_m3": 60,
+    "placement_profile": "declared_constant_rate",
+    "evidence_ref": "F01 declared physical plan (hypothetical): 60 m3 at constant placement rate"
+  },
+  "prepared_checker_declared": {
+    "passed": true,
+    "rows": [
+      {
+        "variant": "A_restart_30",
+        "check": "F01-0 status",
+        "passed": true,
+        "detail": "status=OPTIMAL validated=True"
+      },
+      {
+        "variant": "A_restart_30",
+        "check": "F01-1 segments",
+        "passed": true,
+        "detail": "[['2027-01-15T12:00+01:00', '2027-01-15T16:00+01:00'], ['2027-01-18T08:00+01:00', '2027-01-18T14:30+01:00']]"
+      },
+      {
+        "variant": "A_restart_30",
+        "check": "F01-2 productive minutes",
+        "passed": true,
+        "detail": "600"
+      },
+      {
+        "variant": "A_restart_30",
+        "check": "F01-3 independent volumes",
+        "passed": true,
+        "detail": "placed=60.0 allowance=3.0 total=63.0"
+      },
+      {
+        "variant": "A_restart_30",
+        "check": "F01-4 makespan",
+        "passed": true,
+        "detail": "4710"
+      },
+      {
+        "variant": "A_restart_30",
+        "check": "F01-5 placed volume reported",
+        "passed": true,
+        "detail": "aggregate_planned_placed_volume_m3=60.0 (expected 60.0)"
+      },
+      {
+        "variant": "A_restart_30",
+        "check": "F01-6 restart allowance reported separately",
+        "passed": true,
+        "detail": "aggregate_restart_capacity_allowance_m3=3.0 (expected 3.0)"
+      },
+      {
+        "variant": "A_restart_30",
+        "check": "F01-7 total labelled as allowance",
+        "passed": true,
+        "detail": "aggregate_total_capacity_allowance_m3=63.0 (optional; must equal 63.0)"
+      },
+      {
+        "variant": "A_restart_30",
+        "check": "F01-8 no measurement-labelled allowance",
+        "passed": true,
+        "detail": "offending fields: []"
+      },
+      {
+        "variant": "A_restart_30",
+        "check": "F01-9 not marked as measured",
+        "passed": true,
+        "detail": "supply input_states ['hypothetical_fixture']"
+      },
+      {
+        "variant": "A_restart_30",
+        "check": "F01-10 restart occupancy labelled",
+        "passed": true,
+        "detail": "SUPPLY occupancy bases ['productive_capacity_allowance', 'restart_capacity_allowance']"
+      },
+      {
+        "variant": "A_restart_30",
+        "check": "F01-11 cost unchanged by allowance",
+        "passed": true,
+        "detail": "total=7114.2 S=7114.2"
+      },
+      {
+        "variant": "B_restart_0",
+        "check": "F01-0 status",
+        "passed": true,
+        "detail": "status=OPTIMAL validated=True"
+      },
+      {
+        "variant": "B_restart_0",
+        "check": "F01-1 segments",
+        "passed": true,
+        "detail": "[['2027-01-15T12:00+01:00', '2027-01-15T16:00+01:00'], ['2027-01-18T08:00+01:00', '2027-01-18T14:00+01:00']]"
+      },
+      {
+        "variant": "B_restart_0",
+        "check": "F01-2 productive minutes",
+        "passed": true,
+        "detail": "600"
+      },
+      {
+        "variant": "B_restart_0",
+        "check": "F01-3 independent volumes",
+        "passed": true,
+        "detail": "placed=60.0 allowance=0.0 total=60.0"
+      },
+      {
+        "variant": "B_restart_0",
+        "check": "F01-4 makespan",
+        "passed": true,
+        "detail": "4680"
+      },
+      {
+        "variant": "B_restart_0",
+        "check": "F01-5 placed volume reported",
+        "passed": true,
+        "detail": "aggregate_planned_placed_volume_m3=60.0 (expected 60.0)"
+      },
+      {
+        "variant": "B_restart_0",
+        "check": "F01-6 restart allowance reported separately",
+        "passed": true,
+        "detail": "aggregate_restart_capacity_allowance_m3=0.0 (expected 0.0)"
+      },
+      {
+        "variant": "B_restart_0",
+        "check": "F01-7 total labelled as allowance",
+        "passed": true,
+        "detail": "aggregate_total_capacity_allowance_m3=60.0 (optional; must equal 60.0)"
+      },
+      {
+        "variant": "B_restart_0",
+        "check": "F01-8 no measurement-labelled allowance",
+        "passed": true,
+        "detail": "offending fields: []"
+      },
+      {
+        "variant": "B_restart_0",
+        "check": "F01-9 not marked as measured",
+        "passed": true,
+        "detail": "supply input_states ['hypothetical_fixture']"
+      },
+      {
+        "variant": "B_restart_0",
+        "check": "F01-10 restart occupancy labelled",
+        "passed": true,
+        "detail": "SUPPLY occupancy bases ['productive_capacity_allowance']"
+      },
+      {
+        "variant": "B_restart_0",
+        "check": "F01-11 cost unchanged by allowance",
+        "passed": true,
+        "detail": "total=7114.2 S=7114.2"
+      },
+      {
+        "variant": "A vs B",
+        "check": "F01-12 cost identical with and without restart overhead",
+        "passed": true,
+        "detail": "A=7114.2 B=7114.2"
+      }
+    ]
+  },
+  "prepared_checker_evidence_absent": {
+    "failed_checks": [
+      "F01-5 placed volume reported"
+    ],
+    "interpretation": "Only F01-5 fails, as required: the plan stays unknown (null) when no physical evidence is declared."
+  },
+  "level_checks": {
+    "A_restart_30_declared": [
+      {
+        "check": "L-activity",
+        "passed": true,
+        "detail": "activity: ['60', '60', '3', '63'] expected ['60', '60', '3', '63']"
+      },
+      {
+        "check": "L-source",
+        "passed": true,
+        "detail": "source: ['60', '60', '3', '63'] expected ['60', '60', '3', '63']"
+      },
+      {
+        "check": "L-aggregate",
+        "passed": true,
+        "detail": "aggregate: ['60', '60', '3', '63'] expected ['60', '60', '3', '63']"
+      },
+      {
+        "check": "L-daily Fri",
+        "passed": true,
+        "detail": "{\"planned_placed_volume_m3\": \"24\", \"productive_capacity_allowance_m3\": \"24\", \"restart_capacity_allowance_m3\": \"0\", \"total_capacity_allowance_m3\": \"24\"}"
+      },
+      {
+        "check": "L-daily Mon",
+        "passed": true,
+        "detail": "{\"planned_placed_volume_m3\": \"36\", \"productive_capacity_allowance_m3\": \"36\", \"restart_capacity_allowance_m3\": \"3\", \"total_capacity_allowance_m3\": \"39\"}"
+      },
+      {
+        "check": "L-daily other days zero",
+        "passed": true,
+        "detail": "6 days"
+      },
+      {
+        "check": "L-occupancy labels",
+        "passed": true,
+        "detail": "[('productive_capacity_allowance', '2027-01-15T12:00+01:00', '2027-01-15T16:00+01:00'), ('restart_capacity_allowance', '2027-01-18T08:00+01:00', '2027-01-18T08:30+01:00'), ('productive_capacity_allowance', '2027-01-18T08:30+01:00', '2027-01-18T14:30+01:00')]"
+      },
+      {
+        "check": "L-engineering quantity untouched",
+        "passed": true,
+        "detail": "S planned=60 cost=7114.2"
+      },
+      {
+        "check": "L-cost unchanged",
+        "passed": true,
+        "detail": "{'total_direct_reference_eur': 7114.2}"
+      },
+      {
+        "check": "L-no measured/actual/material/environment fields",
+        "passed": true,
+        "detail": "[]"
+      },
+      {
+        "check": "L-supply input_state not measured",
+        "passed": true,
+        "detail": "supply provenance"
+      }
+    ],
+    "A_restart_30_unchanged": [
+      {
+        "check": "L-activity",
+        "passed": true,
+        "detail": "activity: ['None', '60', '3', '63'] expected ['None', '60', '3', '63']"
+      },
+      {
+        "check": "L-source",
+        "passed": true,
+        "detail": "source: ['None', '60', '3', '63'] expected ['None', '60', '3', '63']"
+      },
+      {
+        "check": "L-aggregate",
+        "passed": true,
+        "detail": "aggregate: ['None', '60', '3', '63'] expected ['None', '60', '3', '63']"
+      },
+      {
+        "check": "L-daily Fri",
+        "passed": true,
+        "detail": "{\"planned_placed_volume_m3\": null, \"productive_capacity_allowance_m3\": \"24\", \"restart_capacity_allowance_m3\": \"0\", \"total_capacity_allowance_m3\": \"24\"}"
+      },
+      {
+        "check": "L-daily Mon",
+        "passed": true,
+        "detail": "{\"planned_placed_volume_m3\": null, \"productive_capacity_allowance_m3\": \"36\", \"restart_capacity_allowance_m3\": \"3\", \"total_capacity_allowance_m3\": \"39\"}"
+      },
+      {
+        "check": "L-daily other days zero",
+        "passed": true,
+        "detail": "6 days"
+      },
+      {
+        "check": "L-occupancy labels",
+        "passed": true,
+        "detail": "[('productive_capacity_allowance', '2027-01-15T12:00+01:00', '2027-01-15T16:00+01:00'), ('restart_capacity_allowance', '2027-01-18T08:00+01:00', '2027-01-18T08:30+01:00'), ('productive_capacity_allowance', '2027-01-18T08:30+01:00', '2027-01-18T14:30+01:00')]"
+      },
+      {
+        "check": "L-engineering quantity untouched",
+        "passed": true,
+        "detail": "S planned=None cost=7114.2"
+      },
+      {
+        "check": "L-cost unchanged",
+        "passed": true,
+        "detail": "{'total_direct_reference_eur': 7114.2}"
+      },
+      {
+        "check": "L-no measured/actual/material/environment fields",
+        "passed": true,
+        "detail": "[]"
+      },
+      {
+        "check": "L-supply input_state not measured",
+        "passed": true,
+        "detail": "supply provenance"
+      }
+    ],
+    "B_restart_0_declared": [
+      {
+        "check": "L-activity",
+        "passed": true,
+        "detail": "activity: ['60', '60', '0', '60'] expected ['60', '60', '0', '60']"
+      },
+      {
+        "check": "L-source",
+        "passed": true,
+        "detail": "source: ['60', '60', '0', '60'] expected ['60', '60', '0', '60']"
+      },
+      {
+        "check": "L-aggregate",
+        "passed": true,
+        "detail": "aggregate: ['60', '60', '0', '60'] expected ['60', '60', '0', '60']"
+      },
+      {
+        "check": "L-daily Fri",
+        "passed": true,
+        "detail": "{\"planned_placed_volume_m3\": \"24\", \"productive_capacity_allowance_m3\": \"24\", \"restart_capacity_allowance_m3\": \"0\", \"total_capacity_allowance_m3\": \"24\"}"
+      },
+      {
+        "check": "L-daily Mon",
+        "passed": true,
+        "detail": "{\"planned_placed_volume_m3\": \"36\", \"productive_capacity_allowance_m3\": \"36\", \"restart_capacity_allowance_m3\": \"0\", \"total_capacity_allowance_m3\": \"36\"}"
+      },
+      {
+        "check": "L-daily other days zero",
+        "passed": true,
+        "detail": "6 days"
+      },
+      {
+        "check": "L-occupancy labels",
+        "passed": true,
+        "detail": "[('productive_capacity_allowance', '2027-01-15T12:00+01:00', '2027-01-15T16:00+01:00'), ('productive_capacity_allowance', '2027-01-18T08:00+01:00', '2027-01-18T14:00+01:00')]"
+      },
+      {
+        "check": "L-engineering quantity untouched",
+        "passed": true,
+        "detail": "S planned=60 cost=7114.2"
+      },
+      {
+        "check": "L-cost unchanged",
+        "passed": true,
+        "detail": "{'total_direct_reference_eur': 7114.2}"
+      },
+      {
+        "check": "L-no measured/actual/material/environment fields",
+        "passed": true,
+        "detail": "[]"
+      },
+      {
+        "check": "L-supply input_state not measured",
+        "passed": true,
+        "detail": "supply provenance"
+      }
+    ],
+    "B_restart_0_unchanged": [
+      {
+        "check": "L-activity",
+        "passed": true,
+        "detail": "activity: ['None', '60', '0', '60'] expected ['None', '60', '0', '60']"
+      },
+      {
+        "check": "L-source",
+        "passed": true,
+        "detail": "source: ['None', '60', '0', '60'] expected ['None', '60', '0', '60']"
+      },
+      {
+        "check": "L-aggregate",
+        "passed": true,
+        "detail": "aggregate: ['None', '60', '0', '60'] expected ['None', '60', '0', '60']"
+      },
+      {
+        "check": "L-daily Fri",
+        "passed": true,
+        "detail": "{\"planned_placed_volume_m3\": null, \"productive_capacity_allowance_m3\": \"24\", \"restart_capacity_allowance_m3\": \"0\", \"total_capacity_allowance_m3\": \"24\"}"
+      },
+      {
+        "check": "L-daily Mon",
+        "passed": true,
+        "detail": "{\"planned_placed_volume_m3\": null, \"productive_capacity_allowance_m3\": \"36\", \"restart_capacity_allowance_m3\": \"0\", \"total_capacity_allowance_m3\": \"36\"}"
+      },
+      {
+        "check": "L-daily other days zero",
+        "passed": true,
+        "detail": "6 days"
+      },
+      {
+        "check": "L-occupancy labels",
+        "passed": true,
+        "detail": "[('productive_capacity_allowance', '2027-01-15T12:00+01:00', '2027-01-15T16:00+01:00'), ('productive_capacity_allowance', '2027-01-18T08:00+01:00', '2027-01-18T14:00+01:00')]"
+      },
+      {
+        "check": "L-engineering quantity untouched",
+        "passed": true,
+        "detail": "S planned=None cost=7114.2"
+      },
+      {
+        "check": "L-cost unchanged",
+        "passed": true,
+        "detail": "{'total_direct_reference_eur': 7114.2}"
+      },
+      {
+        "check": "L-no measured/actual/material/environment fields",
+        "passed": true,
+        "detail": "[]"
+      },
+      {
+        "check": "L-supply input_state not measured",
+        "passed": true,
+        "detail": "supply provenance"
+      }
+    ]
+  },
+  "level_checks_passed": true,
+  "summary": {
+    "A_restart_30_declared": {
+      "status": "OPTIMAL",
+      "validated": true,
+      "exit_code": 0,
+      "makespan": 4710,
+      "project_makespan": 4710,
+      "schedule_scope": "complete_project",
+      "supply_totals": {
+        "aggregate_planned_placed_volume_m3": "60",
+        "aggregate_productive_capacity_allowance_m3": "60",
+        "aggregate_restart_capacity_allowance_m3": "3",
+        "aggregate_total_capacity_allowance_m3": "63"
+      },
+      "cost": 7114.2
+    },
+    "A_restart_30_unchanged": {
+      "status": "OPTIMAL",
+      "validated": true,
+      "exit_code": 0,
+      "makespan": 4710,
+      "project_makespan": 4710,
+      "schedule_scope": "complete_project",
+      "supply_totals": {
+        "aggregate_planned_placed_volume_m3": null,
+        "aggregate_productive_capacity_allowance_m3": "60",
+        "aggregate_restart_capacity_allowance_m3": "3",
+        "aggregate_total_capacity_allowance_m3": "63"
+      },
+      "cost": 7114.2
+    },
+    "B_restart_0_declared": {
+      "status": "OPTIMAL",
+      "validated": true,
+      "exit_code": 0,
+      "makespan": 4680,
+      "project_makespan": 4680,
+      "schedule_scope": "complete_project",
+      "supply_totals": {
+        "aggregate_planned_placed_volume_m3": "60",
+        "aggregate_productive_capacity_allowance_m3": "60",
+        "aggregate_restart_capacity_allowance_m3": "0",
+        "aggregate_total_capacity_allowance_m3": "60"
+      },
+      "cost": 7114.2
+    },
+    "B_restart_0_unchanged": {
+      "status": "OPTIMAL",
+      "validated": true,
+      "exit_code": 0,
+      "makespan": 4680,
+      "project_makespan": 4680,
+      "schedule_scope": "complete_project",
+      "supply_totals": {
+        "aggregate_planned_placed_volume_m3": null,
+        "aggregate_productive_capacity_allowance_m3": "60",
+        "aggregate_restart_capacity_allowance_m3": "0",
+        "aggregate_total_capacity_allowance_m3": "60"
+      },
+      "cost": 7114.2
+    }
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "pipeline": "pmi_core.application --config research/implementation/stage5_4b_integration/r0_config.json",
+  "runs": {
+    "tick_5": {
+      "exit_code": 0,
+      "stdout": {
+        "output": "C:\\Users\\Chloe\\AppData\\Local\\Temp\\pmi_e2e_5e6nbe84\\r0_5\\schedule.json",
+        "proof": {
+          "status": "OPTIMAL",
+          "solver_status": "OPTIMAL",
+          "solver_scope": "controlled",
+          "schedule_scope": "complete_project",
+          "project_makespan_minutes": 14850,
+          "makespan_by_scope_minutes": {
+            "complete_project": 14850
+          },
+          "lower_bound_minutes": 14850,
+          "optimality_gap": 0.0,
+          "optimality_gap_minutes": 0,
+          "timestamp_source": "secondary",
+          "runtime_seconds": 0.0204383,
+          "primary_runtime_seconds": 0.0169668,
+          "secondary_runtime_seconds": 0.0034715,
+          "diagnostic_runtime_seconds": 0.0
+        }
+      },
+      "source_ifc_sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+      "ifc_file_sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+      "evidence_input_ifc_sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+      "model_version_id": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+      "handover_model_version_id": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+      "bim_model_version_id": null,
+      "runtimes": {
+        "ifc": {
+          "python": "3.14.7",
+          "dependency": "ifcopenshell",
+          "version": "0.9.0.post1",
+          "executable": ".venv/Scripts/python.exe"
+        },
+        "planning": {
+          "python": "3.12.14",
+          "dependency": "ortools",
+          "version": "9.15.6755",
+          "executable": ".venv-planning/Scripts/python.exe"
+        }
+      },
+      "stage_payload_hashes_match_files": true,
+      "pipeline_handover_equals_committed_stage5_3": true,
+      "ifc_elements_independent": [
+        [
+          "1jDfy2_jTRueAw6f5fc3Ev",
+          "IfcBeam"
+        ],
+        [
+          "24tlOXIsvMQfyRLiqh6fZt",
+          "IfcColumn"
+        ],
+        [
+          "3wOB$MtWLSz8SJNgW3VJvy",
+          "IfcSlab"
+        ]
+      ],
+      "activity_global_ids_subset_of_ifc": true,
+      "all_ifc_elements_scheduled": true,
+      "activities_per_element": {
+        "24tlOXIsvMQfyRLiqh6fZt": 7,
+        "3wOB$MtWLSz8SJNgW3VJvy": 7,
+        "1jDfy2_jTRueAw6f5fc3Ev": 7
+      },
+      "activities": 21,
+      "activity_ids_equal_pipeline_handover": true,
+      "work_packages": 3,
+      "package_ids": [
+        "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+        "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+        "f1f55844-5a59-5182-bd47-05697444fec0"
+      ],
+      "activity_package_ids_in_packages": true,
+      "dependencies": 28,
+      "dependency_endpoints_mapped": true,
+      "proof": {
+        "status": "OPTIMAL",
+        "solver_status": "OPTIMAL",
+        "solver_scope": "controlled",
+        "schedule_scope": "complete_project",
+        "project_makespan_minutes": 14850,
+        "makespan_by_scope_minutes": {
+          "complete_project": 14850
+        },
+        "lower_bound_minutes": 14850,
+        "optimality_gap": 0.0,
+        "optimality_gap_minutes": 0,
+        "timestamp_source": "secondary",
+        "runtime_seconds": 0.0204383,
+        "primary_runtime_seconds": 0.0169668,
+        "secondary_runtime_seconds": 0.0034715,
+        "diagnostic_runtime_seconds": 0.0
+      },
+      "target": 14850,
+      "independent_check_errors": [],
+      "independent_cpm_makespan": 14850,
+      "cpm_makespan": 14850,
+      "cpm_critical_ids": 7,
+      "critical_only_in_baseline": true,
+      "activities_where_optimized_start_differs_from_cpm": 0,
+      "cost": {
+        "scope": "direct_reference_only",
+        "currency": "EUR",
+        "covered_direct_reference_eur": 1172.5136,
+        "total_direct_reference_eur": 1172.5136,
+        "components_eur": {
+          "labor": 506.232944,
+          "equipment": 1.92192,
+          "material": 663.167296
+        },
+        "rounding_residual_eur": 1.191440000000071,
+        "boundary": "BCCA Dec-2023 V02 Andalusia direct catalogue costs, excluding tax, overhead, profit and indirects."
+      },
+      "pending_approvals": 88,
+      "pending_all": true,
+      "fixture_exceptions": [
+        "FX-R0-01",
+        "FX-R0-02",
+        "FX-R0-03",
+        "FX-R0-04",
+        "FX-R0-05",
+        "FX-R0-06"
+      ],
+      "real_project_eligible": false,
+      "internal_timestamp_validated": true,
+      "pass": true
+    },
+    "tick_15": {
+      "exit_code": 0,
+      "stdout": {
+        "output": "C:\\Users\\Chloe\\AppData\\Local\\Temp\\pmi_e2e_5e6nbe84\\r0_15\\schedule.json",
+        "proof": {
+          "status": "OPTIMAL",
+          "solver_status": "OPTIMAL",
+          "solver_scope": "controlled",
+          "schedule_scope": "complete_project",
+          "project_makespan_minutes": 14880,
+          "makespan_by_scope_minutes": {
+            "complete_project": 14880
+          },
+          "lower_bound_minutes": 14880,
+          "optimality_gap": 0.0,
+          "optimality_gap_minutes": 0,
+          "timestamp_source": "secondary",
+          "runtime_seconds": 0.0196547,
+          "primary_runtime_seconds": 0.0163704,
+          "secondary_runtime_seconds": 0.0032843000000000004,
+          "diagnostic_runtime_seconds": 0.0
+        }
+      },
+      "source_ifc_sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+      "ifc_file_sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+      "evidence_input_ifc_sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+      "model_version_id": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+      "handover_model_version_id": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+      "bim_model_version_id": null,
+      "runtimes": {
+        "ifc": {
+          "python": "3.14.7",
+          "dependency": "ifcopenshell",
+          "version": "0.9.0.post1",
+          "executable": ".venv/Scripts/python.exe"
+        },
+        "planning": {
+          "python": "3.12.14",
+          "dependency": "ortools",
+          "version": "9.15.6755",
+          "executable": ".venv-planning/Scripts/python.exe"
+        }
+      },
+      "stage_payload_hashes_match_files": true,
+      "pipeline_handover_equals_committed_stage5_3": true,
+      "ifc_elements_independent": [
+        [
+          "1jDfy2_jTRueAw6f5fc3Ev",
+          "IfcBeam"
+        ],
+        [
+          "24tlOXIsvMQfyRLiqh6fZt",
+          "IfcColumn"
+        ],
+        [
+          "3wOB$MtWLSz8SJNgW3VJvy",
+          "IfcSlab"
+        ]
+      ],
+      "activity_global_ids_subset_of_ifc": true,
+      "all_ifc_elements_scheduled": true,
+      "activities_per_element": {
+        "24tlOXIsvMQfyRLiqh6fZt": 7,
+        "3wOB$MtWLSz8SJNgW3VJvy": 7,
+        "1jDfy2_jTRueAw6f5fc3Ev": 7
+      },
+      "activities": 21,
+      "activity_ids_equal_pipeline_handover": true,
+      "work_packages": 3,
+      "package_ids": [
+        "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+        "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+        "f1f55844-5a59-5182-bd47-05697444fec0"
+      ],
+      "activity_package_ids_in_packages": true,
+      "dependencies": 28,
+      "dependency_endpoints_mapped": true,
+      "proof": {
+        "status": "OPTIMAL",
+        "solver_status": "OPTIMAL",
+        "solver_scope": "controlled",
+        "schedule_scope": "complete_project",
+        "project_makespan_minutes": 14880,
+        "makespan_by_scope_minutes": {
+          "complete_project": 14880
+        },
+        "lower_bound_minutes": 14880,
+        "optimality_gap": 0.0,
+        "optimality_gap_minutes": 0,
+        "timestamp_source": "secondary",
+        "runtime_seconds": 0.0196547,
+        "primary_runtime_seconds": 0.0163704,
+        "secondary_runtime_seconds": 0.0032843000000000004,
+        "diagnostic_runtime_seconds": 0.0
+      },
+      "target": 14880,
+      "independent_check_errors": [],
+      "independent_cpm_makespan": 14880,
+      "cpm_makespan": 14880,
+      "cpm_critical_ids": 7,
+      "critical_only_in_baseline": true,
+      "activities_where_optimized_start_differs_from_cpm": 0,
+      "cost": {
+        "scope": "direct_reference_only",
+        "currency": "EUR",
+        "covered_direct_reference_eur": 1172.5136,
+        "total_direct_reference_eur": 1172.5136,
+        "components_eur": {
+          "labor": 506.232944,
+          "equipment": 1.92192,
+          "material": 663.167296
+        },
+        "rounding_residual_eur": 1.191440000000071,
+        "boundary": "BCCA Dec-2023 V02 Andalusia direct catalogue costs, excluding tax, overhead, profit and indirects."
+      },
+      "pending_approvals": 88,
+      "pending_all": true,
+      "fixture_exceptions": [
+        "FX-R0-01",
+        "FX-R0-02",
+        "FX-R0-03",
+        "FX-R0-04",
+        "FX-R0-05",
+        "FX-R0-06"
+      ],
+      "real_project_eligible": false,
+      "internal_timestamp_validated": true,
+      "pass": true
+    }
+  },
+  "identities_stable_across_ticks": true,
+  "derivation_tamper_test": {
+    "modified": "27e7a5c3-5aa1-5665-9f68-1c2168a412ac productive_hours x2",
+    "exit_code": 1,
+    "rejected": true,
+    "message_tail": "ile \"C:\\Users\\Chloe\\PMI\\PMI\\pmi_core\\scheduling\\fixture.py\", line 46, in verify_reference\n    raise ValueError(f\"Independent fixture evidence differs for {row['work_item']}.\")\nValueError: Independent fixture evidence differs for COL-REBAR.\n"
+  },
+  "ifc_hash_gate": {
+    "exit_code": 1,
+    "rejected": true,
+    "message": "IFC hash is outside the registered controlled pipeline."
+  },
+  "pass": true
+}

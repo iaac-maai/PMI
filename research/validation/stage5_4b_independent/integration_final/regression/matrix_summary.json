@@ -1,0 +1,39 @@
+{
+  "criteria": 86,
+  "mandatory": 84,
+  "mandatory_accepted": 84,
+  "mandatory_flags_consistent": true,
+  "not_accepted": [],
+  "extra_checks": {
+    "tick 7": {
+      "result": "TICK_MISALIGNED",
+      "expected": "TICK_MISALIGNED",
+      "pass": true
+    },
+    "window 08:01": {
+      "result": "TICK_MISALIGNED",
+      "expected": "TICK_MISALIGNED",
+      "pass": true
+    },
+    "scope real project": {
+      "result": "MODEL_INVALID",
+      "expected": "MODEL_INVALID",
+      "pass": true
+    },
+    "unknown top-level key": {
+      "result": "UNSUPPORTED_CONSTRAINT",
+      "expected": "UNSUPPORTED_CONSTRAINT",
+      "pass": true
+    },
+    "elapsed hold demanding a resource": {
+      "result": "MODEL_INVALID",
+      "expected": "MODEL_INVALID",
+      "pass": true
+    },
+    "V4 hours exceed units x scheduled time": {
+      "result": "MODEL_INVALID",
+      "expected": "MODEL_INVALID",
+      "pass": true
+    }
+  }
+}

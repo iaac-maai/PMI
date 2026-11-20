@@ -1,0 +1,85 @@
+criterion_id,mandatory,status,evidence
+AC-G01,yes,DEFERRED,Applicable statuses matched. Deferred case inputs rejected before solving.
+AC-G02,yes,DEFERRED,Applicable optimal makespans matched.
+AC-G03,yes,DEFERRED,Timestamp validation passed. Applicable required activity dates matched.
+AC-G04,yes,PASSED,Durations verified by core input checks or regression coverage.
+AC-G05,yes,PASSED,Calendars verified by core input checks or regression coverage.
+AC-G06,yes,DEFERRED,Working-time cumulative and timestamp sweep passed. Continuous occupancy deferred.
+AC-G07,yes,PASSED,Precedence verified by core input checks or regression coverage.
+AC-G08,yes,PASSED,Deadlines verified by core input checks or regression coverage.
+AC-G09,yes,DEFERRED,Single-segment schedules validated. Authorized split cases rejected before solving.
+AC-G10,yes,PASSED,Resolution verified by core input checks or regression coverage.
+AC-G11,yes,PASSED,Default calendar policy verified by core input checks or regression coverage.
+AC-RC01,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC02,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC03,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC04,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC05a,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
+AC-RC05b,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
+AC-RC06,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC07a,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC07b,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC07c,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC08a,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC08b,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC08c,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC08d,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC09,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC10a,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
+AC-RC10b,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC10c,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
+AC-RC11a,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
+AC-RC11b,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
+AC-R0-15,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-R0-5,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC06-D,yes,PASSED,"Matched reference status and applicable objective, timestamps or diagnostic."
+AC-RC12a,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
+AC-RC12b,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
+AC-RC12c,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
+AC-RC12d,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
+AC-RC12e,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
+AC-RC13a,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
+AC-RC13b,yes,DEFERRED,Pre-solve UNSUPPORTED_CONSTRAINT verified. Expected outcome deferred.
+AC-DEMO-H1,no,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
+AC-C-P1,yes,DEFERRED,Core missing-input checks are active. Advanced construction inputs deferred.
+AC-C-P2,yes,DEFERRED,Working-time constraints active. Continuous occupancy deferred.
+AC-C-P3,yes,PASSED,P3 Durations are owned by Stage 5 verified by core input checks or regression coverage.
+AC-C-P4,yes,PASSED,P4 Cost is owned by Stage 5 verified by core input checks or regression coverage.
+AC-C-P5,yes,DEFERRED,No physical counts inferred. Reservation functionality deferred.
+AC-C-P6,yes,PASSED,P6 Explicit none is distinct from missing verified by core input checks or regression coverage.
+AC-C-P7,yes,PASSED,P7 Blocking is conservative verified by core input checks or regression coverage.
+AC-C-V1,yes,DEFERRED,Working-time resource identities checked. Reservation and supply identities deferred.
+AC-C-V2,yes,PASSED,V2 verified by core input checks or regression coverage.
+AC-C-V3,yes,DEFERRED,Working-time calendars required. Continuous assets deferred.
+AC-C-V4,yes,PASSED,V4 verified by core input checks or regression coverage.
+AC-C-V5,yes,PASSED,V5 verified by core input checks or regression coverage.
+AC-C-V6,yes,DEFERRED,Elapsed holds cannot demand resources. Strength event logic deferred.
+AC-C-V7,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
+AC-C-V8,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
+AC-C-V9,yes,DEFERRED,Working-time load enforced. Reservation capacities deferred.
+AC-C-V10,yes,DEFERRED,Inspector activity cannot carry cost. Supply and reservation features deferred.
+AC-C-V11,yes,DEFERRED,Core windows checked for alignment. Supply boundaries deferred.
+AC-C-MISSING_INPUT,yes,DEFERRED,RC08a passed. Advanced missing-field diagnostics deferred.
+AC-C-EXPLICIT_NONE_REQUIRED,yes,PASSED,EXPLICIT_NONE_REQUIRED verified by core input checks or regression coverage.
+AC-C-IMPOSSIBLE_CREW,yes,PASSED,IMPOSSIBLE_CREW verified by core input checks or regression coverage.
+AC-C-NO_ELIGIBLE_MODE,yes,DEFERRED,Single fixed mode. Insufficient capacity rejects the entire input with IMPOSSIBLE_CREW. Add distinct contract diagnostic in 5.4B.2.
+AC-C-NO_FIT,yes,PASSED,NO_FIT verified by core input checks or regression coverage.
+AC-C-SPLIT_NOT_AUTHORIZED,yes,DEFERRED,Missing authorization or minimum segment rules rejected. Full R2 split validation deferred.
+AC-C-RESERVATION_UNRELEASED,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
+AC-C-RELEASE_CONDITIONAL,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
+AC-C-TICK_MISALIGNED,yes,PASSED,TICK_MISALIGNED verified by core input checks or regression coverage.
+AC-C-INFEASIBLE_DEADLINE,yes,DEFERRED,RC07a passed with solver-proof and deadline diagnostics. Full implicated-chain reporting remains pending.
+AC-R2-1,yes,PASSED,R2-1_calendar_policy verified by core input checks or regression coverage.
+AC-R2-2,yes,PASSED,R2-2_mode_occupancy verified by core input checks or regression coverage.
+AC-R2-3,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
+AC-R2-4,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
+AC-D01,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
+AC-D02,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
+AC-D03,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
+AC-D04,yes,DEFERRED,Requires Stage 5.4B.2 construction model and benchmark runs.
+AC-D05,no,NOT_APPLICABLE,Benchmark has alternative optima and representative dates are excluded.
+AC-P01,yes,PASSED,"Both registers read and validated as pending, with no tracked changes."
+AC-P02,yes,PASSED,Frozen R0-15 passed. Eight tracked export files unchanged against clean baseline.
+AC-P03,yes,PASSED,Frozen R0-5 passed.
+AC-P04,yes,PASSED,Frozen handover cost retained in both R0 runs.
+AC-P05,yes,PASSED,Controlled scope enforced and real_project_eligible is false.

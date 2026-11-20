@@ -1,0 +1,14 @@
+unified_field,source,semantics
+project_id / model_version_id / source_ifc_sha256,BIM project and IFC digest through Stage 5.3A and CPM,Model and IFC fields null for synthetic demo
+activities[].activity_id / canonical_element_id / ifc_global_id,CPM and optimization joined by stable activity ID,No fabricated demo element IDs or GlobalIds
+activities[].work_package_id / work_packages,Construction and estimation package IDs,Corrected demo activity package IDs come from its source JSON
+activities[].engineering_quantity / evidence_ref / input_state,Stage 5.3A engineering and normalized optimizer provenance,A supply allowance does not alter these quantities
+activities[].baseline,CPM early and late bounds and working and elapsed durations,Only CPM marks criticality
+activities[].optimized,Relocated solver timestamps and working and elapsed durations,null for blocked or infeasible activities
+dependencies / cpm,Normalized FS graph and Stage 5.4A critical edges,Cpm critical path is not inferred from optimization
+reservations / reservation_declarations / resource_occupancy,Continuous and working time ledgers,Restart occupancy has a distinct allowance label
+supply,"Optimizer activity, source, daily and aggregate supply reporting",Rational strings preserve exact amounts; null means unknown
+cost,Stage 5.3A or controlled demo direct reference cost,Excludes unsupported downstream quantities
+proof / diagnostic,Primary objective and bound scoped by outcome; static and runtime diagnostics,Complete project makespan stays null for partial or conditional results
+events / blocked_activities / conditional_activities,R2 events and dependency propagation,C02 RC13b retains hypothetical criterion reference
+evidence / fixture_exceptions / pending_approvals / real_project_eligible,"Pipeline provenance, registered assumptions and trusted approval registry",88 PENDING; false real-project eligibility

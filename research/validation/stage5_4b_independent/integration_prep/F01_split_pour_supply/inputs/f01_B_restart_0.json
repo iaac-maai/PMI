@@ -1,0 +1,111 @@
+{
+  "scope": "hypothetical_fixture_only",
+  "objective": "minimize_makespan",
+  "timezone": "Europe/Madrid",
+  "tick_minutes": 5,
+  "project_start": "2027-01-15T08:00",
+  "horizon_end": "2027-01-22T16:00",
+  "project_calendar": {
+    "timezone": "Europe/Madrid",
+    "input_state": "hypothetical_fixture",
+    "date_exceptions": [],
+    "working_windows": [
+      {
+        "weekday": 1,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 2,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 3,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 4,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 5,
+        "start": "08:00",
+        "end": "16:00"
+      }
+    ]
+  },
+  "resources": {
+    "CREW_F": {
+      "resource_id": "CREW_F",
+      "display_name": "CREW_F",
+      "kind": "renewable",
+      "unit": "worker",
+      "capacity": 1,
+      "calendar": "project",
+      "explicit_none": false,
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "F01 regression (hypothetical)"
+    },
+    "SUPPLY": {
+      "resource_id": "SUPPLY",
+      "display_name": "SUPPLY",
+      "kind": "supply_source",
+      "unit": "m3/h",
+      "capacity": 6,
+      "calendar": "project",
+      "explicit_none": false,
+      "max_volume_per_day_m3": 200,
+      "input_state": "hypothetical_fixture",
+      "evidence_ref": "F01 regression (hypothetical)"
+    }
+  },
+  "activities": [
+    {
+      "id": "PREP",
+      "kind": "productive",
+      "duration_minutes": 240,
+      "resources": {
+        "CREW_F": 1
+      },
+      "input_state": "hypothetical_fixture"
+    },
+    {
+      "id": "S",
+      "kind": "productive",
+      "duration_minutes": 597,
+      "resources": {
+        "CREW_F": 1,
+        "SUPPLY": 6
+      },
+      "interruption": "split_allowed",
+      "reference_cost_eur": 7114.2,
+      "input_state": "hypothetical_fixture",
+      "split": {
+        "authorization_ref": "HYPOTHETICAL F01 split authorization",
+        "max_segments": 2,
+        "min_segment_minutes": 120,
+        "retention_during_gap": "release",
+        "restart_overhead_minutes": 0,
+        "same_mode_on_restart": true,
+        "voluntary_pause": false,
+        "cold_joint_authorization_ref": "HYPOTHETICAL F01 cold-joint authorization",
+        "input_state": "hypothetical_fixture"
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "predecessor": "PREP",
+      "successor": "S",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed"
+    }
+  ],
+  "cost": {
+    "total_direct_reference_eur": 7114.2
+  }
+}

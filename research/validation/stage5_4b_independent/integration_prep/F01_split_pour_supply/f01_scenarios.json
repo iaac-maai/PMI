@@ -1,0 +1,85 @@
+{
+  "_meta": {
+    "id": "F01-REGRESSION",
+    "version": "1.0",
+    "purpose": "Independent regression for Stage 5.4B.2 finding F01: a split pour's restart supply allowance must be reported separately from the planned placed volume, and must never be presented as measured consumption or added to material cost.",
+    "status": "HYPOTHETICAL software test input. Not an engineering approval; AP-X-SUP-01 and AP-X-SPL-01 remain PENDING.",
+    "format": "Normalized controlled input, field set of research/implementation/stage5_4b/engine.py at d72eda3. If integration renames input fields, translate them; do not change values.",
+    "derivation": "Based on Task 4 RC10a (PREP 240 min, then S 597 min split over Fri 12:00-16:00 and Mon). S is made a concrete pour drawing 6 m3/h from a 6 m3/h supply source. Variant A adds a 30-minute restart overhead; variant B has none.",
+    "cost_basis": "S reference_cost_eur = 60 m3 placed x 118.57 EUR/m3 (BCCA 05HHL00003 published unit price, Dec-2023 V02). The restart allowance must not change it."
+  },
+  "expected": {
+    "A_restart_30": {
+      "status": "OPTIMAL",
+      "segments_S": [["2027-01-15T12:00+01:00", "2027-01-15T16:00+01:00"], ["2027-01-18T08:00+01:00", "2027-01-18T14:30+01:00"]],
+      "productive_minutes_S": 600,
+      "restart_minutes_S": 30,
+      "planned_placed_volume_m3": 60,
+      "restart_allowance_m3": 3,
+      "total_supply_allowance_m3": 63,
+      "daily": {"2027-01-15": {"placed_m3": 24, "restart_allowance_m3": 0, "total_m3": 24},
+                "2027-01-18": {"placed_m3": 36, "restart_allowance_m3": 3, "total_m3": 39}},
+      "direct_reference_cost_eur": 7114.2,
+      "makespan_minutes": 4710
+    },
+    "B_restart_0": {
+      "status": "OPTIMAL",
+      "segments_S": [["2027-01-15T12:00+01:00", "2027-01-15T16:00+01:00"], ["2027-01-18T08:00+01:00", "2027-01-18T14:00+01:00"]],
+      "productive_minutes_S": 600,
+      "restart_minutes_S": 0,
+      "planned_placed_volume_m3": 60,
+      "restart_allowance_m3": 0,
+      "total_supply_allowance_m3": 60,
+      "direct_reference_cost_eur": 7114.2,
+      "makespan_minutes": 4680
+    },
+    "derivation": "Placed = rate x productive minutes / 60 = 6 x 600 / 60 = 60 m3. Allowance = rate x overhead x (segments - 1) / 60 = 6 x 30 x 1 / 60 = 3 m3. Total = 63 m3. With no voluntary pause and release between segments, S fills Fri 12:00-16:00 (240 min); the Monday segment is 360 productive + 30 restart = 390 min (08:00-14:30). Makespan A = 3 days + 390 min from Fri 08:00 = 4710 min; B = 4680 min (RC10a). Cost 60 x 118.57 = 7114.20 EUR in both variants; 63 x 118.57 = 7469.91 EUR would be the forbidden allowance-inflated value."
+  },
+  "base_problem": {
+    "scope": "hypothetical_fixture_only",
+    "objective": "minimize_makespan",
+    "timezone": "Europe/Madrid",
+    "tick_minutes": 5,
+    "project_start": "2027-01-15T08:00",
+    "horizon_end": "2027-01-22T16:00",
+    "project_calendar": {
+      "timezone": "Europe/Madrid", "input_state": "hypothetical_fixture", "date_exceptions": [],
+      "working_windows": [
+        {"weekday": 1, "start": "08:00", "end": "16:00"}, {"weekday": 2, "start": "08:00", "end": "16:00"},
+        {"weekday": 3, "start": "08:00", "end": "16:00"}, {"weekday": 4, "start": "08:00", "end": "16:00"},
+        {"weekday": 5, "start": "08:00", "end": "16:00"}]
+    },
+    "resources": {
+      "CREW_F": {"resource_id": "CREW_F", "display_name": "CREW_F", "kind": "renewable", "unit": "worker",
+                 "capacity": 1, "calendar": "project", "explicit_none": false,
+                 "input_state": "hypothetical_fixture", "evidence_ref": "F01 regression (hypothetical)"},
+      "SUPPLY": {"resource_id": "SUPPLY", "display_name": "SUPPLY", "kind": "supply_source", "unit": "m3/h",
+                 "capacity": 6, "calendar": "project", "explicit_none": false, "max_volume_per_day_m3": 200,
+                 "input_state": "hypothetical_fixture", "evidence_ref": "F01 regression (hypothetical)"}
+    },
+    "activities": [
+      {"id": "PREP", "kind": "productive", "duration_minutes": 240, "resources": {"CREW_F": 1},
+       "input_state": "hypothetical_fixture"},
+      {"id": "S", "kind": "productive", "duration_minutes": 597, "resources": {"CREW_F": 1, "SUPPLY": 6},
+       "interruption": "split_allowed", "reference_cost_eur": 7114.2, "input_state": "hypothetical_fixture",
+       "split": {"authorization_ref": "HYPOTHETICAL F01 split authorization", "max_segments": 2,
+                 "min_segment_minutes": 120, "retention_during_gap": "release", "restart_overhead_minutes": 30,
+                 "same_mode_on_restart": true, "voluntary_pause": false,
+                 "cold_joint_authorization_ref": "HYPOTHETICAL F01 cold-joint authorization",
+                 "input_state": "hypothetical_fixture"}}
+    ],
+    "dependencies": [{"predecessor": "PREP", "successor": "S", "relation": "FS", "lag_minutes": 0, "lag_basis": "elapsed"}],
+    "cost": {"total_direct_reference_eur": 7114.2}
+  },
+  "variants": {
+    "A_restart_30": {"activities.S.split.restart_overhead_minutes": 30},
+    "B_restart_0": {"activities.S.split.restart_overhead_minutes": 0}
+  },
+  "default_field_map": {
+    "_note": "Proposed output names from F01. If Agent 1 chooses other names, pass a field map; the semantics, not the names, are tested.",
+    "placed_volume": "placed_volume_m3",
+    "restart_allowance": "restart_allowance_m3",
+    "total_allowance": "supply_allowance_m3",
+    "occupancy_basis_for_restart": ["restart_allowance", "restart_overhead", "planning_allowance"]
+  }
+}

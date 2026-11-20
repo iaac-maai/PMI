@@ -1,0 +1,18 @@
+{
+  "historical": {
+    "python": "C:\\Users\\Chloe\\PMI\\PMI\\.venv\\Scripts\\python.exe",
+    "tests_run": 43,
+    "exit_code": 0,
+    "summary": "...........................................\n----------------------------------------------------------------------\nRan 43 tests in 1.282s\n\nOK"
+  },
+  "optimizer_and_integration": {
+    "python": "C:\\Users\\Chloe\\PMI\\PMI\\.venv-planning\\Scripts\\python.exe",
+    "tests_run": 32,
+    "exit_code": 0,
+    "summary": "................................\n----------------------------------------------------------------------\nRan 32 tests in 11.160s\n\nOK"
+  },
+  "independent_c01": {
+    "passed_checks_per_fixture": 350,
+    "fixtures": 2
+  }
+}

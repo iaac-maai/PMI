@@ -1,0 +1,64 @@
+{
+  "preparation": "Stage 5.4B.3 targeted independent acceptance preparation",
+  "status": "prepared; awaiting a stable integrated commit (production optimizer not run)",
+  "preservation": {
+    "git_head": "d72eda3a7da47ef3f7bdf7498e4c7cef2e9aaa75",
+    "final_package_changed": [],
+    "task7_manifest_changed": [],
+    "c01_manifest_changed": [],
+    "task7_reference_cases_sha256": "d8416ac28f5e8faf1b03383b0f4cde2bd6bb2e83c6e49ccaf3b382697c2cbb7a",
+    "resource_contract_sha256": "b6bca6b47281cd62515ef85046c6035305984621e5129390eaf02725c6420b69",
+    "r2_addendum_sha256": "9c2fdefb0f961b193b40f9fdbd01ad06b670bef2227b2d994f95992e3a157164",
+    "approval_register_sha256": "d86a26cea516c10a38d97c5d82b5ca03d4af940f01a9bdcdd359bdac3111ab23",
+    "concurrent_changes_by_agent_1_not_reviewed": [
+      " M research/implementation/stage5_4b/advanced.py",
+      " M research/implementation/stage5_4b/capacity_dates.py",
+      " M research/implementation/stage5_4b/controlled_metadata.py",
+      " M research/implementation/stage5_4b/demo.py",
+      " M research/implementation/stage5_4b/engine.py",
+      " M research/implementation/stage5_4b/input_states.py",
+      "?? pmi_core/optimization/ (new, untracked)"
+    ],
+    "changes_made_by_this_preparation": "New files only, under the three new directories listed in files_sha256; no tracked file modified"
+  },
+  "f01_self_test": {
+    "corrected_shape_passes": true,
+    "d72eda3_shape_rejected": true,
+    "d72eda3_shape_failed_checks": [
+      "F01-10 restart occupancy labelled",
+      "F01-5 placed volume reported",
+      "F01-6 restart allowance reported separately",
+      "F01-8 no measurement-labelled allowance"
+    ],
+    "inflated_cost_rejected": true,
+    "inflated_failed_checks": [
+      "F01-11 cost unchanged by allowance",
+      "F01-12 cost identical with and without restart overhead"
+    ],
+    "self_test_pass": true
+  },
+  "c02": {
+    "diff": [
+      {
+        "path": "/strength_events[0]/acceptance_criterion_ref",
+        "before": "<absent>",
+        "after": "HYP-RC13B-PLANNED-STRENGTH-TEST-CRITERION"
+      }
+    ],
+    "expected_outcome_unchanged": true
+  },
+  "files_sha256": {
+    "research/validation/stage5_4b_independent/integration_prep/acceptance_criteria_amendment_5_4B3.csv": "1ac493039d7ba8d78c4030ff768e6e71146c57026566c2fe69da717086c437e1",
+    "research/validation/stage5_4b_independent/integration_prep/F01_split_pour_supply/check_f01.py": "68ae5084f3b59e3416c1b08d4fe6917c4e041b63ca96c801140ea5127a9f9ff3",
+    "research/validation/stage5_4b_independent/integration_prep/F01_split_pour_supply/f01_scenarios.json": "d2e6ae1134800cc68349c91236b3d5e0986271e9a56fad146d8c4ca8e2d25f33",
+    "research/validation/stage5_4b_independent/integration_prep/F01_split_pour_supply/inputs/f01_A_restart_30.json": "084cc94d94d9b6111d5203c463059f45d8748b3cb3ff5cfdf12fd77f2800aa9b",
+    "research/validation/stage5_4b_independent/integration_prep/F01_split_pour_supply/inputs/f01_B_restart_0.json": "ed008c9e823b5936f35026c2a335b3abd4734c627fa447286270ed14747b3a64",
+    "research/validation/stage5_4b_independent/integration_prep/F01_split_pour_supply/self_test_report.json": "f7ec02edb40f32f194a6ab1b224ea14bed817e91e3aac03841d6902c0f1e8bb9",
+    "research/validation/stage5_4b_independent/integration_prep/README.md": "b507956f0ad349d449da02cf7302032a869d1125b616ced01f7798e34522b4b5",
+    "research/validation/stage5_4a_independent_verification/corrections/C02_rc13b_acceptance_criterion_ref/c02_verification.json": "7287288dc7beb4698baf6b8eb623222b54bac8a098bf862b2b7e5929bdd2e1c5",
+    "research/validation/stage5_4a_independent_verification/corrections/C02_rc13b_acceptance_criterion_ref/RC13b_v1.1.json": "7051ec608dc8a35aa2cbb2607cfc0ffd9683c3e59fdef64b33a56364397db0af",
+    "research/validation/stage5_4a_independent_verification/corrections/C02_rc13b_acceptance_criterion_ref/scripts/build_c02.py": "26ed47264de4606b8d2ccf99efd466939abb7534a8bda60055b14f4d9e53f029",
+    "research/validation/stage5_4a_independent_verification/corrections/C03_capacity_by_date_timezone/resource_contract_R3_F07_amendment.json": "66985cc12ead8266173c210cd50873ddd1cb6929f72b3846970c746a71ab2370",
+    "research/validation/stage5_4a_independent_verification/corrections/C03_capacity_by_date_timezone/scripts/build_c03.py": "a9ea53124cdd36b9ea64643a8701397ece74f87e1be324abcf95d9995ebf4441"
+  }
+}

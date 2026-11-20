@@ -1,0 +1,59 @@
+{
+  "contract_version": "pmi-schedule/1",
+  "optimizer_contract": "pmi-optimization-result/2",
+  "pipeline_configuration": "pmi-pipeline-config/1",
+  "pipeline_evidence": "pmi-pipeline-evidence/1",
+  "stage_payloads": {
+    "IFC": "SHA-256-addressed IFC",
+    "canonical_bim": "5.1.0",
+    "construction": "5.2A/version digest",
+    "engineering_handover": "5.3A",
+    "cpm": "5.4A"
+  },
+  "public_python": {
+    "application": "pmi_core.application.run_controlled_pipeline(config, output=..., ifc_python=..., planning_python=..., tick=5)",
+    "optimizer": "pmi_core.optimization.solve(problem, registry=..., time_limit=10.0)",
+    "unified_result": "pmi_core.schedule_result.schedule_result(optimized=..., baseline=..., provenance=...)"
+  },
+  "timestamps": {
+    "format": "ISO 8601 offset-aware",
+    "intervals": "half-open [start, finish)",
+    "representative_optima": "Multiple valid optimal schedules may differ on dates. Acceptance compares objective and proof, and validates all returned timestamps."
+  },
+  "proof": {
+    "project_makespan_minutes": "Integer or null. Set only on complete_project schedules.",
+    "makespan_by_scope_minutes": "Mapping populated only for the reported complete_project, conditional_projection or unblocked_subset scope.",
+    "lower_bound_minutes": "Primary proof bound in minutes for the same schedule scope.",
+    "optimality_gap_minutes": "Primary absolute gap for the same scope.",
+    "timestamp_source": "primary, secondary or null. A secondary tie-break cannot change the primary proof."
+  },
+  "supply": {
+    "planned_placed_volume_m3": "Declared physical plan as a rational string or null. Never inferred from allowance.",
+    "productive_capacity_allowance_m3": "Rational string for declared scheduling draw during productive minutes.",
+    "restart_capacity_allowance_m3": "Rational string for conservative scheduler draw during authorized restart.",
+    "total_capacity_allowance_m3": "Sum of productive and restart allowances. Conservative scheduler rate and daily limits count both.",
+    "physical_day_allocation": "Declared all-day plan for an unsplit single-day pour, or apportioned only where a declared constant placement profile reconciles to the declared plan. Unknown otherwise.",
+    "material_cost_environment": "Restart allowance has no effect on material quantities, cost, or environmental quantities.",
+    "reported_levels": [
+      "activity",
+      "source",
+      "daily",
+      "aggregate"
+    ]
+  },
+  "dated_capacity": {
+    "key": "ISO date",
+    "interval": "local midnight to local midnight, including DST days",
+    "timezone": "Resource calendar timezone. Project calendar timezone for continuously held assets without their own calendar."
+  },
+  "validation": {
+    "internal": "Rechecks serialized timestamps with shared calendar and capacity preparation.",
+    "independent": "Source-fixture oracles remain a separate acceptance gate."
+  },
+  "controlled_scope": {
+    "pending_approvals": 88,
+    "real_project_eligible": false,
+    "larger_fixture_ifc_identity": null,
+    "critical_path_owner": "CPM baseline only"
+  }
+}\n

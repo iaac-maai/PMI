@@ -66,6 +66,9 @@ def construction_demo(holiday=False, *, version="v1.0", coverage_sensitivity=Fal
             "reference_cost_eur": row["cost_eur"], "input_state": row["input_state"],
             "pending_approval_ids": row["approval_ids"],
         }
+        if rid in task["resources"] and row["unit"] == "m3":
+            task["planned_placed_volume_m3"] = row["quantity"]
+            task["evidence_ref"] = "Task 6 controlled fixture placed quantity"
         if row["mode"]:
             mode = modes[row["mode"]]
             working = {k: v for k, v in task["resources"].items() if k != rid}

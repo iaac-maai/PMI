@@ -1,6 +1,7 @@
 """Adapters for the committed controlled references and frozen Stage 5.3A handover."""
 
 import csv
+from hashlib import sha256
 from pathlib import Path
 
 from pmi_core.scheduling.fixture import adapt, read_json, verify_reference
@@ -114,10 +115,13 @@ def normalize_reference(case):
             for row in case["reservations"]
         ]
     if case["case_id"] == "RC13b":
-        problem["strength_events"] = [
-            {**row, "acceptance_criterion_ref": "Task 7 hypothetical planned-test criterion"}
-            for row in problem["strength_events"]
-        ]
+        c02 = REFERENCES / "corrections/C02_rc13b_acceptance_criterion_ref"
+        record = read_json(c02 / "c02_verification.json")["corrected_case"]
+        corrected_path = REFERENCES / record["path"]
+        if sha256(corrected_path.read_bytes()).hexdigest() != record["sha256"]:
+            raise ValueError("C02 RC13b source hash mismatch.")
+        corrected = read_json(corrected_path)
+        problem["strength_events"] = [{"input_state": state, **row} for row in corrected["strength_events"]]
     addendum = read_json(REFERENCES / "resource_contract_R2_addendum.json")
     if case["case_id"] == "RC06":
         problem["calendar_exceptions"] = [registered_calendar_exception(addendum)]
@@ -127,17 +131,20 @@ def normalize_reference(case):
     return problem
 
 
-def frozen_r0(tick):
+def frozen_r0(tick, *, handover=None, baseline_output=None):
     """Use 5.4A identities and FS edges, and preserve the 5.3A selected-mode inputs."""
     case = reference_cases()[f"R0-{tick}"]
     problem = normalize_reference(case)
     stage = ROOT / "research/implementation/stage5_4a"
     config = {**read_json(stage / "controlled_schedule_inputs.json"), "tick_minutes": tick}
-    handover = read_json(ROOT / config["handover"])
+    if handover is None:
+        handover = read_json(ROOT / config["handover"])
     prep = ROOT / config["preparation_directory"]
     verify_reference(handover, prep, ROOT / config["fixture_inputs"])
     prepared = read_json(prep / "controlled_scheduling_inputs.json")
     baseline = adapt(handover, prepared, config)
+    if baseline_output is not None:
+        baseline_output.update(baseline)
     events = baseline["hypothetical_strength_events"]
     if set(events) != {"C-STRIKE", "B-STRIKE", "S-STRIKE"} or any(
         row["status"] != "hypothetical_pass_at_minimum" for row in events.values()

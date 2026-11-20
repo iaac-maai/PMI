@@ -1,0 +1,170 @@
+{
+  "self_test": {
+    "corrected_shape_passes": true,
+    "d72eda3_shape_rejected": true,
+    "d72eda3_shape_failed_checks": [
+      "F01-10 restart occupancy labelled",
+      "F01-5 placed volume reported",
+      "F01-6 restart allowance reported separately",
+      "F01-8 no measurement-labelled allowance"
+    ],
+    "inflated_cost_rejected": true,
+    "inflated_failed_checks": [
+      "F01-11 cost unchanged by allowance",
+      "F01-12 cost identical with and without restart overhead"
+    ],
+    "self_test_pass": true
+  },
+  "corrected_shape_rows": [
+    {
+      "variant": "A_restart_30",
+      "check": "F01-0 status",
+      "passed": true,
+      "detail": "status=OPTIMAL validated=True"
+    },
+    {
+      "variant": "A_restart_30",
+      "check": "F01-1 segments",
+      "passed": true,
+      "detail": "[['2027-01-15T12:00+01:00', '2027-01-15T16:00+01:00'], ['2027-01-18T08:00+01:00', '2027-01-18T14:30+01:00']]"
+    },
+    {
+      "variant": "A_restart_30",
+      "check": "F01-2 productive minutes",
+      "passed": true,
+      "detail": "600"
+    },
+    {
+      "variant": "A_restart_30",
+      "check": "F01-3 independent volumes",
+      "passed": true,
+      "detail": "placed=60.0 allowance=3.0 total=63.0"
+    },
+    {
+      "variant": "A_restart_30",
+      "check": "F01-4 makespan",
+      "passed": true,
+      "detail": "4710"
+    },
+    {
+      "variant": "A_restart_30",
+      "check": "F01-5 placed volume reported",
+      "passed": true,
+      "detail": "placed_volume_m3=60.0 (expected 60.0)"
+    },
+    {
+      "variant": "A_restart_30",
+      "check": "F01-6 restart allowance reported separately",
+      "passed": true,
+      "detail": "restart_allowance_m3=3.0 (expected 3.0)"
+    },
+    {
+      "variant": "A_restart_30",
+      "check": "F01-7 total labelled as allowance",
+      "passed": true,
+      "detail": "supply_allowance_m3=63.0 (optional; must equal 63.0)"
+    },
+    {
+      "variant": "A_restart_30",
+      "check": "F01-8 no measurement-labelled allowance",
+      "passed": true,
+      "detail": "offending fields: []"
+    },
+    {
+      "variant": "A_restart_30",
+      "check": "F01-9 not marked as measured",
+      "passed": true,
+      "detail": "supply input_states []"
+    },
+    {
+      "variant": "A_restart_30",
+      "check": "F01-10 restart occupancy labelled",
+      "passed": true,
+      "detail": "SUPPLY occupancy bases ['restart_allowance', 'working_time']"
+    },
+    {
+      "variant": "A_restart_30",
+      "check": "F01-11 cost unchanged by allowance",
+      "passed": true,
+      "detail": "total=7114.2 S=7114.2"
+    },
+    {
+      "variant": "B_restart_0",
+      "check": "F01-0 status",
+      "passed": true,
+      "detail": "status=OPTIMAL validated=True"
+    },
+    {
+      "variant": "B_restart_0",
+      "check": "F01-1 segments",
+      "passed": true,
+      "detail": "[['2027-01-15T12:00+01:00', '2027-01-15T16:00+01:00'], ['2027-01-18T08:00+01:00', '2027-01-18T14:00+01:00']]"
+    },
+    {
+      "variant": "B_restart_0",
+      "check": "F01-2 productive minutes",
+      "passed": true,
+      "detail": "600"
+    },
+    {
+      "variant": "B_restart_0",
+      "check": "F01-3 independent volumes",
+      "passed": true,
+      "detail": "placed=60.0 allowance=0.0 total=60.0"
+    },
+    {
+      "variant": "B_restart_0",
+      "check": "F01-4 makespan",
+      "passed": true,
+      "detail": "4680"
+    },
+    {
+      "variant": "B_restart_0",
+      "check": "F01-5 placed volume reported",
+      "passed": true,
+      "detail": "placed_volume_m3=60.0 (expected 60.0)"
+    },
+    {
+      "variant": "B_restart_0",
+      "check": "F01-6 restart allowance reported separately",
+      "passed": true,
+      "detail": "restart_allowance_m3=0.0 (expected 0.0)"
+    },
+    {
+      "variant": "B_restart_0",
+      "check": "F01-7 total labelled as allowance",
+      "passed": true,
+      "detail": "supply_allowance_m3=60.0 (optional; must equal 60.0)"
+    },
+    {
+      "variant": "B_restart_0",
+      "check": "F01-8 no measurement-labelled allowance",
+      "passed": true,
+      "detail": "offending fields: []"
+    },
+    {
+      "variant": "B_restart_0",
+      "check": "F01-9 not marked as measured",
+      "passed": true,
+      "detail": "supply input_states []"
+    },
+    {
+      "variant": "B_restart_0",
+      "check": "F01-10 restart occupancy labelled",
+      "passed": true,
+      "detail": "SUPPLY occupancy bases ['working_time']"
+    },
+    {
+      "variant": "B_restart_0",
+      "check": "F01-11 cost unchanged by allowance",
+      "passed": true,
+      "detail": "total=7114.2 S=7114.2"
+    },
+    {
+      "variant": "A vs B",
+      "check": "F01-12 cost identical with and without restart overhead",
+      "passed": true,
+      "detail": "A=7114.2 B=7114.2"
+    }
+  ]
+}

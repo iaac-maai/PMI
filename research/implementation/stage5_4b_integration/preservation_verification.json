@@ -1,0 +1,19 @@
+{
+  "accepted_baseline": "cf8f4581e65e027cd843ed42c81384a5d60224ef",
+  "history_and_evidence_unchanged": true,
+  "frozen_exports_sha256": {
+    "activities.csv": "cfd15a043b6dd6c83b6948ffef836b91dbc94c618e279413fe77bd53e603432e",
+    "calendar_validation.csv": "3febfa78a39136f64e747e2f11830e57f0e22770c0d4fe738f628e7ef1c460e5",
+    "critical_path.csv": "ff06c47397c2baa48309e5904457958d08a3b338f6d7048485aea8aa74a0f748",
+    "dependencies.csv": "4e62b16fcc56ba12bcb4e2741b38fa876c69790bfbf8b39d071696232547839c",
+    "reference_schedule_comparison.csv": "116ff653685c11df0bbb9876de0e927287a51ac8b0d33ded8376dec62aaf3f50",
+    "report.html": "364f8f7834781eaa1b995f970e990062ccb008e2a9caaffc3714913309518590",
+    "resource_conflicts.csv": "f3a95249c9011e32fd5b7cd763f8986b23f055a8be398270f5904d84ebb25a46",
+    "schedule.json": "53849aa9f24aa16f4482449cac10cdc33a07a32a088a000df6b7838e0a4a51ed"
+  },
+  "task7_manifest_files_verified": 66,
+  "c01_manifest_files_verified": 15,
+  "historical_c01_hashes_verified": 4,
+  "pending_approvals": 88,
+  "real_project_eligible": false
+}

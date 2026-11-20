@@ -1,0 +1,40 @@
+{
+  "correction": "C02",
+  "case": "RC13b",
+  "case_version": "v1.1",
+  "source": {
+    "path": "task7_reference_cases.json",
+    "sha256": "d8416ac28f5e8faf1b03383b0f4cde2bd6bb2e83c6e49ccaf3b382697c2cbb7a",
+    "modified": false
+  },
+  "corrected_case": {
+    "path": "corrections/C02_rc13b_acceptance_criterion_ref/RC13b_v1.1.json",
+    "sha256": "7051ec608dc8a35aa2cbb2607cfc0ffd9683c3e59fdef64b33a56364397db0af"
+  },
+  "diff_excluding_correction_block": [
+    {
+      "path": "/strength_events[0]/acceptance_criterion_ref",
+      "before": "<absent>",
+      "after": "HYP-RC13B-PLANNED-STRENGTH-TEST-CRITERION"
+    }
+  ],
+  "expected_outcome_unchanged": true,
+  "independent_recomputation": {
+    "projection_makespan_minutes": 5880,
+    "schedule": {
+      "POUR": [
+        "2027-01-11T08:00+01:00",
+        "2027-01-11T09:00+01:00"
+      ],
+      "RELEASE": [
+        "2027-01-11T09:00+01:00",
+        "2027-01-15T09:00+01:00"
+      ],
+      "STRIP": [
+        "2027-01-15T09:00+01:00",
+        "2027-01-15T10:00+01:00"
+      ]
+    },
+    "expected_status_semantics": "CONDITIONAL (R2-3 planned test)"
+  }
+}

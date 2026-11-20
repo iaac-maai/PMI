@@ -1,0 +1,9 @@
+{
+  "contract_version": "pmi-pipeline-config/1",
+  "project_id": "PMI-CONTROLLED",
+  "ifc": "research/implementation/stage5_2/controlled_frame.ifc",
+  "ifc_sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+  "estimation_config": "research/implementation/stage5_3/controlled_fixture_inputs.json",
+  "references": "research/validation/engineering_approval_review/stage5_3_reference_selection.csv",
+  "scheduling_worker": "research.implementation.stage5_4b_integration.r0_worker"
+}

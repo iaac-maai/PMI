@@ -1,0 +1,150 @@
+{
+  "case_id": "RC13b",
+  "category": 9,
+  "title": "Future activity-dependent strength test (planned, not recorded)",
+  "tick_minutes": 5,
+  "timezone": "Europe/Madrid",
+  "project_start": "2027-01-11T08:00",
+  "horizon_end": "2027-01-22T16:00",
+  "project_calendar": {
+    "timezone": "Europe/Madrid",
+    "working_windows": [
+      {
+        "weekday": 1,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 2,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 3,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 4,
+        "start": "08:00",
+        "end": "16:00"
+      },
+      {
+        "weekday": 5,
+        "start": "08:00",
+        "end": "16:00"
+      }
+    ],
+    "date_exceptions": []
+  },
+  "resources": {
+    "CREW_C": {
+      "capacity": 1,
+      "kind": "renewable",
+      "calendar": "project"
+    },
+    "CREW_F": {
+      "capacity": 1,
+      "kind": "renewable",
+      "calendar": "project"
+    }
+  },
+  "activities": [
+    {
+      "id": "POUR",
+      "kind": "productive",
+      "duration_minutes": 57,
+      "resources": {
+        "CREW_C": 1
+      },
+      "allowed_hours": [
+        [
+          "08:00",
+          "14:00"
+        ]
+      ]
+    },
+    {
+      "id": "RELEASE",
+      "kind": "elapsed_hold",
+      "duration_minutes": 5760,
+      "resources": {}
+    },
+    {
+      "id": "STRIP",
+      "kind": "productive",
+      "duration_minutes": 57,
+      "resources": {
+        "CREW_F": 1
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "predecessor": "POUR",
+      "successor": "RELEASE",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed"
+    },
+    {
+      "predecessor": "RELEASE",
+      "successor": "STRIP",
+      "relation": "FS",
+      "lag_minutes": 0,
+      "lag_basis": "elapsed"
+    }
+  ],
+  "objective": "minimize_makespan",
+  "calendar_policy": "intersect_project_activity_resources",
+  "strength_events": [
+    {
+      "event_id": "EV-T",
+      "kind": "activity_dependent_test",
+      "status": "planned",
+      "test_age_hours_after_pour": 96,
+      "release_activity": "RELEASE",
+      "acceptance_criterion_ref": "HYP-RC13B-PLANNED-STRENGTH-TEST-CRITERION"
+    }
+  ],
+  "expected": {
+    "expected_status": "CONDITIONAL",
+    "optimal_makespan_minutes": 5880,
+    "completion_local": "2027-01-15T10:00+01:00",
+    "unique_optimal_schedule": true,
+    "brute_force_check": {
+      "no_schedule_with_makespan_minutes_at_most": 5875,
+      "schedules_found_below_optimum": 0,
+      "optimum_attained": true
+    },
+    "proof": "Method A: exhaustive serial SGS over all precedence-feasible activity lists. Method B: time-indexed brute force finds no schedule one tick shorter.",
+    "schedule": [
+      {
+        "id": "POUR",
+        "start": "2027-01-11T08:00+01:00",
+        "finish": "2027-01-11T09:00+01:00"
+      },
+      {
+        "id": "RELEASE",
+        "start": "2027-01-11T09:00+01:00",
+        "finish": "2027-01-15T09:00+01:00"
+      },
+      {
+        "id": "STRIP",
+        "start": "2027-01-15T09:00+01:00",
+        "finish": "2027-01-15T10:00+01:00"
+      }
+    ],
+    "required_solver_status": "CONDITIONAL (projection only)",
+    "note": "Projection uses max(72 h minimum, 96 h test age) measured from the pour finish, so it moves with the pour. It must never be reported as OPTIMAL or releasable and must not be converted into a fixed timestamp."
+  },
+  "case_version": "v1.1",
+  "correction": {
+    "id": "C02",
+    "supersedes": "task7_reference_cases.json#RC13b (v1.0)",
+    "supersedes_file_sha256": "d8416ac28f5e8faf1b03383b0f4cde2bd6bb2e83c6e49ccaf3b382697c2cbb7a",
+    "change": "Added strength_events[0].acceptance_criterion_ref, required by R2-3 for planned or pending tests.",
+    "criterion_ref_meaning": "Identifier of a HYPOTHETICAL planned-test acceptance criterion. It names the criterion slot only; it states no strength value, test method or striking threshold. The criterion itself remains for engineering decision under AP-X-STR-02 (PENDING).",
+    "unchanged": "Construction assumptions, durations, dependencies, resources, the 96 h test age, status semantics and the expected outcome."
+  }
+}

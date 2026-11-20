@@ -1,0 +1,117 @@
+{
+  "_meta": {
+    "contract": "PMI Stage 5.4B resource contract",
+    "version": "5.4B-R3-F07",
+    "amends": {
+      "resource_contract.json": {
+        "version": "5.4B-R1-draft",
+        "sha256": "b6bca6b47281cd62515ef85046c6035305984621e5129390eaf02725c6420b69",
+        "section": "entities.Resource.fields.capacity_by_date",
+        "modified": false
+      },
+      "resource_contract_R2_addendum.json": {
+        "sha256": "9c2fdefb0f961b193b40f9fdbd01ad06b670bef2227b2d994f95992e3a157164",
+        "modified": false
+      }
+    },
+    "origin": "Stage 5.4B.2 final verification finding F07, accepted interpretation",
+    "status": "PROPOSED clarification of an existing field; no new capability; not an engineering approval"
+  },
+  "capacity_by_date": {
+    "type": "object: ISO calendar date (YYYY-MM-DD) -> nonnegative integer in the resource's declared unit",
+    "date_timezone": {
+      "calendar_resources": "The timezone of the resource's own calendar (calendar.timezone). 'project' calendars use the project timezone.",
+      "continuous_resources": "The project timezone (resources with availability 'continuous' have no calendar of their own)."
+    },
+    "date_span": "From local midnight of the date to local midnight of the next date in that timezone, half-open. On DST transition days the span is 23 h or 25 h, never a fixed 24 h.",
+    "effect": "Replaces the declared capacity for every tick inside the span. Calendar availability still governs working-time occupancy; continuous reservations are checked across the whole span, including capacity changes inside a reservation interval.",
+    "constraints": [
+      "Date keys must be canonical ISO dates; values nonnegative integers (rates use the m3/h unit, scaled exactly with nominal and drawn rates).",
+      "Span boundaries must align to the scheduling tick (TICK_MISALIGNED otherwise).",
+      "An explicit-none resource may only declare 0.",
+      "The resource must declare a unit compatible with its class.",
+      "Duplicate date keys are invalid input."
+    ],
+    "invalid": "INVALID_CAPACITY_OVERRIDE (MODEL_INVALID) before solving."
+  },
+  "worked_examples": [
+    {
+      "case": "Working-time resource whose calendar is in Europe/London (project in Europe/Madrid)",
+      "capacity_by_date": {
+        "2027-03-29": 0
+      },
+      "applies": {
+        "date": "2027-03-29",
+        "timezone": "Europe/London",
+        "local_start": "2027-03-29T00:00+01:00",
+        "local_end": "2027-03-30T00:00+01:00",
+        "utc_start": "2027-03-28T23:00+00:00",
+        "utc_end": "2027-03-29T23:00+00:00",
+        "minutes": 1440
+      }
+    },
+    {
+      "case": "Continuous reusable asset (no calendar): project timezone Europe/Madrid, spring DST day",
+      "capacity_by_date": {
+        "2027-03-28": 0
+      },
+      "applies": {
+        "date": "2027-03-28",
+        "timezone": "Europe/Madrid",
+        "local_start": "2027-03-28T00:00+01:00",
+        "local_end": "2027-03-29T00:00+02:00",
+        "utc_start": "2027-03-27T23:00+00:00",
+        "utc_end": "2027-03-28T22:00+00:00",
+        "minutes": 1380
+      }
+    },
+    {
+      "case": "Continuous reusable asset: autumn DST day",
+      "capacity_by_date": {
+        "2027-10-31": 1
+      },
+      "applies": {
+        "date": "2027-10-31",
+        "timezone": "Europe/Madrid",
+        "local_start": "2027-10-31T00:00+02:00",
+        "local_end": "2027-11-01T00:00+01:00",
+        "utc_start": "2027-10-30T22:00+00:00",
+        "utc_end": "2027-10-31T23:00+00:00",
+        "minutes": 1500
+      }
+    },
+    {
+      "case": "Ordinary day, project calendar",
+      "capacity_by_date": {
+        "2027-01-11": 2
+      },
+      "applies": {
+        "date": "2027-01-11",
+        "timezone": "Europe/Madrid",
+        "local_start": "2027-01-11T00:00+01:00",
+        "local_end": "2027-01-12T00:00+01:00",
+        "utc_start": "2027-01-10T23:00+00:00",
+        "utc_end": "2027-01-11T23:00+00:00",
+        "minutes": 1440
+      }
+    }
+  ],
+  "acceptance_additions": [
+    {
+      "criterion_id": "AC-C03-1",
+      "requirement": "Override span uses the resource calendar timezone",
+      "pass_condition": "Europe/London resource override for 2027-03-29 applies from 2027-03-28T23:00Z to 2027-03-29T23:00Z"
+    },
+    {
+      "criterion_id": "AC-C03-2",
+      "requirement": "Continuous resources use the project timezone and DST-length days",
+      "pass_condition": "Europe/Madrid 2027-03-28 spans 1380 minutes; 2027-10-31 spans 1500 minutes"
+    },
+    {
+      "criterion_id": "AC-C03-3",
+      "requirement": "Invalid overrides rejected before solving",
+      "pass_condition": "non-ISO keys, negative/fractional values, missing unit, explicit-none > 0, duplicate keys -> MODEL_INVALID"
+    }
+  ],
+  "verified_by": "Stage 5.4B.2 final verification (verification_evidence.json timezone_checks and date_capacity)"
+}

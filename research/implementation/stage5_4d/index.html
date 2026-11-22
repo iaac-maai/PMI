@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PMI | R0 Construction Sequence</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/plotly.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="notice">CONTROLLED HYPOTHETICAL DEMONSTRATION — NOT AUTHORIZED FOR CONSTRUCTION USE.</aside>
+  <header>
+    <div><div class="brand">PMI <span> / </span> IFC4D</div><h1>R0 construction sequence</h1><p id="origin"></p></div>
+    <div class="status"><b>Engineering approval pending</b><span>88 pending · Real-project eligibility false</span></div>
+  </header>
+  <main id="workspace" hidden>
+    <section class="simulation" aria-labelledby="simulation-title">
+      <div><h2 id="simulation-title">Sequence playback</h2><p>Activity simulation &middot; Physical progress unverified</p></div>
+      <button id="play" type="button">Play</button>
+      <label>Speed <select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="5">5×</option></select></label>
+      <label class="scrub">Simulated date <output id="date"></output><input id="scrub" type="range" min="0" step="1" value="0"></label>
+      <div class="counts"><span id="active"></span><span id="complete"></span></div>
+    </section>
+    <div class="panels">
+      <section class="panel" aria-labelledby="model-title">
+        <div class="panel-head"><div><h2 id="model-title">Structural model</h2><p>3 IFC elements · World coordinates</p></div><div class="camera-tools"><button id="zoom-in" type="button" aria-label="Zoom in">+</button><button id="zoom-out" type="button" aria-label="Zoom out">&minus;</button><button id="reset" type="button">Reset camera</button></div></div>
+        <div id="model" aria-label="Interactive 3D IFC model"></div>
+        <div class="element-controls" id="elements" aria-label="Select IFC element"></div>
+        <div class="legend model-legend"><span>Selected</span><span>Active</span><span>All activities completed</span></div>
+        <div id="identity" class="identity" aria-live="polite"></div>
+      </section>
+      <section class="panel" aria-labelledby="gantt-title">
+        <div class="panel-head gantt-head"><div><h2 id="gantt-title">Construction programme</h2><p id="proof"></p></div>
+          <label>Package <select id="package"><option value="">All packages</option></select></label></div>
+        <div class="chart-tools"><div role="group" aria-label="Schedule mode"><button id="cpm" type="button">CPM</button><button id="cp_sat" type="button">CP-SAT</button></div><button id="clear" type="button">Clear selection</button></div>
+        <p class="comparison">CPM and CP-SAT dates coincide in this R0 fixture.</p>
+        <div class="chart-scroll"><div id="gantt"></div></div>
+        <div class="legend"><span class="work">Construction</span><span class="hold">Hold</span><span class="inspect">Inspection</span><span class="critical">CPM critical</span><span class="path">Dependency</span></div>
+        <div id="activity" class="identity" aria-live="polite"></div>
+      </section>
+    </div>
+  </main>
+  <p id="error" role="alert"></p>
+</body>
+</html>

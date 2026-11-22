@@ -1,0 +1,842 @@
+{
+  "head": "ad9ce05d2ce14b0674ee648418cb23fc6f533b18",
+  "live_run_exit": 0,
+  "live_run_stderr_tail": "",
+  "workspaces": {
+    "replay_5": {
+      "server_started": true,
+      "message": "",
+      "data": {
+        "contract": "pmi-r0-prototype/1",
+        "proof": {
+          "status": "OPTIMAL",
+          "project_makespan_minutes": 14850,
+          "lower_bound_minutes": 14850,
+          "schedule_scope": "complete_project"
+        },
+        "proof_matches_accepted": true,
+        "elements": [
+          "1jDfy2_jTRueAw6f5fc3Ev",
+          "24tlOXIsvMQfyRLiqh6fZt",
+          "3wOB$MtWLSz8SJNgW3VJvy"
+        ],
+        "geometry_equals_source_tessellation": true,
+        "activities": 21,
+        "dates_equal_accepted": true,
+        "element_links_equal_accepted": true,
+        "dependencies_equal_accepted": true,
+        "packages_equal_accepted": true,
+        "status": {
+          "ApprovalStatus": "PENDING",
+          "PendingApprovalCount": 88,
+          "RealProjectEligible": false
+        },
+        "restriction": "Hypothetical R0. Engineering approval pending. Construction use prohibited.",
+        "cpm_equals_cp_sat_all": true,
+        "cpm_critical_ids": [
+          "B-STRIP",
+          "S-FORM",
+          "S-INSP",
+          "S-POUR",
+          "S-REBAR",
+          "S-STRIKE",
+          "S-STRIP"
+        ]
+      },
+      "browser": {
+        "notice": "CONTROLLED HYPOTHETICAL DEMONSTRATION \u2014 NOT AUTHORIZED FOR CONSTRUCTION USE.",
+        "status_banner": "Engineering approval pending\n88 pending \u00b7 Real-project eligibility false",
+        "playback_caption": "Activity simulation \u00b7 Physical progress unverified",
+        "comparison_note": "CPM and CP-SAT dates coincide in this R0 fixture.",
+        "proof_text": "OPTIMAL \u00b7 14,850 min \u00b7 bound 14,850 min",
+        "error_text": "",
+        "webgl_canvas": 3,
+        "rows": 21,
+        "edges": 28,
+        "cp_sat_rows_dates_and_geometry_correct": true,
+        "bars_widened_to_3px": [
+          "B-FORM",
+          "B-INSP",
+          "B-POUR",
+          "B-REBAR",
+          "B-STRIP",
+          "C-FORM",
+          "C-INSP",
+          "C-POUR",
+          "C-REBAR",
+          "C-STRIP",
+          "S-INSP",
+          "S-POUR",
+          "S-REBAR"
+        ],
+        "bars_widened_detail": {
+          "C-REBAR": "20 min shown as 66 min-equivalent",
+          "C-FORM": "40 min shown as 66 min-equivalent",
+          "C-POUR": "10 min shown as 66 min-equivalent",
+          "C-STRIP": "45 min shown as 66 min-equivalent",
+          "C-INSP": "30 min shown as 66 min-equivalent",
+          "B-REBAR": "35 min shown as 66 min-equivalent",
+          "B-FORM": "60 min shown as 66 min-equivalent",
+          "B-POUR": "15 min shown as 66 min-equivalent",
+          "B-STRIP": "50 min shown as 66 min-equivalent",
+          "B-INSP": "30 min shown as 66 min-equivalent",
+          "S-REBAR": "55 min shown as 66 min-equivalent",
+          "S-POUR": "45 min shown as 66 min-equivalent",
+          "S-INSP": "30 min shown as 66 min-equivalent"
+        },
+        "arrows_match_dependencies_and_direction": true,
+        "cpm_rows_dates_geometry_and_critical_correct": true,
+        "cpm_critical_rows": [
+          "B-STRIP",
+          "S-FORM",
+          "S-INSP",
+          "S-POUR",
+          "S-REBAR",
+          "S-STRIKE",
+          "S-STRIP"
+        ],
+        "cpm_bar_geometry_identical_to_cp_sat": true,
+        "element_to_activities": {
+          "1jDfy2_jTRueAw6f5fc3Ev": true,
+          "24tlOXIsvMQfyRLiqh6fZt": true,
+          "3wOB$MtWLSz8SJNgW3VJvy": true
+        },
+        "activity_to_element_all_21": true,
+        "real_canvas_picking_attempts": {
+          "3wOB$MtWLSz8SJNgW3VJvy": [
+            "3wOB$MtWLSz8SJNgW3VJvy"
+          ],
+          "1jDfy2_jTRueAw6f5fc3Ev": [
+            "1jDfy2_jTRueAw6f5fc3Ev"
+          ],
+          "24tlOXIsvMQfyRLiqh6fZt": [
+            "24tlOXIsvMQfyRLiqh6fZt"
+          ]
+        },
+        "real_canvas_picking": {
+          "3wOB$MtWLSz8SJNgW3VJvy": true,
+          "1jDfy2_jTRueAw6f5fc3Ev": true,
+          "24tlOXIsvMQfyRLiqh6fZt": true
+        },
+        "camera": {
+          "zoom_in_scales_0_82": true,
+          "orbit_drag_changes_eye": true,
+          "pan_drag_changes_center": true,
+          "wheel_zoom_changes_distance": true,
+          "reset_restores_initial": true
+        },
+        "package_filter": {
+          "COL": true,
+          "BEAM": true,
+          "SLAB": true
+        },
+        "scrub_counts_and_dates": true,
+        "scrub_examples": [
+          {
+            "minute": 0,
+            "shown": [
+              "1 active",
+              "0 completed",
+              "04 Jan, 08:00 CET"
+            ],
+            "expected": [
+              1,
+              0,
+              "04 Jan, 08:00 CET"
+            ],
+            "ok": true
+          },
+          {
+            "minute": 30,
+            "shown": [
+              "1 active",
+              "1 completed",
+              "04 Jan, 08:30 CET"
+            ],
+            "expected": [
+              1,
+              1,
+              "04 Jan, 08:30 CET"
+            ],
+            "ok": true
+          },
+          {
+            "minute": 120,
+            "shown": [
+              "2 active",
+              "4 completed",
+              "04 Jan, 10:00 CET"
+            ],
+            "expected": [
+              2,
+              4,
+              "04 Jan, 10:00 CET"
+            ],
+            "ok": true
+          },
+          {
+            "minute": 1440,
+            "shown": [
+              "2 active",
+              "4 completed",
+              "05 Jan, 08:00 CET"
+            ],
+            "expected": [
+              2,
+              4,
+              "05 Jan, 08:00 CET"
+            ],
+            "ok": true
+          },
+          {
+            "minute": 14835,
+            "shown": [
+              "1 active",
+              "20 completed",
+              "14 Jan, 15:15 CET"
+            ],
+            "expected": [
+              1,
+              20,
+              "14 Jan, 15:15 CET"
+            ],
+            "ok": true
+          },
+          {
+            "minute": 14850,
+            "shown": [
+              "0 active",
+              "21 completed",
+              "14 Jan, 15:30 CET"
+            ],
+            "expected": [
+              0,
+              21,
+              "14 Jan, 15:30 CET"
+            ],
+            "ok": true
+          }
+        ],
+        "scrub_max_equals_makespan": true,
+        "playback": {
+          "advanced_at_5x_in_1_5s": 3198,
+          "paused_stays": true,
+          "advanced_at_0_5x_in_1_5s": 319,
+          "speed_ratio_plausible": true,
+          "label_after_pause": "Play"
+        },
+        "end_state": {
+          "complete_text": "21 completed",
+          "element_colors": [
+            "#4e9a78",
+            "#4e9a78",
+            "#4e9a78"
+          ],
+          "all_green": true
+        }
+      },
+      "page_errors": {
+        "Europe/Madrid": [],
+        "America/New_York": [],
+        "Asia/Tokyo": []
+      },
+      "browser_timezone_independent_labels": {
+        "America/New_York": true,
+        "Asia/Tokyo": true
+      },
+      "routes": {
+        "/": 200,
+        "/style.css": 200,
+        "/app.js": 200,
+        "/plotly.js": 200,
+        "/data.json": 200,
+        "/index.html": 404,
+        "/server.py": 404,
+        "/../server.py": 404,
+        "/%2e%2e/server.py": 404,
+        "/data.json?x=1": 404,
+        "//etc/passwd": 404,
+        "/README.md": 404,
+        "/research/implementation/stage5_2/controlled_frame.ifc": 404,
+        "/scheduled.ifc": 404,
+        "/ifc4d/scheduled.ifc": 404,
+        "POST /data.json": 501,
+        "PUT /": 501,
+        "raw GET absolute-form": "HTTP/1.0 404 Not Found",
+        "raw GET backslash": "HTTP/1.0 404 Not Found",
+        "non-loopback": "not reachable on LAN address"
+      }
+    },
+    "replay_15": {
+      "server_started": true,
+      "message": "",
+      "data": {
+        "contract": "pmi-r0-prototype/1",
+        "proof": {
+          "status": "OPTIMAL",
+          "project_makespan_minutes": 14880,
+          "lower_bound_minutes": 14880,
+          "schedule_scope": "complete_project"
+        },
+        "proof_matches_accepted": true,
+        "elements": [
+          "1jDfy2_jTRueAw6f5fc3Ev",
+          "24tlOXIsvMQfyRLiqh6fZt",
+          "3wOB$MtWLSz8SJNgW3VJvy"
+        ],
+        "geometry_equals_source_tessellation": true,
+        "activities": 21,
+        "dates_equal_accepted": true,
+        "element_links_equal_accepted": true,
+        "dependencies_equal_accepted": true,
+        "packages_equal_accepted": true,
+        "status": {
+          "ApprovalStatus": "PENDING",
+          "PendingApprovalCount": 88,
+          "RealProjectEligible": false
+        },
+        "restriction": "Hypothetical R0. Engineering approval pending. Construction use prohibited.",
+        "cpm_equals_cp_sat_all": true,
+        "cpm_critical_ids": [
+          "B-STRIP",
+          "S-FORM",
+          "S-INSP",
+          "S-POUR",
+          "S-REBAR",
+          "S-STRIKE",
+          "S-STRIP"
+        ]
+      },
+      "browser": {
+        "notice": "CONTROLLED HYPOTHETICAL DEMONSTRATION \u2014 NOT AUTHORIZED FOR CONSTRUCTION USE.",
+        "status_banner": "Engineering approval pending\n88 pending \u00b7 Real-project eligibility false",
+        "playback_caption": "Activity simulation \u00b7 Physical progress unverified",
+        "comparison_note": "CPM and CP-SAT dates coincide in this R0 fixture.",
+        "proof_text": "OPTIMAL \u00b7 14,880 min \u00b7 bound 14,880 min",
+        "error_text": "",
+        "webgl_canvas": 3,
+        "rows": 21,
+        "edges": 28,
+        "cp_sat_rows_dates_and_geometry_correct": true,
+        "bars_widened_to_3px": [
+          "B-FORM",
+          "B-INSP",
+          "B-POUR",
+          "B-REBAR",
+          "B-STRIP",
+          "C-FORM",
+          "C-INSP",
+          "C-POUR",
+          "C-REBAR",
+          "C-STRIP",
+          "S-INSP",
+          "S-POUR",
+          "S-REBAR"
+        ],
+        "bars_widened_detail": {
+          "C-REBAR": "30 min shown as 67 min-equivalent",
+          "C-FORM": "45 min shown as 67 min-equivalent",
+          "C-POUR": "15 min shown as 67 min-equivalent",
+          "C-STRIP": "45 min shown as 67 min-equivalent",
+          "C-INSP": "30 min shown as 67 min-equivalent",
+          "B-REBAR": "45 min shown as 67 min-equivalent",
+          "B-FORM": "60 min shown as 67 min-equivalent",
+          "B-POUR": "15 min shown as 67 min-equivalent",
+          "B-STRIP": "60 min shown as 67 min-equivalent",
+          "B-INSP": "30 min shown as 67 min-equivalent",
+          "S-REBAR": "60 min shown as 67 min-equivalent",
+          "S-POUR": "45 min shown as 67 min-equivalent",
+          "S-INSP": "30 min shown as 67 min-equivalent"
+        },
+        "arrows_match_dependencies_and_direction": true,
+        "cpm_rows_dates_geometry_and_critical_correct": true,
+        "cpm_critical_rows": [
+          "B-STRIP",
+          "S-FORM",
+          "S-INSP",
+          "S-POUR",
+          "S-REBAR",
+          "S-STRIKE",
+          "S-STRIP"
+        ],
+        "cpm_bar_geometry_identical_to_cp_sat": true,
+        "element_to_activities": {
+          "1jDfy2_jTRueAw6f5fc3Ev": true,
+          "24tlOXIsvMQfyRLiqh6fZt": true,
+          "3wOB$MtWLSz8SJNgW3VJvy": true
+        },
+        "activity_to_element_all_21": true,
+        "real_canvas_picking_attempts": {
+          "3wOB$MtWLSz8SJNgW3VJvy": [
+            "3wOB$MtWLSz8SJNgW3VJvy"
+          ],
+          "1jDfy2_jTRueAw6f5fc3Ev": [
+            "1jDfy2_jTRueAw6f5fc3Ev"
+          ],
+          "24tlOXIsvMQfyRLiqh6fZt": [
+            "24tlOXIsvMQfyRLiqh6fZt"
+          ]
+        },
+        "real_canvas_picking": {
+          "3wOB$MtWLSz8SJNgW3VJvy": true,
+          "1jDfy2_jTRueAw6f5fc3Ev": true,
+          "24tlOXIsvMQfyRLiqh6fZt": true
+        },
+        "camera": {
+          "zoom_in_scales_0_82": true,
+          "orbit_drag_changes_eye": true,
+          "pan_drag_changes_center": true,
+          "wheel_zoom_changes_distance": true,
+          "reset_restores_initial": true
+        },
+        "package_filter": {
+          "COL": true,
+          "BEAM": true,
+          "SLAB": true
+        },
+        "scrub_counts_and_dates": true,
+        "scrub_examples": [
+          {
+            "minute": 0,
+            "shown": [
+              "1 active",
+              "0 completed",
+              "04 Jan, 08:00 CET"
+            ],
+            "expected": [
+              1,
+              0,
+              "04 Jan, 08:00 CET"
+            ],
+            "ok": true
+          },
+          {
+            "minute": 30,
+            "shown": [
+              "1 active",
+              "1 completed",
+              "04 Jan, 08:30 CET"
+            ],
+            "expected": [
+              1,
+              1,
+              "04 Jan, 08:30 CET"
+            ],
+            "ok": true
+          },
+          {
+            "minute": 120,
+            "shown": [
+              "2 active",
+              "4 completed",
+              "04 Jan, 10:00 CET"
+            ],
+            "expected": [
+              2,
+              4,
+              "04 Jan, 10:00 CET"
+            ],
+            "ok": true
+          },
+          {
+            "minute": 1440,
+            "shown": [
+              "2 active",
+              "4 completed",
+              "05 Jan, 08:00 CET"
+            ],
+            "expected": [
+              2,
+              4,
+              "05 Jan, 08:00 CET"
+            ],
+            "ok": true
+          },
+          {
+            "minute": 14865,
+            "shown": [
+              "1 active",
+              "20 completed",
+              "14 Jan, 15:45 CET"
+            ],
+            "expected": [
+              1,
+              20,
+              "14 Jan, 15:45 CET"
+            ],
+            "ok": true
+          },
+          {
+            "minute": 14880,
+            "shown": [
+              "0 active",
+              "21 completed",
+              "14 Jan, 16:00 CET"
+            ],
+            "expected": [
+              0,
+              21,
+              "14 Jan, 16:00 CET"
+            ],
+            "ok": true
+          }
+        ],
+        "scrub_max_equals_makespan": true,
+        "playback": {
+          "advanced_at_5x_in_1_5s": 3200,
+          "paused_stays": true,
+          "advanced_at_0_5x_in_1_5s": 320,
+          "speed_ratio_plausible": true,
+          "label_after_pause": "Play"
+        },
+        "end_state": {
+          "complete_text": "21 completed",
+          "element_colors": [
+            "#4e9a78",
+            "#4e9a78",
+            "#4e9a78"
+          ],
+          "all_green": true
+        }
+      },
+      "page_errors": {
+        "Europe/Madrid": [],
+        "America/New_York": [],
+        "Asia/Tokyo": []
+      },
+      "browser_timezone_independent_labels": {
+        "America/New_York": true,
+        "Asia/Tokyo": true
+      },
+      "routes": {
+        "/": 200,
+        "/style.css": 200,
+        "/app.js": 200,
+        "/plotly.js": 200,
+        "/data.json": 200,
+        "/index.html": 404,
+        "/server.py": 404,
+        "/../server.py": 404,
+        "/%2e%2e/server.py": 404,
+        "/data.json?x=1": 404,
+        "//etc/passwd": 404,
+        "/README.md": 404,
+        "/research/implementation/stage5_2/controlled_frame.ifc": 404,
+        "/scheduled.ifc": 404,
+        "/ifc4d/scheduled.ifc": 404,
+        "POST /data.json": 501,
+        "PUT /": 501,
+        "raw GET absolute-form": "HTTP/1.0 404 Not Found",
+        "raw GET backslash": "HTTP/1.0 404 Not Found",
+        "non-loopback": "not reachable on LAN address"
+      }
+    },
+    "live_5": {
+      "server_started": true,
+      "message": "",
+      "data": {
+        "contract": "pmi-r0-prototype/1",
+        "proof": {
+          "status": "OPTIMAL",
+          "project_makespan_minutes": 14850,
+          "lower_bound_minutes": 14850,
+          "schedule_scope": "complete_project"
+        },
+        "proof_matches_accepted": true,
+        "elements": [
+          "1jDfy2_jTRueAw6f5fc3Ev",
+          "24tlOXIsvMQfyRLiqh6fZt",
+          "3wOB$MtWLSz8SJNgW3VJvy"
+        ],
+        "geometry_equals_source_tessellation": true,
+        "activities": 21,
+        "dates_equal_accepted": true,
+        "element_links_equal_accepted": true,
+        "dependencies_equal_accepted": true,
+        "packages_equal_accepted": true,
+        "status": {
+          "ApprovalStatus": "PENDING",
+          "PendingApprovalCount": 88,
+          "RealProjectEligible": false
+        },
+        "restriction": "Hypothetical R0. Engineering approval pending. Construction use prohibited.",
+        "cpm_equals_cp_sat_all": true,
+        "cpm_critical_ids": [
+          "B-STRIP",
+          "S-FORM",
+          "S-INSP",
+          "S-POUR",
+          "S-REBAR",
+          "S-STRIKE",
+          "S-STRIP"
+        ]
+      },
+      "browser": {
+        "notice": "CONTROLLED HYPOTHETICAL DEMONSTRATION \u2014 NOT AUTHORIZED FOR CONSTRUCTION USE.",
+        "status_banner": "Engineering approval pending\n88 pending \u00b7 Real-project eligibility false",
+        "playback_caption": "Activity simulation \u00b7 Physical progress unverified",
+        "comparison_note": "CPM and CP-SAT dates coincide in this R0 fixture.",
+        "proof_text": "OPTIMAL \u00b7 14,850 min \u00b7 bound 14,850 min",
+        "error_text": "",
+        "webgl_canvas": 3,
+        "rows": 21,
+        "edges": 28,
+        "cp_sat_rows_dates_and_geometry_correct": true,
+        "bars_widened_to_3px": [
+          "B-FORM",
+          "B-INSP",
+          "B-POUR",
+          "B-REBAR",
+          "B-STRIP",
+          "C-FORM",
+          "C-INSP",
+          "C-POUR",
+          "C-REBAR",
+          "C-STRIP",
+          "S-INSP",
+          "S-POUR",
+          "S-REBAR"
+        ],
+        "bars_widened_detail": {
+          "C-REBAR": "20 min shown as 66 min-equivalent",
+          "C-FORM": "40 min shown as 66 min-equivalent",
+          "C-POUR": "10 min shown as 66 min-equivalent",
+          "C-STRIP": "45 min shown as 66 min-equivalent",
+          "C-INSP": "30 min shown as 66 min-equivalent",
+          "B-REBAR": "35 min shown as 66 min-equivalent",
+          "B-FORM": "60 min shown as 66 min-equivalent",
+          "B-POUR": "15 min shown as 66 min-equivalent",
+          "B-STRIP": "50 min shown as 66 min-equivalent",
+          "B-INSP": "30 min shown as 66 min-equivalent",
+          "S-REBAR": "55 min shown as 66 min-equivalent",
+          "S-POUR": "45 min shown as 66 min-equivalent",
+          "S-INSP": "30 min shown as 66 min-equivalent"
+        },
+        "arrows_match_dependencies_and_direction": true,
+        "cpm_rows_dates_geometry_and_critical_correct": true,
+        "cpm_critical_rows": [
+          "B-STRIP",
+          "S-FORM",
+          "S-INSP",
+          "S-POUR",
+          "S-REBAR",
+          "S-STRIKE",
+          "S-STRIP"
+        ],
+        "cpm_bar_geometry_identical_to_cp_sat": true,
+        "element_to_activities": {
+          "1jDfy2_jTRueAw6f5fc3Ev": true,
+          "24tlOXIsvMQfyRLiqh6fZt": true,
+          "3wOB$MtWLSz8SJNgW3VJvy": true
+        },
+        "activity_to_element_all_21": true,
+        "real_canvas_picking_attempts": {
+          "3wOB$MtWLSz8SJNgW3VJvy": [
+            "3wOB$MtWLSz8SJNgW3VJvy"
+          ],
+          "1jDfy2_jTRueAw6f5fc3Ev": [
+            "1jDfy2_jTRueAw6f5fc3Ev"
+          ],
+          "24tlOXIsvMQfyRLiqh6fZt": [
+            "24tlOXIsvMQfyRLiqh6fZt"
+          ]
+        },
+        "real_canvas_picking": {
+          "3wOB$MtWLSz8SJNgW3VJvy": true,
+          "1jDfy2_jTRueAw6f5fc3Ev": true,
+          "24tlOXIsvMQfyRLiqh6fZt": true
+        },
+        "camera": {
+          "zoom_in_scales_0_82": true,
+          "orbit_drag_changes_eye": true,
+          "pan_drag_changes_center": true,
+          "wheel_zoom_changes_distance": true,
+          "reset_restores_initial": true
+        },
+        "package_filter": {
+          "COL": true,
+          "BEAM": true,
+          "SLAB": true
+        },
+        "scrub_counts_and_dates": true,
+        "scrub_examples": [
+          {
+            "minute": 0,
+            "shown": [
+              "1 active",
+              "0 completed",
+              "04 Jan, 08:00 CET"
+            ],
+            "expected": [
+              1,
+              0,
+              "04 Jan, 08:00 CET"
+            ],
+            "ok": true
+          },
+          {
+            "minute": 30,
+            "shown": [
+              "1 active",
+              "1 completed",
+              "04 Jan, 08:30 CET"
+            ],
+            "expected": [
+              1,
+              1,
+              "04 Jan, 08:30 CET"
+            ],
+            "ok": true
+          },
+          {
+            "minute": 120,
+            "shown": [
+              "2 active",
+              "4 completed",
+              "04 Jan, 10:00 CET"
+            ],
+            "expected": [
+              2,
+              4,
+              "04 Jan, 10:00 CET"
+            ],
+            "ok": true
+          },
+          {
+            "minute": 1440,
+            "shown": [
+              "2 active",
+              "4 completed",
+              "05 Jan, 08:00 CET"
+            ],
+            "expected": [
+              2,
+              4,
+              "05 Jan, 08:00 CET"
+            ],
+            "ok": true
+          },
+          {
+            "minute": 14835,
+            "shown": [
+              "1 active",
+              "20 completed",
+              "14 Jan, 15:15 CET"
+            ],
+            "expected": [
+              1,
+              20,
+              "14 Jan, 15:15 CET"
+            ],
+            "ok": true
+          },
+          {
+            "minute": 14850,
+            "shown": [
+              "0 active",
+              "21 completed",
+              "14 Jan, 15:30 CET"
+            ],
+            "expected": [
+              0,
+              21,
+              "14 Jan, 15:30 CET"
+            ],
+            "ok": true
+          }
+        ],
+        "scrub_max_equals_makespan": true,
+        "playback": {
+          "advanced_at_5x_in_1_5s": 3199,
+          "paused_stays": true,
+          "advanced_at_0_5x_in_1_5s": 318,
+          "speed_ratio_plausible": true,
+          "label_after_pause": "Play"
+        },
+        "end_state": {
+          "complete_text": "21 completed",
+          "element_colors": [
+            "#4e9a78",
+            "#4e9a78",
+            "#4e9a78"
+          ],
+          "all_green": true
+        }
+      },
+      "page_errors": {
+        "Europe/Madrid": [],
+        "America/New_York": [],
+        "Asia/Tokyo": []
+      },
+      "browser_timezone_independent_labels": {
+        "America/New_York": true,
+        "Asia/Tokyo": true
+      },
+      "routes": {
+        "/": 200,
+        "/style.css": 200,
+        "/app.js": 200,
+        "/plotly.js": 200,
+        "/data.json": 200,
+        "/index.html": 404,
+        "/server.py": 404,
+        "/../server.py": 404,
+        "/%2e%2e/server.py": 404,
+        "/data.json?x=1": 404,
+        "//etc/passwd": 404,
+        "/README.md": 404,
+        "/research/implementation/stage5_2/controlled_frame.ifc": 404,
+        "/scheduled.ifc": 404,
+        "/ifc4d/scheduled.ifc": 404,
+        "POST /data.json": 501,
+        "PUT /": 501,
+        "raw GET absolute-form": "HTTP/1.0 404 Not Found",
+        "raw GET backslash": "HTTP/1.0 404 Not Found",
+        "non-loopback": "not reachable on LAN address"
+      }
+    }
+  },
+  "negative": {
+    "modified schedule (label) with resynced digest": {
+      "refused": true,
+      "message": "R0 prototype refused to start: Application schedule content or provenance differs from registered R0 evidence."
+    },
+    "modified schedule date with resynced digest": {
+      "refused": true,
+      "message": "R0 prototype refused to start: Optimized segment does not match activity interval: a3a9c4bb-8619-5ff0-a41b-8552bc746366."
+    },
+    "modified IFC bytes": {
+      "refused": true,
+      "message": "R0 prototype refused to start: Application bundle differs from the authenticated export: scheduled.ifc."
+    },
+    "modified viewer contract": {
+      "refused": true,
+      "message": "R0 prototype refused to start: Application bundle differs from the authenticated export: viewer.json."
+    },
+    "altered IFC + updated viewer and round-trip hashes": {
+      "refused": true,
+      "message": "R0 prototype refused to start: Application bundle differs from the authenticated export: scheduled.ifc."
+    },
+    "changed engineering approval with resynced digest": {
+      "refused": true,
+      "message": "R0 prototype refused to start: Expected a validated controlled R0 schedule with pending approvals."
+    },
+    "unsupported IFC model in bundle": {
+      "refused": true,
+      "message": "R0 prototype refused to start: Application bundle differs from the authenticated export: scheduled.ifc."
+    },
+    "missing pipeline evidence": {
+      "refused": true,
+      "message": "rototype refused to start: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Chloe\\\\AppData\\\\Local\\\\Temp\\\\pmi_54d_hd2kktlf\\\\t8\\\\pipeline_evidence.json'"
+    },
+    "C01 benchmark as run directory": {
+      "refused": true,
+      "message": "R0 prototype refused to start: Schedule and application pipeline evidence disagree."
+    },
+    "unregistered tick 10": {
+      "refused": true,
+      "message": "on.exe -m research.implementation.stage5_4d.server: error: argument --tick: invalid choice: '10' (choose from '5', '15')"
+    }
+  },
+  "stage5_4d_files_stable": true
+}

@@ -1,0 +1,19 @@
+﻿PMI input,IFC representation,Viewer or evidence representation
+Source model elements and geometry,Original IFC instances retained at their source STEP IDs,model.uri and source_element_global_ids
+source_ifc_sha256 and model_version_id,IfcWorkSchedule PMI_ScheduleProvenance.SourceIfcSha256 and ModelVersionId,status and model.model_version_id
+Schedule artifact SHA-256,IfcWorkSchedule PMI_ScheduleProvenance.ScheduleSha256,status.ScheduleSha256
+project schedule,IfcProject declares IfcWorkPlan which aggregates IfcWorkSchedule,model and status
+work_packages[].id and family,Package IfcTask.Identification and Name,packages
+work_packages[].activity_ids,Ordered IfcRelNests under package IfcTask,packages
+activities[].activity_id and reference_id,Activity IfcTask.Identification and Name,activities_by_id key and label
+activities[].work_package_id and canonical_element_id,IfcTask PMI_ActivityProvenance.WorkPackageId and CanonicalElementId,activities_by_id package_id
+activities[].optimized.start and finish,IfcTaskTime.ScheduleStart and ScheduleFinish with UTC offset,cp_sat and round-trip timestamps
+activities[].optimized.segments and minute counts,Available in source schedule referenced by digest,activities_by_id cp_sat
+activities[].baseline,Available in source schedule referenced by digest,activities_by_id cpm
+activities[].ifc_global_id,IfcRelAssignsToProcess relates task to the original IfcElement,Forward and reverse GlobalId indexes
+dependencies[].predecessor_id and successor_id,IfcRelSequence.RelatingProcess and RelatedProcess,dependencies
+dependencies[].relation and lag,FINISH_START with absent TimeLag for zero lag,dependencies
+Dependency rule and origin and condition,IfcRelSequence.Description as JSON,dependencies
+activities[].input_state and approval_ids and evidence_ref,IfcTask PMI_ActivityProvenance.InputState and ApprovalIds and EvidenceReference,activity status and approval IDs
+pending_approvals and real_project_eligible,IfcWorkSchedule PMI_ScheduleProvenance pending count and status and eligibility,status
+Controlled construction-use restriction,IfcWorkPlan and IfcWorkSchedule and IfcTask.Description,restriction

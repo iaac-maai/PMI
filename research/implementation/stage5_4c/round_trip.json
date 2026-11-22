@@ -1,0 +1,517 @@
+{
+  "status": "PASS",
+  "ifc_schema": "IFC4",
+  "ifc_validation_issues": 0,
+  "original_step_instances_verified": 73,
+  "source_element_global_ids": [
+    "1jDfy2_jTRueAw6f5fc3Ev",
+    "24tlOXIsvMQfyRLiqh6fZt",
+    "3wOB$MtWLSz8SJNgW3VJvy"
+  ],
+  "activities": {
+    "27e7a5c3-5aa1-5665-9f68-1c2168a412ac": {
+      "start": "2027-01-04T08:00:00+01:00",
+      "finish": "2027-01-04T08:20:00+01:00",
+      "task_global_id": "23rk$lTQfRMhZGy8z4r2tn",
+      "element_global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "work_package_id": "f1f55844-5a59-5182-bd47-05697444fec0"
+    },
+    "3235aa7e-88d9-53c5-9cf7-49e573d81a5a": {
+      "start": "2027-01-04T08:20:00+01:00",
+      "finish": "2027-01-04T09:00:00+01:00",
+      "task_global_id": "2sJrBDPLTOmAt9tNkwlBkF",
+      "element_global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "work_package_id": "f1f55844-5a59-5182-bd47-05697444fec0"
+    },
+    "c0b8943f-0dbd-54a0-977e-731916bcd42a": {
+      "start": "2027-01-04T09:00:00+01:00",
+      "finish": "2027-01-04T09:30:00+01:00",
+      "task_global_id": "0qWiQ6avrTuQ0r0W6twrMY",
+      "element_global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "work_package_id": "f1f55844-5a59-5182-bd47-05697444fec0"
+    },
+    "04527e9d-995e-5e16-9663-9756d828c586": {
+      "start": "2027-01-04T09:30:00+01:00",
+      "finish": "2027-01-04T09:40:00+01:00",
+      "task_global_id": "0o83O4mB1O0eS4NhEqnK_m",
+      "element_global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "work_package_id": "f1f55844-5a59-5182-bd47-05697444fec0"
+    },
+    "a47f0364-8f49-5947-94e7-e24af60a1b92": {
+      "start": "2027-01-04T09:40:00+01:00",
+      "finish": "2027-01-05T09:40:00+01:00",
+      "task_global_id": "1Pv$QikBjMrw6qG86VQs_P",
+      "element_global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "work_package_id": "f1f55844-5a59-5182-bd47-05697444fec0"
+    },
+    "fe8beee0-18d0-505c-9cf2-ab234883c2db": {
+      "start": "2027-01-04T09:40:00+01:00",
+      "finish": "2027-01-05T09:40:00+01:00",
+      "task_global_id": "1F9I55a_nHJekrnhGJgAoX",
+      "element_global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "work_package_id": "f1f55844-5a59-5182-bd47-05697444fec0"
+    },
+    "c318b5bb-2652-5d7b-a706-041aeb3307d5": {
+      "start": "2027-01-05T09:40:00+01:00",
+      "finish": "2027-01-05T10:25:00+01:00",
+      "task_global_id": "2aayIZK$vUqhRdDFTg$EU7",
+      "element_global_id": "24tlOXIsvMQfyRLiqh6fZt",
+      "work_package_id": "f1f55844-5a59-5182-bd47-05697444fec0"
+    },
+    "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a": {
+      "start": "2027-01-05T10:25:00+01:00",
+      "finish": "2027-01-05T11:25:00+01:00",
+      "task_global_id": "0v6MZwNnXV4h_GriNCFYq_",
+      "element_global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "work_package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2"
+    },
+    "0240248f-1548-557b-945e-e417b0b1222d": {
+      "start": "2027-01-05T11:25:00+01:00",
+      "finish": "2027-01-05T12:00:00+01:00",
+      "task_global_id": "1VBdP7HljMBAOkeXGxyxKW",
+      "element_global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "work_package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2"
+    },
+    "9cd34b99-bcb2-5f88-ad80-896053ef5153": {
+      "start": "2027-01-05T12:00:00+01:00",
+      "finish": "2027-01-05T12:30:00+01:00",
+      "task_global_id": "1osZAiuDrPlxJzmo3VHVhE",
+      "element_global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "work_package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2"
+    },
+    "d908f25a-67e4-565f-a629-c9f52ff352ed": {
+      "start": "2027-01-05T12:30:00+01:00",
+      "finish": "2027-01-05T12:45:00+01:00",
+      "task_global_id": "0yNQP3bvvNwhVAhRln82sB",
+      "element_global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "work_package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2"
+    },
+    "2cf0b700-88cb-5d0b-91e5-9fa0a1a5c4b0": {
+      "start": "2027-01-05T12:45:00+01:00",
+      "finish": "2027-01-12T12:45:00+01:00",
+      "task_global_id": "2re8C_gWDRahxOiLfS_84j",
+      "element_global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "work_package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2"
+    },
+    "7d1f4e79-3847-5408-8fba-12afc11f6bfd": {
+      "start": "2027-01-05T12:45:00+01:00",
+      "finish": "2027-01-06T12:45:00+01:00",
+      "task_global_id": "3PAOX4W15NdOBNGrNEyzxt",
+      "element_global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "work_package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2"
+    },
+    "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7": {
+      "start": "2027-01-07T08:00:00+01:00",
+      "finish": "2027-01-07T10:55:00+01:00",
+      "task_global_id": "23lgqJbYjNoB76ni5ONDXs",
+      "element_global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "work_package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432"
+    },
+    "ef679452-ad4e-5662-803e-a59d6f27c913": {
+      "start": "2027-01-07T10:55:00+01:00",
+      "finish": "2027-01-07T11:50:00+01:00",
+      "task_global_id": "186vxcZx9SefkFSGB2z$hK",
+      "element_global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "work_package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432"
+    },
+    "0de967fe-4794-5dbb-aab8-8fea253a5927": {
+      "start": "2027-01-07T11:50:00+01:00",
+      "finish": "2027-01-07T12:20:00+01:00",
+      "task_global_id": "1ywkVlETPL5OKA8gftnC0j",
+      "element_global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "work_package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432"
+    },
+    "8a20a577-58c4-58e1-a2c7-86dbb4ee5523": {
+      "start": "2027-01-07T12:20:00+01:00",
+      "finish": "2027-01-07T13:05:00+01:00",
+      "task_global_id": "1YthUaWIHSOhW9_WvFFDi8",
+      "element_global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "work_package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432"
+    },
+    "a83bd1d6-07c6-585c-b501-4ebf1183d5d0": {
+      "start": "2027-01-07T13:05:00+01:00",
+      "finish": "2027-01-08T13:05:00+01:00",
+      "task_global_id": "2rqrb9IHzKLv4$LmS830Tn",
+      "element_global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "work_package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432"
+    },
+    "f00f202c-c5fe-5fe5-832b-6e8acdb8b639": {
+      "start": "2027-01-07T13:05:00+01:00",
+      "finish": "2027-01-14T13:05:00+01:00",
+      "task_global_id": "0TwppJ69TGzQDJYrjWsxr7",
+      "element_global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "work_package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432"
+    },
+    "6c3c378a-8f19-575f-b4e8-3af46b600c94": {
+      "start": "2027-01-14T13:05:00+01:00",
+      "finish": "2027-01-14T14:40:00+01:00",
+      "task_global_id": "02PNslFEPS$evDX5pfBBpM",
+      "element_global_id": "3wOB$MtWLSz8SJNgW3VJvy",
+      "work_package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432"
+    },
+    "a3a9c4bb-8619-5ff0-a41b-8552bc746366": {
+      "start": "2027-01-14T14:40:00+01:00",
+      "finish": "2027-01-14T15:30:00+01:00",
+      "task_global_id": "03hxoBZpHKrQQrJamAa1NC",
+      "element_global_id": "1jDfy2_jTRueAw6f5fc3Ev",
+      "work_package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2"
+    }
+  },
+  "packages": {
+    "f1f55844-5a59-5182-bd47-05697444fec0": "0_Bx183e5P0wRkQmyv80iF",
+    "8eca47aa-bad4-5bee-bc28-69f81edd29f2": "3nsn77ccXVHutTKp$cD8VB",
+    "8cba32d6-f71e-5285-9b0a-0985bf9fa432": "3cBzuMzpTVReeZY0o3WOaV"
+  },
+  "dependencies": [
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-REBAR",
+      "predecessor_id": "27e7a5c3-5aa1-5665-9f68-1c2168a412ac",
+      "relation": "FS",
+      "rule_id": "DR05",
+      "source": "5.3A",
+      "successor_alias": "C-FORM",
+      "successor_id": "3235aa7e-88d9-53c5-9cf7-49e573d81a5a"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-FORM",
+      "predecessor_id": "3235aa7e-88d9-53c5-9cf7-49e573d81a5a",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "C-INSP",
+      "successor_id": "c0b8943f-0dbd-54a0-977e-731916bcd42a"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-REBAR",
+      "predecessor_id": "27e7a5c3-5aa1-5665-9f68-1c2168a412ac",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "C-INSP",
+      "successor_id": "c0b8943f-0dbd-54a0-977e-731916bcd42a"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-INSP",
+      "predecessor_id": "c0b8943f-0dbd-54a0-977e-731916bcd42a",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "C-POUR",
+      "successor_id": "04527e9d-995e-5e16-9663-9756d828c586"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-POUR",
+      "predecessor_id": "04527e9d-995e-5e16-9663-9756d828c586",
+      "relation": "FS",
+      "rule_id": "DR07",
+      "source": "5.3A",
+      "successor_alias": "C-CURE",
+      "successor_id": "fe8beee0-18d0-505c-9cf2-ab234883c2db"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-STRIKE",
+      "predecessor_id": "a47f0364-8f49-5947-94e7-e24af60a1b92",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "5.3A",
+      "successor_alias": "C-STRIP",
+      "successor_id": "c318b5bb-2652-5d7b-a706-041aeb3307d5"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-FORM",
+      "predecessor_id": "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "B-REBAR",
+      "successor_id": "0240248f-1548-557b-945e-e417b0b1222d"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-FORM",
+      "predecessor_id": "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "B-INSP",
+      "successor_id": "9cd34b99-bcb2-5f88-ad80-896053ef5153"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-REBAR",
+      "predecessor_id": "0240248f-1548-557b-945e-e417b0b1222d",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "B-INSP",
+      "successor_id": "9cd34b99-bcb2-5f88-ad80-896053ef5153"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-INSP",
+      "predecessor_id": "9cd34b99-bcb2-5f88-ad80-896053ef5153",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "B-POUR",
+      "successor_id": "d908f25a-67e4-565f-a629-c9f52ff352ed"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-POUR",
+      "predecessor_id": "d908f25a-67e4-565f-a629-c9f52ff352ed",
+      "relation": "FS",
+      "rule_id": "DR07",
+      "source": "5.3A",
+      "successor_alias": "B-CURE",
+      "successor_id": "7d1f4e79-3847-5408-8fba-12afc11f6bfd"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-STRIKE",
+      "predecessor_id": "2cf0b700-88cb-5d0b-91e5-9fa0a1a5c4b0",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "5.3A",
+      "successor_alias": "B-STRIP",
+      "successor_id": "a3a9c4bb-8619-5ff0-a41b-8552bc746366"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-FORM",
+      "predecessor_id": "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "S-REBAR",
+      "successor_id": "ef679452-ad4e-5662-803e-a59d6f27c913"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-FORM",
+      "predecessor_id": "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "S-INSP",
+      "successor_id": "0de967fe-4794-5dbb-aab8-8fea253a5927"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-REBAR",
+      "predecessor_id": "ef679452-ad4e-5662-803e-a59d6f27c913",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "S-INSP",
+      "successor_id": "0de967fe-4794-5dbb-aab8-8fea253a5927"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-INSP",
+      "predecessor_id": "0de967fe-4794-5dbb-aab8-8fea253a5927",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "S-POUR",
+      "successor_id": "8a20a577-58c4-58e1-a2c7-86dbb4ee5523"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-POUR",
+      "predecessor_id": "8a20a577-58c4-58e1-a2c7-86dbb4ee5523",
+      "relation": "FS",
+      "rule_id": "DR07",
+      "source": "5.3A",
+      "successor_alias": "S-CURE",
+      "successor_id": "a83bd1d6-07c6-585c-b501-4ebf1183d5d0"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-STRIKE",
+      "predecessor_id": "f00f202c-c5fe-5fe5-832b-6e8acdb8b639",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "5.3A",
+      "successor_alias": "S-STRIP",
+      "successor_id": "6c3c378a-8f19-575f-b4e8-3af46b600c94"
+    },
+    {
+      "condition": "Minimum elapsed time from pour completion.",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-POUR",
+      "predecessor_id": "04527e9d-995e-5e16-9663-9756d828c586",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "fixture_extension",
+      "successor_alias": "C-STRIKE",
+      "successor_id": "a47f0364-8f49-5947-94e7-e24af60a1b92"
+    },
+    {
+      "condition": "Curing completed independently of strength release.",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-CURE",
+      "predecessor_id": "fe8beee0-18d0-505c-9cf2-ab234883c2db",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "fixture_extension",
+      "successor_alias": "C-STRIP",
+      "successor_id": "c318b5bb-2652-5d7b-a706-041aeb3307d5"
+    },
+    {
+      "condition": "Minimum elapsed time from pour completion.",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-POUR",
+      "predecessor_id": "d908f25a-67e4-565f-a629-c9f52ff352ed",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "fixture_extension",
+      "successor_alias": "B-STRIKE",
+      "successor_id": "2cf0b700-88cb-5d0b-91e5-9fa0a1a5c4b0"
+    },
+    {
+      "condition": "Curing completed independently of strength release.",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-CURE",
+      "predecessor_id": "7d1f4e79-3847-5408-8fba-12afc11f6bfd",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "fixture_extension",
+      "successor_alias": "B-STRIP",
+      "successor_id": "a3a9c4bb-8619-5ff0-a41b-8552bc746366"
+    },
+    {
+      "condition": "Minimum elapsed time from pour completion.",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-POUR",
+      "predecessor_id": "8a20a577-58c4-58e1-a2c7-86dbb4ee5523",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "fixture_extension",
+      "successor_alias": "S-STRIKE",
+      "successor_id": "f00f202c-c5fe-5fe5-832b-6e8acdb8b639"
+    },
+    {
+      "condition": "Curing completed independently of strength release.",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-CURE",
+      "predecessor_id": "a83bd1d6-07c6-585c-b501-4ebf1183d5d0",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "fixture_extension",
+      "successor_alias": "S-STRIP",
+      "successor_id": "6c3c378a-8f19-575f-b4e8-3af46b600c94"
+    },
+    {
+      "condition": "HYPOTHETICAL DR09: slab soffit formwork after beam curing gate",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-CURE",
+      "predecessor_id": "7d1f4e79-3847-5408-8fba-12afc11f6bfd",
+      "relation": "FS",
+      "rule_id": "DR09",
+      "source": "fixture_extension",
+      "successor_alias": "S-FORM",
+      "successor_id": "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7"
+    },
+    {
+      "condition": "HYPOTHETICAL DR09: beam formwork bears on the column -> after column curing gate; after column stripping (single formwork crew, explicit order)",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-CURE",
+      "predecessor_id": "fe8beee0-18d0-505c-9cf2-ab234883c2db",
+      "relation": "FS",
+      "rule_id": "DR09",
+      "source": "fixture_extension",
+      "successor_alias": "B-FORM",
+      "successor_id": "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a"
+    },
+    {
+      "condition": "HYPOTHETICAL DR09: beam formwork bears on the column -> after column curing gate; after column stripping (single formwork crew, explicit order)",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-STRIP",
+      "predecessor_id": "c318b5bb-2652-5d7b-a706-041aeb3307d5",
+      "relation": "FS",
+      "rule_id": "DR09",
+      "source": "fixture_extension",
+      "successor_alias": "B-FORM",
+      "successor_id": "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a"
+    },
+    {
+      "condition": "HYPOTHETICAL: beam soffit props retained until the supported slab is stripped",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-STRIP",
+      "predecessor_id": "6c3c378a-8f19-575f-b4e8-3af46b600c94",
+      "relation": "FS",
+      "rule_id": "DR09",
+      "source": "fixture_extension",
+      "successor_alias": "B-STRIP",
+      "successor_id": "a3a9c4bb-8619-5ff0-a41b-8552bc746366"
+    }
+  ],
+  "provenance": {
+    "ModelVersionId": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+    "SourceIfcSha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+    "ScheduleSha256": "c892fe2756b943eb186bb7676ab0f3161b388e06c6df41b2a9ef9e850a22a9e0",
+    "ScheduleContract": "pmi-schedule/1",
+    "ScheduleScope": "complete_project",
+    "TimestampSource": "secondary",
+    "InputState": "hypothetical_fixture",
+    "ApprovalStatus": "PENDING",
+    "PendingApprovalCount": 88,
+    "RealProjectEligible": false
+  },
+  "restriction": "Hypothetical R0. Engineering approval pending. Construction use prohibited.",
+  "output_ifc_sha256": "c50a585e4b88fedeea1ef11d6af67d504bcda24f63d33779c891c05c22d487b1"
+}

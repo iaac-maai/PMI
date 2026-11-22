@@ -1,0 +1,1322 @@
+{
+  "contract_version": "pmi-ifc4d-viewer/1",
+  "model": {
+    "uri": "scheduled.ifc",
+    "model_version_id": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+    "sha256": "c50a585e4b88fedeea1ef11d6af67d504bcda24f63d33779c891c05c22d487b1"
+  },
+  "activities_by_id": {
+    "27e7a5c3-5aa1-5665-9f68-1c2168a412ac": {
+      "label": "C-REBAR",
+      "kind": "productive",
+      "package_id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "ifc_task_global_id": "23rk$lTQfRMhZGy8z4r2tn",
+      "element_global_ids": [
+        "24tlOXIsvMQfyRLiqh6fZt"
+      ],
+      "cpm": {
+        "start": "2027-01-04T08:00+01:00",
+        "finish": "2027-01-04T08:20+01:00",
+        "late_start": "2027-01-04T09:15+01:00",
+        "late_finish": "2027-01-04T09:35+01:00",
+        "working_minutes": 20,
+        "elapsed_minutes": 20,
+        "cpm_critical": false
+      },
+      "cp_sat": {
+        "start": "2027-01-04T08:00+01:00",
+        "finish": "2027-01-04T08:20+01:00",
+        "segments": [
+          [
+            "2027-01-04T08:00+01:00",
+            "2027-01-04T08:20+01:00"
+          ]
+        ],
+        "working_minutes": 20,
+        "elapsed_minutes": 20
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC05",
+        "AP-DR05",
+        "AP-DR06",
+        "AP-W-COL-REBAR"
+      ]
+    },
+    "3235aa7e-88d9-53c5-9cf7-49e573d81a5a": {
+      "label": "C-FORM",
+      "kind": "productive",
+      "package_id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "ifc_task_global_id": "2sJrBDPLTOmAt9tNkwlBkF",
+      "element_global_ids": [
+        "24tlOXIsvMQfyRLiqh6fZt"
+      ],
+      "cpm": {
+        "start": "2027-01-04T08:20+01:00",
+        "finish": "2027-01-04T09:00+01:00",
+        "late_start": "2027-01-04T09:35+01:00",
+        "late_finish": "2027-01-04T10:15+01:00",
+        "working_minutes": 40,
+        "elapsed_minutes": 40,
+        "cpm_critical": false
+      },
+      "cp_sat": {
+        "start": "2027-01-04T08:20+01:00",
+        "finish": "2027-01-04T09:00+01:00",
+        "segments": [
+          [
+            "2027-01-04T08:20+01:00",
+            "2027-01-04T09:00+01:00"
+          ]
+        ],
+        "working_minutes": 40,
+        "elapsed_minutes": 40
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC02",
+        "AP-DR05",
+        "AP-DR06",
+        "AP-W-COL-FORM"
+      ]
+    },
+    "c0b8943f-0dbd-54a0-977e-731916bcd42a": {
+      "label": "C-INSP",
+      "kind": "inspection",
+      "package_id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "ifc_task_global_id": "0qWiQ6avrTuQ0r0W6twrMY",
+      "element_global_ids": [
+        "24tlOXIsvMQfyRLiqh6fZt"
+      ],
+      "cpm": {
+        "start": "2027-01-04T09:00+01:00",
+        "finish": "2027-01-04T09:30+01:00",
+        "late_start": "2027-01-04T10:15+01:00",
+        "late_finish": "2027-01-04T10:45+01:00",
+        "working_minutes": 30,
+        "elapsed_minutes": 30,
+        "cpm_critical": false
+      },
+      "cp_sat": {
+        "start": "2027-01-04T09:00+01:00",
+        "finish": "2027-01-04T09:30+01:00",
+        "segments": [
+          [
+            "2027-01-04T09:00+01:00",
+            "2027-01-04T09:30+01:00"
+          ]
+        ],
+        "working_minutes": 30,
+        "elapsed_minutes": 30
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-DR06"
+      ]
+    },
+    "04527e9d-995e-5e16-9663-9756d828c586": {
+      "label": "C-POUR",
+      "kind": "productive",
+      "package_id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "ifc_task_global_id": "0o83O4mB1O0eS4NhEqnK_m",
+      "element_global_ids": [
+        "24tlOXIsvMQfyRLiqh6fZt"
+      ],
+      "cpm": {
+        "start": "2027-01-04T09:30+01:00",
+        "finish": "2027-01-04T09:40+01:00",
+        "late_start": "2027-01-04T10:45+01:00",
+        "late_finish": "2027-01-04T10:55+01:00",
+        "working_minutes": 10,
+        "elapsed_minutes": 10,
+        "cpm_critical": false
+      },
+      "cp_sat": {
+        "start": "2027-01-04T09:30+01:00",
+        "finish": "2027-01-04T09:40+01:00",
+        "segments": [
+          [
+            "2027-01-04T09:30+01:00",
+            "2027-01-04T09:40+01:00"
+          ]
+        ],
+        "working_minutes": 10,
+        "elapsed_minutes": 10
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC03",
+        "AP-DC07",
+        "AP-DC08",
+        "AP-DR06",
+        "AP-DR07",
+        "AP-TOL",
+        "AP-W-COL-CONC"
+      ]
+    },
+    "a47f0364-8f49-5947-94e7-e24af60a1b92": {
+      "label": "C-STRIKE",
+      "kind": "strength_release",
+      "package_id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "ifc_task_global_id": "1Pv$QikBjMrw6qG86VQs_P",
+      "element_global_ids": [
+        "24tlOXIsvMQfyRLiqh6fZt"
+      ],
+      "cpm": {
+        "start": "2027-01-04T09:40+01:00",
+        "finish": "2027-01-05T09:40+01:00",
+        "late_start": "2027-01-04T10:55+01:00",
+        "late_finish": "2027-01-05T10:55+01:00",
+        "working_minutes": 0,
+        "elapsed_minutes": 1440,
+        "cpm_critical": false
+      },
+      "cp_sat": {
+        "start": "2027-01-04T09:40+01:00",
+        "finish": "2027-01-05T09:40+01:00",
+        "segments": [
+          [
+            "2027-01-04T09:40+01:00",
+            "2027-01-05T09:40+01:00"
+          ]
+        ],
+        "working_minutes": 0,
+        "elapsed_minutes": 1440
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC01",
+        "AP-DC02",
+        "AP-DR08",
+        "AP-W-FRM-STRIP"
+      ]
+    },
+    "fe8beee0-18d0-505c-9cf2-ab234883c2db": {
+      "label": "C-CURE",
+      "kind": "elapsed_hold",
+      "package_id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "ifc_task_global_id": "1F9I55a_nHJekrnhGJgAoX",
+      "element_global_ids": [
+        "24tlOXIsvMQfyRLiqh6fZt"
+      ],
+      "cpm": {
+        "start": "2027-01-04T09:40+01:00",
+        "finish": "2027-01-05T09:40+01:00",
+        "late_start": "2027-01-04T10:55+01:00",
+        "late_finish": "2027-01-05T10:55+01:00",
+        "working_minutes": 0,
+        "elapsed_minutes": 1440,
+        "cpm_critical": false
+      },
+      "cp_sat": {
+        "start": "2027-01-04T09:40+01:00",
+        "finish": "2027-01-05T09:40+01:00",
+        "segments": [
+          [
+            "2027-01-04T09:40+01:00",
+            "2027-01-05T09:40+01:00"
+          ]
+        ],
+        "working_minutes": 0,
+        "elapsed_minutes": 1440
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC03",
+        "AP-DR07",
+        "AP-DR08",
+        "AP-W-CURE"
+      ]
+    },
+    "c318b5bb-2652-5d7b-a706-041aeb3307d5": {
+      "label": "C-STRIP",
+      "kind": "productive",
+      "package_id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "ifc_task_global_id": "2aayIZK$vUqhRdDFTg$EU7",
+      "element_global_ids": [
+        "24tlOXIsvMQfyRLiqh6fZt"
+      ],
+      "cpm": {
+        "start": "2027-01-05T09:40+01:00",
+        "finish": "2027-01-05T10:25+01:00",
+        "late_start": "2027-01-05T10:55+01:00",
+        "late_finish": "2027-01-05T11:40+01:00",
+        "working_minutes": 45,
+        "elapsed_minutes": 45,
+        "cpm_critical": false
+      },
+      "cp_sat": {
+        "start": "2027-01-05T09:40+01:00",
+        "finish": "2027-01-05T10:25+01:00",
+        "segments": [
+          [
+            "2027-01-05T09:40+01:00",
+            "2027-01-05T10:25+01:00"
+          ]
+        ],
+        "working_minutes": 45,
+        "elapsed_minutes": 45
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC01",
+        "AP-DC02",
+        "AP-DR08",
+        "AP-W-FRM-STRIP"
+      ]
+    },
+    "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a": {
+      "label": "B-FORM",
+      "kind": "productive",
+      "package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "ifc_task_global_id": "0v6MZwNnXV4h_GriNCFYq_",
+      "element_global_ids": [
+        "1jDfy2_jTRueAw6f5fc3Ev"
+      ],
+      "cpm": {
+        "start": "2027-01-05T10:25+01:00",
+        "finish": "2027-01-05T11:25+01:00",
+        "late_start": "2027-01-05T11:40+01:00",
+        "late_finish": "2027-01-05T12:40+01:00",
+        "working_minutes": 60,
+        "elapsed_minutes": 60,
+        "cpm_critical": false
+      },
+      "cp_sat": {
+        "start": "2027-01-05T10:25+01:00",
+        "finish": "2027-01-05T11:25+01:00",
+        "segments": [
+          [
+            "2027-01-05T10:25+01:00",
+            "2027-01-05T11:25+01:00"
+          ]
+        ],
+        "working_minutes": 60,
+        "elapsed_minutes": 60
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC02",
+        "AP-DR06",
+        "AP-W-BEAM-FORM"
+      ]
+    },
+    "0240248f-1548-557b-945e-e417b0b1222d": {
+      "label": "B-REBAR",
+      "kind": "productive",
+      "package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "ifc_task_global_id": "1VBdP7HljMBAOkeXGxyxKW",
+      "element_global_ids": [
+        "1jDfy2_jTRueAw6f5fc3Ev"
+      ],
+      "cpm": {
+        "start": "2027-01-05T11:25+01:00",
+        "finish": "2027-01-05T12:00+01:00",
+        "late_start": "2027-01-05T12:40+01:00",
+        "late_finish": "2027-01-05T13:15+01:00",
+        "working_minutes": 35,
+        "elapsed_minutes": 35,
+        "cpm_critical": false
+      },
+      "cp_sat": {
+        "start": "2027-01-05T11:25+01:00",
+        "finish": "2027-01-05T12:00+01:00",
+        "segments": [
+          [
+            "2027-01-05T11:25+01:00",
+            "2027-01-05T12:00+01:00"
+          ]
+        ],
+        "working_minutes": 35,
+        "elapsed_minutes": 35
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC05",
+        "AP-DR06",
+        "AP-W-BEAM-REBAR"
+      ]
+    },
+    "9cd34b99-bcb2-5f88-ad80-896053ef5153": {
+      "label": "B-INSP",
+      "kind": "inspection",
+      "package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "ifc_task_global_id": "1osZAiuDrPlxJzmo3VHVhE",
+      "element_global_ids": [
+        "1jDfy2_jTRueAw6f5fc3Ev"
+      ],
+      "cpm": {
+        "start": "2027-01-05T12:00+01:00",
+        "finish": "2027-01-05T12:30+01:00",
+        "late_start": "2027-01-05T13:15+01:00",
+        "late_finish": "2027-01-05T13:45+01:00",
+        "working_minutes": 30,
+        "elapsed_minutes": 30,
+        "cpm_critical": false
+      },
+      "cp_sat": {
+        "start": "2027-01-05T12:00+01:00",
+        "finish": "2027-01-05T12:30+01:00",
+        "segments": [
+          [
+            "2027-01-05T12:00+01:00",
+            "2027-01-05T12:30+01:00"
+          ]
+        ],
+        "working_minutes": 30,
+        "elapsed_minutes": 30
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-DR06"
+      ]
+    },
+    "d908f25a-67e4-565f-a629-c9f52ff352ed": {
+      "label": "B-POUR",
+      "kind": "productive",
+      "package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "ifc_task_global_id": "0yNQP3bvvNwhVAhRln82sB",
+      "element_global_ids": [
+        "1jDfy2_jTRueAw6f5fc3Ev"
+      ],
+      "cpm": {
+        "start": "2027-01-05T12:30+01:00",
+        "finish": "2027-01-05T12:45+01:00",
+        "late_start": "2027-01-05T13:45+01:00",
+        "late_finish": "2027-01-05T14:00+01:00",
+        "working_minutes": 15,
+        "elapsed_minutes": 15,
+        "cpm_critical": false
+      },
+      "cp_sat": {
+        "start": "2027-01-05T12:30+01:00",
+        "finish": "2027-01-05T12:45+01:00",
+        "segments": [
+          [
+            "2027-01-05T12:30+01:00",
+            "2027-01-05T12:45+01:00"
+          ]
+        ],
+        "working_minutes": 15,
+        "elapsed_minutes": 15
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC03",
+        "AP-DC06",
+        "AP-DC08",
+        "AP-DR06",
+        "AP-DR07",
+        "AP-TOL",
+        "AP-W-BEAM-CONC"
+      ]
+    },
+    "2cf0b700-88cb-5d0b-91e5-9fa0a1a5c4b0": {
+      "label": "B-STRIKE",
+      "kind": "strength_release",
+      "package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "ifc_task_global_id": "2re8C_gWDRahxOiLfS_84j",
+      "element_global_ids": [
+        "1jDfy2_jTRueAw6f5fc3Ev"
+      ],
+      "cpm": {
+        "start": "2027-01-05T12:45+01:00",
+        "finish": "2027-01-12T12:45+01:00",
+        "late_start": "2027-01-07T14:40+01:00",
+        "late_finish": "2027-01-14T14:40+01:00",
+        "working_minutes": 0,
+        "elapsed_minutes": 10080,
+        "cpm_critical": false
+      },
+      "cp_sat": {
+        "start": "2027-01-05T12:45+01:00",
+        "finish": "2027-01-12T12:45+01:00",
+        "segments": [
+          [
+            "2027-01-05T12:45+01:00",
+            "2027-01-12T12:45+01:00"
+          ]
+        ],
+        "working_minutes": 0,
+        "elapsed_minutes": 10080
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC01",
+        "AP-DC02",
+        "AP-DR08",
+        "AP-W-FRM-STRIP"
+      ]
+    },
+    "7d1f4e79-3847-5408-8fba-12afc11f6bfd": {
+      "label": "B-CURE",
+      "kind": "elapsed_hold",
+      "package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "ifc_task_global_id": "3PAOX4W15NdOBNGrNEyzxt",
+      "element_global_ids": [
+        "1jDfy2_jTRueAw6f5fc3Ev"
+      ],
+      "cpm": {
+        "start": "2027-01-05T12:45+01:00",
+        "finish": "2027-01-06T12:45+01:00",
+        "late_start": "2027-01-06T08:00+01:00",
+        "late_finish": "2027-01-07T08:00+01:00",
+        "working_minutes": 0,
+        "elapsed_minutes": 1440,
+        "cpm_critical": false
+      },
+      "cp_sat": {
+        "start": "2027-01-05T12:45+01:00",
+        "finish": "2027-01-06T12:45+01:00",
+        "segments": [
+          [
+            "2027-01-05T12:45+01:00",
+            "2027-01-06T12:45+01:00"
+          ]
+        ],
+        "working_minutes": 0,
+        "elapsed_minutes": 1440
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC03",
+        "AP-DR07",
+        "AP-DR08",
+        "AP-W-CURE"
+      ]
+    },
+    "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7": {
+      "label": "S-FORM",
+      "kind": "productive",
+      "package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "ifc_task_global_id": "23lgqJbYjNoB76ni5ONDXs",
+      "element_global_ids": [
+        "3wOB$MtWLSz8SJNgW3VJvy"
+      ],
+      "cpm": {
+        "start": "2027-01-07T08:00+01:00",
+        "finish": "2027-01-07T10:55+01:00",
+        "late_start": "2027-01-07T08:00+01:00",
+        "late_finish": "2027-01-07T10:55+01:00",
+        "working_minutes": 175,
+        "elapsed_minutes": 175,
+        "cpm_critical": true
+      },
+      "cp_sat": {
+        "start": "2027-01-07T08:00+01:00",
+        "finish": "2027-01-07T10:55+01:00",
+        "segments": [
+          [
+            "2027-01-07T08:00+01:00",
+            "2027-01-07T10:55+01:00"
+          ]
+        ],
+        "working_minutes": 175,
+        "elapsed_minutes": 175
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR13",
+        "AP-CR14",
+        "AP-DC02",
+        "AP-DC04",
+        "AP-DR06",
+        "AP-W-SLAB-FORM"
+      ]
+    },
+    "ef679452-ad4e-5662-803e-a59d6f27c913": {
+      "label": "S-REBAR",
+      "kind": "productive",
+      "package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "ifc_task_global_id": "186vxcZx9SefkFSGB2z$hK",
+      "element_global_ids": [
+        "3wOB$MtWLSz8SJNgW3VJvy"
+      ],
+      "cpm": {
+        "start": "2027-01-07T10:55+01:00",
+        "finish": "2027-01-07T11:50+01:00",
+        "late_start": "2027-01-07T10:55+01:00",
+        "late_finish": "2027-01-07T11:50+01:00",
+        "working_minutes": 55,
+        "elapsed_minutes": 55,
+        "cpm_critical": true
+      },
+      "cp_sat": {
+        "start": "2027-01-07T10:55+01:00",
+        "finish": "2027-01-07T11:50+01:00",
+        "segments": [
+          [
+            "2027-01-07T10:55+01:00",
+            "2027-01-07T11:50+01:00"
+          ]
+        ],
+        "working_minutes": 55,
+        "elapsed_minutes": 55
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR13",
+        "AP-CR14",
+        "AP-DC04",
+        "AP-DC05",
+        "AP-DR06",
+        "AP-W-SLAB-REBAR"
+      ]
+    },
+    "0de967fe-4794-5dbb-aab8-8fea253a5927": {
+      "label": "S-INSP",
+      "kind": "inspection",
+      "package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "ifc_task_global_id": "1ywkVlETPL5OKA8gftnC0j",
+      "element_global_ids": [
+        "3wOB$MtWLSz8SJNgW3VJvy"
+      ],
+      "cpm": {
+        "start": "2027-01-07T11:50+01:00",
+        "finish": "2027-01-07T12:20+01:00",
+        "late_start": "2027-01-07T11:50+01:00",
+        "late_finish": "2027-01-07T12:20+01:00",
+        "working_minutes": 30,
+        "elapsed_minutes": 30,
+        "cpm_critical": true
+      },
+      "cp_sat": {
+        "start": "2027-01-07T11:50+01:00",
+        "finish": "2027-01-07T12:20+01:00",
+        "segments": [
+          [
+            "2027-01-07T11:50+01:00",
+            "2027-01-07T12:20+01:00"
+          ]
+        ],
+        "working_minutes": 30,
+        "elapsed_minutes": 30
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-DR06"
+      ]
+    },
+    "8a20a577-58c4-58e1-a2c7-86dbb4ee5523": {
+      "label": "S-POUR",
+      "kind": "productive",
+      "package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "ifc_task_global_id": "1YthUaWIHSOhW9_WvFFDi8",
+      "element_global_ids": [
+        "3wOB$MtWLSz8SJNgW3VJvy"
+      ],
+      "cpm": {
+        "start": "2027-01-07T12:20+01:00",
+        "finish": "2027-01-07T13:05+01:00",
+        "late_start": "2027-01-07T12:20+01:00",
+        "late_finish": "2027-01-07T13:05+01:00",
+        "working_minutes": 45,
+        "elapsed_minutes": 45,
+        "cpm_critical": true
+      },
+      "cp_sat": {
+        "start": "2027-01-07T12:20+01:00",
+        "finish": "2027-01-07T13:05+01:00",
+        "segments": [
+          [
+            "2027-01-07T12:20+01:00",
+            "2027-01-07T13:05+01:00"
+          ]
+        ],
+        "working_minutes": 45,
+        "elapsed_minutes": 45
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR13",
+        "AP-CR14",
+        "AP-DC03",
+        "AP-DC04",
+        "AP-DC06",
+        "AP-DC07",
+        "AP-DC08",
+        "AP-DR06",
+        "AP-DR07",
+        "AP-TOL",
+        "AP-W-SLAB-CONC"
+      ]
+    },
+    "a83bd1d6-07c6-585c-b501-4ebf1183d5d0": {
+      "label": "S-CURE",
+      "kind": "elapsed_hold",
+      "package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "ifc_task_global_id": "2rqrb9IHzKLv4$LmS830Tn",
+      "element_global_ids": [
+        "3wOB$MtWLSz8SJNgW3VJvy"
+      ],
+      "cpm": {
+        "start": "2027-01-07T13:05+01:00",
+        "finish": "2027-01-08T13:05+01:00",
+        "late_start": "2027-01-13T13:05+01:00",
+        "late_finish": "2027-01-14T13:05+01:00",
+        "working_minutes": 0,
+        "elapsed_minutes": 1440,
+        "cpm_critical": false
+      },
+      "cp_sat": {
+        "start": "2027-01-07T13:05+01:00",
+        "finish": "2027-01-08T13:05+01:00",
+        "segments": [
+          [
+            "2027-01-07T13:05+01:00",
+            "2027-01-08T13:05+01:00"
+          ]
+        ],
+        "working_minutes": 0,
+        "elapsed_minutes": 1440
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR13",
+        "AP-CR14",
+        "AP-DC03",
+        "AP-DC04",
+        "AP-DR07",
+        "AP-DR08",
+        "AP-W-CURE"
+      ]
+    },
+    "f00f202c-c5fe-5fe5-832b-6e8acdb8b639": {
+      "label": "S-STRIKE",
+      "kind": "strength_release",
+      "package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "ifc_task_global_id": "0TwppJ69TGzQDJYrjWsxr7",
+      "element_global_ids": [
+        "3wOB$MtWLSz8SJNgW3VJvy"
+      ],
+      "cpm": {
+        "start": "2027-01-07T13:05+01:00",
+        "finish": "2027-01-14T13:05+01:00",
+        "late_start": "2027-01-07T13:05+01:00",
+        "late_finish": "2027-01-14T13:05+01:00",
+        "working_minutes": 0,
+        "elapsed_minutes": 10080,
+        "cpm_critical": true
+      },
+      "cp_sat": {
+        "start": "2027-01-07T13:05+01:00",
+        "finish": "2027-01-14T13:05+01:00",
+        "segments": [
+          [
+            "2027-01-07T13:05+01:00",
+            "2027-01-14T13:05+01:00"
+          ]
+        ],
+        "working_minutes": 0,
+        "elapsed_minutes": 10080
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR13",
+        "AP-CR14",
+        "AP-DC01",
+        "AP-DC02",
+        "AP-DC04",
+        "AP-DR08",
+        "AP-W-FRM-STRIP"
+      ]
+    },
+    "6c3c378a-8f19-575f-b4e8-3af46b600c94": {
+      "label": "S-STRIP",
+      "kind": "productive",
+      "package_id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "ifc_task_global_id": "02PNslFEPS$evDX5pfBBpM",
+      "element_global_ids": [
+        "3wOB$MtWLSz8SJNgW3VJvy"
+      ],
+      "cpm": {
+        "start": "2027-01-14T13:05+01:00",
+        "finish": "2027-01-14T14:40+01:00",
+        "late_start": "2027-01-14T13:05+01:00",
+        "late_finish": "2027-01-14T14:40+01:00",
+        "working_minutes": 95,
+        "elapsed_minutes": 95,
+        "cpm_critical": true
+      },
+      "cp_sat": {
+        "start": "2027-01-14T13:05+01:00",
+        "finish": "2027-01-14T14:40+01:00",
+        "segments": [
+          [
+            "2027-01-14T13:05+01:00",
+            "2027-01-14T14:40+01:00"
+          ]
+        ],
+        "working_minutes": 95,
+        "elapsed_minutes": 95
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR13",
+        "AP-CR14",
+        "AP-DC01",
+        "AP-DC02",
+        "AP-DC04",
+        "AP-DR08",
+        "AP-W-FRM-STRIP"
+      ]
+    },
+    "a3a9c4bb-8619-5ff0-a41b-8552bc746366": {
+      "label": "B-STRIP",
+      "kind": "productive",
+      "package_id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "ifc_task_global_id": "03hxoBZpHKrQQrJamAa1NC",
+      "element_global_ids": [
+        "1jDfy2_jTRueAw6f5fc3Ev"
+      ],
+      "cpm": {
+        "start": "2027-01-14T14:40+01:00",
+        "finish": "2027-01-14T15:30+01:00",
+        "late_start": "2027-01-14T14:40+01:00",
+        "late_finish": "2027-01-14T15:30+01:00",
+        "working_minutes": 50,
+        "elapsed_minutes": 50,
+        "cpm_critical": true
+      },
+      "cp_sat": {
+        "start": "2027-01-14T14:40+01:00",
+        "finish": "2027-01-14T15:30+01:00",
+        "segments": [
+          [
+            "2027-01-14T14:40+01:00",
+            "2027-01-14T15:30+01:00"
+          ]
+        ],
+        "working_minutes": 50,
+        "elapsed_minutes": 50
+      },
+      "input_state": "hypothetical_fixture",
+      "approval_status": "PENDING",
+      "approval_ids": [
+        "AP-CR01",
+        "AP-CR05",
+        "AP-CR14",
+        "AP-DC01",
+        "AP-DC02",
+        "AP-DR08",
+        "AP-W-FRM-STRIP"
+      ]
+    }
+  },
+  "activity_ids_by_element_global_id": {
+    "1jDfy2_jTRueAw6f5fc3Ev": [
+      "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a",
+      "0240248f-1548-557b-945e-e417b0b1222d",
+      "9cd34b99-bcb2-5f88-ad80-896053ef5153",
+      "d908f25a-67e4-565f-a629-c9f52ff352ed",
+      "2cf0b700-88cb-5d0b-91e5-9fa0a1a5c4b0",
+      "7d1f4e79-3847-5408-8fba-12afc11f6bfd",
+      "a3a9c4bb-8619-5ff0-a41b-8552bc746366"
+    ],
+    "24tlOXIsvMQfyRLiqh6fZt": [
+      "27e7a5c3-5aa1-5665-9f68-1c2168a412ac",
+      "3235aa7e-88d9-53c5-9cf7-49e573d81a5a",
+      "c0b8943f-0dbd-54a0-977e-731916bcd42a",
+      "04527e9d-995e-5e16-9663-9756d828c586",
+      "a47f0364-8f49-5947-94e7-e24af60a1b92",
+      "fe8beee0-18d0-505c-9cf2-ab234883c2db",
+      "c318b5bb-2652-5d7b-a706-041aeb3307d5"
+    ],
+    "3wOB$MtWLSz8SJNgW3VJvy": [
+      "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7",
+      "ef679452-ad4e-5662-803e-a59d6f27c913",
+      "0de967fe-4794-5dbb-aab8-8fea253a5927",
+      "8a20a577-58c4-58e1-a2c7-86dbb4ee5523",
+      "a83bd1d6-07c6-585c-b501-4ebf1183d5d0",
+      "f00f202c-c5fe-5fe5-832b-6e8acdb8b639",
+      "6c3c378a-8f19-575f-b4e8-3af46b600c94"
+    ]
+  },
+  "packages": [
+    {
+      "id": "f1f55844-5a59-5182-bd47-05697444fec0",
+      "element_ids": [
+        "b9088700-27e9-5011-82a6-fcfe7d50da04"
+      ],
+      "storey_id": "b80f4aba-7717-59f4-b234-51b7bdf79425",
+      "family": "COL",
+      "activity_ids": [
+        "27e7a5c3-5aa1-5665-9f68-1c2168a412ac",
+        "3235aa7e-88d9-53c5-9cf7-49e573d81a5a",
+        "04527e9d-995e-5e16-9663-9756d828c586",
+        "fe8beee0-18d0-505c-9cf2-ab234883c2db",
+        "c318b5bb-2652-5d7b-a706-041aeb3307d5",
+        "c0b8943f-0dbd-54a0-977e-731916bcd42a",
+        "a47f0364-8f49-5947-94e7-e24af60a1b92"
+      ],
+      "status": "candidate",
+      "independent_pour_scope": null,
+      "global_ids": [
+        "24tlOXIsvMQfyRLiqh6fZt"
+      ],
+      "fixture_sequence": "cage_first"
+    },
+    {
+      "id": "8eca47aa-bad4-5bee-bc28-69f81edd29f2",
+      "element_ids": [
+        "38c0e562-d472-5939-a938-fb0891408b61"
+      ],
+      "storey_id": "b80f4aba-7717-59f4-b234-51b7bdf79425",
+      "family": "BEAM",
+      "activity_ids": [
+        "0240248f-1548-557b-945e-e417b0b1222d",
+        "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a",
+        "d908f25a-67e4-565f-a629-c9f52ff352ed",
+        "7d1f4e79-3847-5408-8fba-12afc11f6bfd",
+        "a3a9c4bb-8619-5ff0-a41b-8552bc746366",
+        "9cd34b99-bcb2-5f88-ad80-896053ef5153",
+        "2cf0b700-88cb-5d0b-91e5-9fa0a1a5c4b0"
+      ],
+      "status": "candidate",
+      "independent_pour_scope": null,
+      "global_ids": [
+        "1jDfy2_jTRueAw6f5fc3Ev"
+      ],
+      "fixture_sequence": "formwork_first"
+    },
+    {
+      "id": "8cba32d6-f71e-5285-9b0a-0985bf9fa432",
+      "element_ids": [
+        "eb9257d4-8531-5b83-81be-350df71a5314"
+      ],
+      "storey_id": "b80f4aba-7717-59f4-b234-51b7bdf79425",
+      "family": "SLAB",
+      "activity_ids": [
+        "ef679452-ad4e-5662-803e-a59d6f27c913",
+        "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7",
+        "8a20a577-58c4-58e1-a2c7-86dbb4ee5523",
+        "a83bd1d6-07c6-585c-b501-4ebf1183d5d0",
+        "6c3c378a-8f19-575f-b4e8-3af46b600c94",
+        "0de967fe-4794-5dbb-aab8-8fea253a5927",
+        "f00f202c-c5fe-5fe5-832b-6e8acdb8b639"
+      ],
+      "status": "candidate",
+      "independent_pour_scope": null,
+      "global_ids": [
+        "3wOB$MtWLSz8SJNgW3VJvy"
+      ],
+      "fixture_sequence": "formwork_first"
+    }
+  ],
+  "dependencies": [
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-REBAR",
+      "predecessor_id": "27e7a5c3-5aa1-5665-9f68-1c2168a412ac",
+      "relation": "FS",
+      "rule_id": "DR05",
+      "source": "5.3A",
+      "successor_alias": "C-FORM",
+      "successor_id": "3235aa7e-88d9-53c5-9cf7-49e573d81a5a"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-FORM",
+      "predecessor_id": "3235aa7e-88d9-53c5-9cf7-49e573d81a5a",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "C-INSP",
+      "successor_id": "c0b8943f-0dbd-54a0-977e-731916bcd42a"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-REBAR",
+      "predecessor_id": "27e7a5c3-5aa1-5665-9f68-1c2168a412ac",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "C-INSP",
+      "successor_id": "c0b8943f-0dbd-54a0-977e-731916bcd42a"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-INSP",
+      "predecessor_id": "c0b8943f-0dbd-54a0-977e-731916bcd42a",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "C-POUR",
+      "successor_id": "04527e9d-995e-5e16-9663-9756d828c586"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-POUR",
+      "predecessor_id": "04527e9d-995e-5e16-9663-9756d828c586",
+      "relation": "FS",
+      "rule_id": "DR07",
+      "source": "5.3A",
+      "successor_alias": "C-CURE",
+      "successor_id": "fe8beee0-18d0-505c-9cf2-ab234883c2db"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-STRIKE",
+      "predecessor_id": "a47f0364-8f49-5947-94e7-e24af60a1b92",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "5.3A",
+      "successor_alias": "C-STRIP",
+      "successor_id": "c318b5bb-2652-5d7b-a706-041aeb3307d5"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-FORM",
+      "predecessor_id": "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "B-REBAR",
+      "successor_id": "0240248f-1548-557b-945e-e417b0b1222d"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-FORM",
+      "predecessor_id": "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "B-INSP",
+      "successor_id": "9cd34b99-bcb2-5f88-ad80-896053ef5153"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-REBAR",
+      "predecessor_id": "0240248f-1548-557b-945e-e417b0b1222d",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "B-INSP",
+      "successor_id": "9cd34b99-bcb2-5f88-ad80-896053ef5153"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-INSP",
+      "predecessor_id": "9cd34b99-bcb2-5f88-ad80-896053ef5153",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "B-POUR",
+      "successor_id": "d908f25a-67e4-565f-a629-c9f52ff352ed"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-POUR",
+      "predecessor_id": "d908f25a-67e4-565f-a629-c9f52ff352ed",
+      "relation": "FS",
+      "rule_id": "DR07",
+      "source": "5.3A",
+      "successor_alias": "B-CURE",
+      "successor_id": "7d1f4e79-3847-5408-8fba-12afc11f6bfd"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-STRIKE",
+      "predecessor_id": "2cf0b700-88cb-5d0b-91e5-9fa0a1a5c4b0",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "5.3A",
+      "successor_alias": "B-STRIP",
+      "successor_id": "a3a9c4bb-8619-5ff0-a41b-8552bc746366"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-FORM",
+      "predecessor_id": "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "S-REBAR",
+      "successor_id": "ef679452-ad4e-5662-803e-a59d6f27c913"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-FORM",
+      "predecessor_id": "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "S-INSP",
+      "successor_id": "0de967fe-4794-5dbb-aab8-8fea253a5927"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-REBAR",
+      "predecessor_id": "ef679452-ad4e-5662-803e-a59d6f27c913",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "S-INSP",
+      "successor_id": "0de967fe-4794-5dbb-aab8-8fea253a5927"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-INSP",
+      "predecessor_id": "0de967fe-4794-5dbb-aab8-8fea253a5927",
+      "relation": "FS",
+      "rule_id": "DR06",
+      "source": "5.3A",
+      "successor_alias": "S-POUR",
+      "successor_id": "8a20a577-58c4-58e1-a2c7-86dbb4ee5523"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-POUR",
+      "predecessor_id": "8a20a577-58c4-58e1-a2c7-86dbb4ee5523",
+      "relation": "FS",
+      "rule_id": "DR07",
+      "source": "5.3A",
+      "successor_alias": "S-CURE",
+      "successor_id": "a83bd1d6-07c6-585c-b501-4ebf1183d5d0"
+    },
+    {
+      "condition": null,
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-STRIKE",
+      "predecessor_id": "f00f202c-c5fe-5fe5-832b-6e8acdb8b639",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "5.3A",
+      "successor_alias": "S-STRIP",
+      "successor_id": "6c3c378a-8f19-575f-b4e8-3af46b600c94"
+    },
+    {
+      "condition": "Minimum elapsed time from pour completion.",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-POUR",
+      "predecessor_id": "04527e9d-995e-5e16-9663-9756d828c586",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "fixture_extension",
+      "successor_alias": "C-STRIKE",
+      "successor_id": "a47f0364-8f49-5947-94e7-e24af60a1b92"
+    },
+    {
+      "condition": "Curing completed independently of strength release.",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-CURE",
+      "predecessor_id": "fe8beee0-18d0-505c-9cf2-ab234883c2db",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "fixture_extension",
+      "successor_alias": "C-STRIP",
+      "successor_id": "c318b5bb-2652-5d7b-a706-041aeb3307d5"
+    },
+    {
+      "condition": "Minimum elapsed time from pour completion.",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-POUR",
+      "predecessor_id": "d908f25a-67e4-565f-a629-c9f52ff352ed",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "fixture_extension",
+      "successor_alias": "B-STRIKE",
+      "successor_id": "2cf0b700-88cb-5d0b-91e5-9fa0a1a5c4b0"
+    },
+    {
+      "condition": "Curing completed independently of strength release.",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-CURE",
+      "predecessor_id": "7d1f4e79-3847-5408-8fba-12afc11f6bfd",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "fixture_extension",
+      "successor_alias": "B-STRIP",
+      "successor_id": "a3a9c4bb-8619-5ff0-a41b-8552bc746366"
+    },
+    {
+      "condition": "Minimum elapsed time from pour completion.",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-POUR",
+      "predecessor_id": "8a20a577-58c4-58e1-a2c7-86dbb4ee5523",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "fixture_extension",
+      "successor_alias": "S-STRIKE",
+      "successor_id": "f00f202c-c5fe-5fe5-832b-6e8acdb8b639"
+    },
+    {
+      "condition": "Curing completed independently of strength release.",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-CURE",
+      "predecessor_id": "a83bd1d6-07c6-585c-b501-4ebf1183d5d0",
+      "relation": "FS",
+      "rule_id": "DR08",
+      "source": "fixture_extension",
+      "successor_alias": "S-STRIP",
+      "successor_id": "6c3c378a-8f19-575f-b4e8-3af46b600c94"
+    },
+    {
+      "condition": "HYPOTHETICAL DR09: slab soffit formwork after beam curing gate",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "B-CURE",
+      "predecessor_id": "7d1f4e79-3847-5408-8fba-12afc11f6bfd",
+      "relation": "FS",
+      "rule_id": "DR09",
+      "source": "fixture_extension",
+      "successor_alias": "S-FORM",
+      "successor_id": "a6bac4e6-d5c1-5723-98e9-1a1004fcd5a7"
+    },
+    {
+      "condition": "HYPOTHETICAL DR09: beam formwork bears on the column -> after column curing gate; after column stripping (single formwork crew, explicit order)",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-CURE",
+      "predecessor_id": "fe8beee0-18d0-505c-9cf2-ab234883c2db",
+      "relation": "FS",
+      "rule_id": "DR09",
+      "source": "fixture_extension",
+      "successor_alias": "B-FORM",
+      "successor_id": "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a"
+    },
+    {
+      "condition": "HYPOTHETICAL DR09: beam formwork bears on the column -> after column curing gate; after column stripping (single formwork crew, explicit order)",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "C-STRIP",
+      "predecessor_id": "c318b5bb-2652-5d7b-a706-041aeb3307d5",
+      "relation": "FS",
+      "rule_id": "DR09",
+      "source": "fixture_extension",
+      "successor_alias": "B-FORM",
+      "successor_id": "a7d2b543-2489-51e9-b4d9-5e3b7f1d3e6a"
+    },
+    {
+      "condition": "HYPOTHETICAL: beam soffit props retained until the supported slab is stripped",
+      "lag_basis": "elapsed",
+      "lag_minutes": 0,
+      "predecessor_alias": "S-STRIP",
+      "predecessor_id": "6c3c378a-8f19-575f-b4e8-3af46b600c94",
+      "relation": "FS",
+      "rule_id": "DR09",
+      "source": "fixture_extension",
+      "successor_alias": "B-STRIP",
+      "successor_id": "a3a9c4bb-8619-5ff0-a41b-8552bc746366"
+    }
+  ],
+  "status": {
+    "ModelVersionId": "8d21c70a-a957-58f3-88c4-123b7ac4f14b",
+    "SourceIfcSha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+    "ScheduleSha256": "c892fe2756b943eb186bb7676ab0f3161b388e06c6df41b2a9ef9e850a22a9e0",
+    "ScheduleContract": "pmi-schedule/1",
+    "ScheduleScope": "complete_project",
+    "TimestampSource": "secondary",
+    "InputState": "hypothetical_fixture",
+    "ApprovalStatus": "PENDING",
+    "PendingApprovalCount": 88,
+    "RealProjectEligible": false
+  },
+  "restriction": "Hypothetical R0. Engineering approval pending. Construction use prohibited."
+}

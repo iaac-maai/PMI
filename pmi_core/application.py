@@ -23,7 +23,7 @@ def _run(stage, argv, root):
     return process.stdout
 
 
-def run_controlled_pipeline(config, *, output, ifc_python, planning_python, tick=5, root=None):
+def run_controlled_pipeline(config, *, output, ifc_python, planning_python, tick=5, root=None, ifc4d=False):
     """Execute IFC, construction, estimation, CPM and optimization from an explicit v1 config."""
     root = Path(root or Path.cwd()).resolve()
     if isinstance(config, (str, Path)):
@@ -66,13 +66,22 @@ def run_controlled_pipeline(config, *, output, ifc_python, planning_python, tick
     _run("CPM and optimization", [identities["planning"]["executable"], "-B", "-m", config["scheduling_worker"],
          "--handover", handover, "--tick", tick, "--project-id", config["project_id"],
          "--evidence", evidence, "--output", intermediate], root)
-    result = _read(intermediate)
+    schedule_payload = intermediate.read_bytes()
+    result = json.loads(schedule_payload.decode("utf-8-sig"))
     if result.get("contract_version") != "pmi-schedule/1" or result.get("source_ifc_sha256") != source_hash:
         raise ValueError("Schedule contract or provenance mismatch.")
     if result["model_version_id"] != _read(handover)["model_version_id"]:
         raise ValueError("Schedule and engineering handover model identities differ.")
     target = output / "schedule.json"
     intermediate.replace(target)
+    if ifc4d:
+        schedule_digest = hashlib.sha256(schedule_payload).hexdigest()
+        provenance["stage_payload_sha256"]["schedule"] = schedule_digest
+        evidence.write_text(json.dumps(provenance, indent=2) + "\n", encoding="utf-8")
+        export = ("import sys; from pmi_core.adapters.ifc4d import _export_live; "
+                  "_export_live(*sys.argv[1:])")
+        _run("controlled IFC4D export", [identities["ifc"]["executable"], "-B", "-c", export,
+             inputs["ifc"], target, output / "ifc4d", schedule_digest], root)
     return result
 
 
@@ -81,10 +90,11 @@ def main(argv=None):
     for name in ("config", "output", "ifc-python", "planning-python"):
         parser.add_argument(f"--{name}", required=True, type=Path)
     parser.add_argument("--tick", choices=(5, 15), type=int, default=5)
+    parser.add_argument("--ifc4d", action="store_true", help="Export verified controlled R0 IFC4D.")
     args = parser.parse_args(argv)
     try:
         result = run_controlled_pipeline(args.config, output=args.output, ifc_python=args.ifc_python,
-                                         planning_python=args.planning_python, tick=args.tick)
+                                         planning_python=args.planning_python, tick=args.tick, ifc4d=args.ifc4d)
     except (KeyError, OSError, RuntimeError, ValueError) as error:
         parser.exit(1, f"{error}\n")
     print(json.dumps({"output": str(args.output / "schedule.json"), "proof": result["proof"]}, indent=2))

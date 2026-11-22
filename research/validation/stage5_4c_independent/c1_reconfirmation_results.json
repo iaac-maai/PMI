@@ -1,0 +1,89 @@
+{
+  "head": "1342ca6f0c8c24fd87e6038bb90240b1de375bdc",
+  "live_run_exit": 0,
+  "attacks": {
+    "A1 shift, proof unchanged (standalone)": {
+      "accepted": false,
+      "message": "ValueError: Optimized makespan differs from the recorded R0 project makespan.",
+      "output_created": false
+    },
+    "A2 shift + makespan adjusted (standalone)": {
+      "accepted": false,
+      "message": "ValueError: Optimal R0 proof does not match the project makespan and lower bound.",
+      "output_created": false
+    },
+    "A3 shift + makespan + lower bound adjusted (standalone)": {
+      "accepted": false,
+      "message": "ValueError: Schedule SHA-256 does not match a registered accepted R0 artifact.",
+      "output_created": false
+    },
+    "A4 A3 via live path with caller-generated digest": {
+      "accepted": false,
+      "message": "ValueError: Application schedule content or provenance differs from registered R0 evidence.",
+      "output_created": false
+    },
+    "A5 forged content + genuine evidence, live path, caller digest": {
+      "accepted": false,
+      "message": "ValueError: Application schedule content or provenance differs from registered R0 evidence.",
+      "output_created": false
+    },
+    "A6 genuine content, mismatching run digest": {
+      "accepted": false,
+      "message": "ValueError: Schedule SHA-256 differs from the application run.",
+      "output_created": false
+    },
+    "A7 genuine content, runtime fields altered (live)": {
+      "accepted": true,
+      "message": "",
+      "output_created": true
+    },
+    "A8 genuine content, interpreter metadata spoofed (live)": {
+      "accepted": true,
+      "message": "",
+      "output_created": true
+    },
+    "A9 registered schedule with altered IFC": {
+      "accepted": false,
+      "message": "ValueError: Only the registered IFC-backed R0 model and schedule are supported.",
+      "output_created": false
+    },
+    "A10 A3 + matching baseline edits (standalone)": {
+      "accepted": false,
+      "message": "ValueError: Schedule SHA-256 does not match a registered accepted R0 artifact.",
+      "output_created": false
+    }
+  },
+  "replay": {
+    "r0_5 as committed": {
+      "accepted": true,
+      "message": "",
+      "output_created": true
+    },
+    "r0_5 CRLF copy": {
+      "accepted": true,
+      "message": "",
+      "output_created": true
+    },
+    "r0_15 as committed": {
+      "accepted": true,
+      "message": "",
+      "output_created": true
+    },
+    "r0_15 CRLF copy": {
+      "accepted": true,
+      "message": "",
+      "output_created": true
+    }
+  },
+  "live_digest_chain": {
+    "schedule_json": "b04b32e8cf0767f4f0da17185735fbf39f9ff5aab438bec1fea9a8893f497f09",
+    "pipeline_evidence": "b04b32e8cf0767f4f0da17185735fbf39f9ff5aab438bec1fea9a8893f497f09",
+    "round_trip_provenance": "b04b32e8cf0767f4f0da17185735fbf39f9ff5aab438bec1fea9a8893f497f09",
+    "all_equal": true
+  },
+  "A1_cli": {
+    "exit": 1,
+    "message": "Optimized makespan differs from the recorded R0 project makespan.",
+    "output_created": false
+  }
+}

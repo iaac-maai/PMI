@@ -1,0 +1,318 @@
+{
+  "head": "1342ca6f0c8c24fd87e6038bb90240b1de375bdc",
+  "source_ifc_sha256": "8932ed0e043a1fb1252e51b223166c5c15b81f4969018a7e18c49e2802282c2c",
+  "runs": {
+    "5": {
+      "source_instances": 73,
+      "source_instances_byte_identical": true,
+      "new_instances": 282,
+      "new_instance_types": {
+        "IFCPROPERTYSET": 22,
+        "IFCPROPERTYSINGLEVALUE": 136,
+        "IFCRELAGGREGATES": 1,
+        "IFCRELASSIGNSTOCONTROL": 1,
+        "IFCRELASSIGNSTOPROCESS": 21,
+        "IFCRELDECLARES": 1,
+        "IFCRELDEFINESBYPROPERTIES": 22,
+        "IFCRELNESTS": 3,
+        "IFCRELSEQUENCE": 28,
+        "IFCTASK": 24,
+        "IFCTASKTIME": 21,
+        "IFCWORKPLAN": 1,
+        "IFCWORKSCHEDULE": 1
+      },
+      "no_new_geometry_or_elements": true,
+      "schema": "IFC4",
+      "element_global_ids": [
+        "1jDfy2_jTRueAw6f5fc3Ev",
+        "24tlOXIsvMQfyRLiqh6fZt",
+        "3wOB$MtWLSz8SJNgW3VJvy"
+      ],
+      "geometry_identical": true,
+      "units_identical": true,
+      "authored_quantities": 6,
+      "authored_quantities_identical": true,
+      "hierarchy": {
+        "plan_declared_by_project": true,
+        "schedule_aggregated_by_plan": true,
+        "package_tasks_controlled_by_schedule": true,
+        "package_members_ordered_equal_schedule": true,
+        "tasks_total": 24
+      },
+      "work_schedule_span_matches": true,
+      "activity_tasks": 21,
+      "task_times_equal_cp_sat": true,
+      "timestamp_offsets": [
+        "+01:00"
+      ],
+      "assignments": 21,
+      "assignments_correct": true,
+      "assignments_per_element": {
+        "24tlOXIsvMQfyRLiqh6fZt": 7,
+        "1jDfy2_jTRueAw6f5fc3Ev": 7,
+        "3wOB$MtWLSz8SJNgW3VJvy": 7
+      },
+      "sequence_edges": 28,
+      "sequences_equal_dependencies_and_directed": true,
+      "sequences_respected_by_task_times": true,
+      "task_predefined_type_by_activity_kind": {
+        "productive": [
+          "CONSTRUCTION"
+        ],
+        "inspection": [
+          "CONSTRUCTION"
+        ],
+        "strength_release": [
+          "CONSTRUCTION"
+        ],
+        "elapsed_hold": [
+          "CONSTRUCTION"
+        ]
+      },
+      "viewer": {
+        "uri_resolves_to_export": true,
+        "sha256_matches": true,
+        "activities": 21,
+        "every_activity_maps_to_source_element": true,
+        "reverse_mapping_complete": true,
+        "cpm_and_cp_sat_separate": true,
+        "cp_sat_segments_available": true,
+        "dependencies_complete_and_directed": true,
+        "task_global_ids_match_ifc": true,
+        "pending_and_restriction_visible": true,
+        "cpm_equals_cp_sat_dates_for_r0": true,
+        "packages": 3,
+        "has_project_makespan_or_proof": false,
+        "has_critical_path_edges": false,
+        "has_resource_occupancy": false,
+        "has_calendar": false
+      },
+      "schedule_equals_accepted_5_4b3": true,
+      "proof": {
+        "status": "OPTIMAL",
+        "schedule_scope": "complete_project",
+        "project_makespan_minutes": 14850,
+        "lower_bound_minutes": 14850
+      },
+      "cost": 1172.5136,
+      "work_packages": 3,
+      "pending_approvals": 88,
+      "real_project_eligible": false,
+      "ifc_sha256": "47993582c27125d79592df9ad13232593f4225f62ac64b11900fbc7710982bc1",
+      "exit_code": 0,
+      "independent_stage5_4a_errors": [],
+      "independent_cpm_makespan": 14850
+    },
+    "15": {
+      "source_instances": 73,
+      "source_instances_byte_identical": true,
+      "new_instances": 282,
+      "new_instance_types": {
+        "IFCPROPERTYSET": 22,
+        "IFCPROPERTYSINGLEVALUE": 136,
+        "IFCRELAGGREGATES": 1,
+        "IFCRELASSIGNSTOCONTROL": 1,
+        "IFCRELASSIGNSTOPROCESS": 21,
+        "IFCRELDECLARES": 1,
+        "IFCRELDEFINESBYPROPERTIES": 22,
+        "IFCRELNESTS": 3,
+        "IFCRELSEQUENCE": 28,
+        "IFCTASK": 24,
+        "IFCTASKTIME": 21,
+        "IFCWORKPLAN": 1,
+        "IFCWORKSCHEDULE": 1
+      },
+      "no_new_geometry_or_elements": true,
+      "schema": "IFC4",
+      "element_global_ids": [
+        "1jDfy2_jTRueAw6f5fc3Ev",
+        "24tlOXIsvMQfyRLiqh6fZt",
+        "3wOB$MtWLSz8SJNgW3VJvy"
+      ],
+      "geometry_identical": true,
+      "units_identical": true,
+      "authored_quantities": 6,
+      "authored_quantities_identical": true,
+      "hierarchy": {
+        "plan_declared_by_project": true,
+        "schedule_aggregated_by_plan": true,
+        "package_tasks_controlled_by_schedule": true,
+        "package_members_ordered_equal_schedule": true,
+        "tasks_total": 24
+      },
+      "work_schedule_span_matches": true,
+      "activity_tasks": 21,
+      "task_times_equal_cp_sat": true,
+      "timestamp_offsets": [
+        "+01:00"
+      ],
+      "assignments": 21,
+      "assignments_correct": true,
+      "assignments_per_element": {
+        "24tlOXIsvMQfyRLiqh6fZt": 7,
+        "1jDfy2_jTRueAw6f5fc3Ev": 7,
+        "3wOB$MtWLSz8SJNgW3VJvy": 7
+      },
+      "sequence_edges": 28,
+      "sequences_equal_dependencies_and_directed": true,
+      "sequences_respected_by_task_times": true,
+      "task_predefined_type_by_activity_kind": {
+        "productive": [
+          "CONSTRUCTION"
+        ],
+        "inspection": [
+          "CONSTRUCTION"
+        ],
+        "strength_release": [
+          "CONSTRUCTION"
+        ],
+        "elapsed_hold": [
+          "CONSTRUCTION"
+        ]
+      },
+      "viewer": {
+        "uri_resolves_to_export": true,
+        "sha256_matches": true,
+        "activities": 21,
+        "every_activity_maps_to_source_element": true,
+        "reverse_mapping_complete": true,
+        "cpm_and_cp_sat_separate": true,
+        "cp_sat_segments_available": true,
+        "dependencies_complete_and_directed": true,
+        "task_global_ids_match_ifc": true,
+        "pending_and_restriction_visible": true,
+        "cpm_equals_cp_sat_dates_for_r0": true,
+        "packages": 3,
+        "has_project_makespan_or_proof": false,
+        "has_critical_path_edges": false,
+        "has_resource_occupancy": false,
+        "has_calendar": false
+      },
+      "schedule_equals_accepted_5_4b3": true,
+      "proof": {
+        "status": "OPTIMAL",
+        "schedule_scope": "complete_project",
+        "project_makespan_minutes": 14880,
+        "lower_bound_minutes": 14880
+      },
+      "cost": 1172.5136,
+      "work_packages": 3,
+      "pending_approvals": 88,
+      "real_project_eligible": false,
+      "ifc_sha256": "88023bd6d33ca689609a7a3ca9ee44cd46317bfe37a44ee5d3fa557720735e40",
+      "exit_code": 0,
+      "independent_stage5_4a_errors": [],
+      "independent_cpm_makespan": 14880
+    }
+  },
+  "task_guids_stable_across_ticks": true,
+  "negative_tests": {
+    "C01 v1.1 schedule (no IFC identity)": {
+      "exit": 1,
+      "output_created": false,
+      "staging_leftovers": [],
+      "message": "Only the registered IFC-backed R0 model and schedule are supported."
+    },
+    "altered IFC bytes with R0 schedule": {
+      "exit": 1,
+      "output_created": false,
+      "staging_leftovers": [],
+      "message": "Only the registered IFC-backed R0 model and schedule are supported."
+    },
+    "different IFC (exported example) as source": {
+      "exit": 1,
+      "output_created": false,
+      "staging_leftovers": [],
+      "message": "Only the registered IFC-backed R0 model and schedule are supported."
+    },
+    "approval APPROVED": {
+      "exit": 1,
+      "output_created": false,
+      "staging_leftovers": [],
+      "message": "Expected a validated controlled R0 schedule with pending approvals."
+    },
+    "approval removed (87)": {
+      "exit": 1,
+      "output_created": false,
+      "staging_leftovers": [],
+      "message": "Expected a validated controlled R0 schedule with pending approvals."
+    },
+    "real_project_eligible true": {
+      "exit": 1,
+      "output_created": false,
+      "staging_leftovers": [],
+      "message": "Expected a validated controlled R0 schedule with pending approvals."
+    },
+    "dependency removed": {
+      "exit": 1,
+      "output_created": false,
+      "staging_leftovers": [],
+      "message": "Incomplete or duplicate R0 dependencies."
+    },
+    "dependency duplicated": {
+      "exit": 1,
+      "output_created": false,
+      "staging_leftovers": [],
+      "message": "Incomplete or duplicate R0 dependencies."
+    },
+    "dependency reversed": {
+      "exit": 1,
+      "output_created": false,
+      "staging_leftovers": [],
+      "message": "Invalid or unsupported R0 dependency."
+    },
+    "dependency unknown endpoint": {
+      "exit": 1,
+      "output_created": false,
+      "staging_leftovers": [],
+      "message": "Invalid or unsupported R0 dependency."
+    },
+    "dependency nonzero lag": {
+      "exit": 1,
+      "output_created": false,
+      "staging_leftovers": [],
+      "message": "Invalid or unsupported R0 dependency."
+    },
+    "activity mapped to unknown element": {
+      "exit": 1,
+      "output_created": false,
+      "staging_leftovers": [],
+      "message": "R0 source element mapping differs."
+    },
+    "conditional scope": {
+      "exit": 1,
+      "output_created": false,
+      "staging_leftovers": [],
+      "message": "Expected a validated controlled R0 schedule with pending approvals."
+    },
+    "forged consistent date shift (makespan not updated)": {
+      "exit": 1,
+      "output_created": false,
+      "staging_leftovers": [],
+      "message": "Optimized makespan differs from the recorded R0 project makespan."
+    },
+    "existing output directory": {
+      "exit": 1,
+      "output_created": true,
+      "staging_leftovers": [],
+      "message": "IFC4D output directory already exists.",
+      "existing_preserved": true
+    },
+    "application into existing output": {
+      "exit": 1,
+      "message": "83] Cannot create a file when that file already exists: 'C:\\\\Users\\\\Chloe\\\\AppData\\\\Local\\\\Temp\\\\pmi_54c_nwbmyso7\\\\r0_5'",
+      "previous_bundle_preserved": true
+    }
+  },
+  "express_rules": {
+    "validate_accepts_express_rules_flag": "True",
+    "rule_executor_import": "rule_executor importable"
+  },
+  "implementation_stable_during_run": true,
+  "implementation_sha256": {
+    "pmi_core/application.py": "0e40dce60502ac7e390a106de0334cb22ee0793563058ae2ce0cf23e2d424707",
+    "pmi_core/adapters/ifc4d.py": "f6565431f1ee5f848c91799e91a818685324d087822cd8be013061bba895e748",
+    "pmi_core/viewer_data.py": "a69fafaf995384b68eee81c035333ab4788f1bb10d2ea5529a9a68212a79f9a2",
+    "tests/test_ifc4d_r0.py": "ac1d3646c812795cc92cab777d618dc5f9ae5bf645030605f0d37aa226c870e0"
+  }
+}

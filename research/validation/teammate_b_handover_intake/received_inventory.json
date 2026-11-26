@@ -1,0 +1,283 @@
+{
+ "received_folder": "research/teammateB_handover",
+ "requested_folder_not_found": "research/validation/teammate_b_handover/",
+ "inventoried": "2026-11-26",
+ "file_count": 55,
+ "files": [
+  {
+   "path": "research/teammateB_handover/evidence/QV01/1795296792493_image.png",
+   "bytes": 384232,
+   "sha256": "afb5ff9d10283e49fdec724b36f9b1c4437ed310d8c765a205b241f4f00e2529"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV01/QV01_3d_context_zoomed_out.jpg",
+   "bytes": 197259,
+   "sha256": "c00d98911a75d5564014ed1e043977e14f772017f75b2db647a4dc89ba3f0556"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV01/QV01_height_250mm.png",
+   "bytes": 390002,
+   "sha256": "75a0fe171132937225e5f04270d840afc95afacca7cdd665fe3a2f50deec394f"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV01/QV01_length_1465mm.png",
+   "bytes": 431052,
+   "sha256": "bb59ce1c0dee02cdbc27bd5542f57fcd7c5db7d75757cbb2df61b113f9976f99"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV01/QV01_plan_minus1_fundering_highlight.png",
+   "bytes": 107996,
+   "sha256": "4e7a2ad45520a0355d86b0fae2a31155bc1083b7f9f8341fb18af68b8f844904"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV01/QV01_properties_elevation_volume.png",
+   "bytes": 24901,
+   "sha256": "09be42f412ee9c40e0f6942b2468a4ee8d022ff2ddce0903d6d707113367a865"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV01/QV01_properties_guid_3d_view.png",
+   "bytes": 214761,
+   "sha256": "32bf9a3275f013448f4310f96dec74c4d31a0d6ec92da8990f9221a566703540"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV01/QV01_selected_guid_match.jpg",
+   "bytes": 160109,
+   "sha256": "0bdfba341a8a6dea3a45b365494aa9a4675bda69ee81d4d42b32a38d5ad8cca6"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV01/QV01_width_1000mm.png",
+   "bytes": 411498,
+   "sha256": "bb339f77d2138b6ee50d9bc164f80666a810c4d1f981e1e9d5dae85caac4e0fb"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV09/QV09_length_4591mm.png",
+   "bytes": 466382,
+   "sha256": "c8ded0c089e3dc710e2a020722d77e276e9a86f461795074b4a3c15f1e96d9c6"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV09/QV09_thickness_300mm.png",
+   "bytes": 402659,
+   "sha256": "4b29b8c0df098a26acb4c4e4e6190c9d0522b3a3292cff812d20506e6bc5b8dd"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV09/QV09_width_500mm.png",
+   "bytes": 408353,
+   "sha256": "e24068cfb8ef17d9d4dd755e1e7577a0975b75391d4371a92cc8b35abab9d654"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV18/QV18_edge_200mm.png",
+   "bytes": 542385,
+   "sha256": "9ef46b95e5d7fb6227e1ae697d3942d01b14f5c98aafaf5261bd9b58adedc15b"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV18/QV18_edge_200mm_second.png",
+   "bytes": 542314,
+   "sha256": "5d3155418575321fae5ac573b2a7c678efdf83ae1f0c82d0682927d0ed1fe825"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV18/QV18_edge_300mm_second.png",
+   "bytes": 539198,
+   "sha256": "1a498902ba4bb3ff6ebb866b10becfb6efe71637c20e5c07c98801561b1b08ca"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV18/QV18_edge_300mm_statusbar_name.png",
+   "bytes": 712123,
+   "sha256": "743c08725c5f331da74a29f3170085dd7cef02dd99c7d878ab138c8a38df5cf5"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV18/QV18_edge_500mm.png",
+   "bytes": 537636,
+   "sha256": "855d586e4fa36534d687c4032e2ca5a18a51f379dff1af2448e66c2bc72fc60d"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV18/QV18_edge_500mm_second.png",
+   "bytes": 537860,
+   "sha256": "6e552337bbf86302f72eda3f84e962e7c5ba19f268a7caa9b67ca78daf2ed416"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV18/QV18_endpoint_snap_check_no_dimension.png",
+   "bytes": 539606,
+   "sha256": "bd9fb9875b539059a7a166df75964b84843e4b527796f2c6b7f42742bed9d1f8"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV18/QV18_height_2800mm.png",
+   "bytes": 662493,
+   "sha256": "e0d9c6e8eb9013ff58b9dee97a1ab8f213d0ade8726ca0f532afa069e0e48408"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV21/QV21_height_400mm.png",
+   "bytes": 679884,
+   "sha256": "a88c8da5280481ebc45c8b29e6325d00da495234b63e2320ef3ff65c2a43dcf9"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV21/QV21_length_1500mm.png",
+   "bytes": 568871,
+   "sha256": "d2ebdf429a03235491a6c56f81f33b37fd692ee53ce4fa9dd780b3d973ece519"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV21/QV21_width_250mm.png",
+   "bytes": 543966,
+   "sha256": "e7b4cbb4fb986a260301dfacc2072430f27a3681b54890b6beb11d44a43dc1b3"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV22/QV22_height_400mm.png",
+   "bytes": 540592,
+   "sha256": "7fa80b99b6a13237cdd0ea4d42e1dfc3d85b7cd9c30944dde4179d2bd0f1b79b"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV22/QV22_length_1500mm.png",
+   "bytes": 556585,
+   "sha256": "3bc92af4858cef5819cb77890fb2ba17cf124d7d5f4dc6662eb1864cc5c7bc52"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV22/QV22_width_200mm.png",
+   "bytes": 675559,
+   "sha256": "9c74e21c3c7ccd44f3ed867abf4dbb00d02882c276e7ef21aedbaff92cb275f7"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV23/QV23_height_500mm.png",
+   "bytes": 674129,
+   "sha256": "cdca7581f89f35d21e8301dd79291f273b9de738f62e6e1b8562e4b97dc4a96d"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV23/QV23_length_1500p3mm.png",
+   "bytes": 546148,
+   "sha256": "ae9867c6f646ffda5afdef683658da7db41bcae73ce595e2b7417660c47c33fb"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV23/QV23_width_200mm.png",
+   "bytes": 547236,
+   "sha256": "2cc63c0e3d54421eb2f9e64d347f2f7d02966756e568e69101ccad1a7bcbd64b"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV27/QV27_length_2445mm.png",
+   "bytes": 686169,
+   "sha256": "246b3bc0ef7a199c94cf28ce529bb3d192b84c50ac6baccbbe74ded829df0337"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV27/QV27_thickness_100mm.png",
+   "bytes": 547862,
+   "sha256": "1c6bd3f68a9c4787880599dd69906182712cc422d77c894078a0fa34aea85562"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV27/QV27_width_530mm_a.png",
+   "bytes": 567151,
+   "sha256": "823cbb65f0079781ed403ca6706d4597be45e3fbe11984f5b9ebb6676ca1f4d8"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV27/QV27_width_530mm_b.png",
+   "bytes": 657509,
+   "sha256": "e910a4fd953881bf2baa00750f98a4dd57c4e02d74c5e18fe249940a8a5f67c0"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV28/QV28_length_1950mm.png",
+   "bytes": 551292,
+   "sha256": "e8eb07da2df09392608403f7ce20757cab831a0bdb9e7f34d479e0991540180b"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV28/QV28_thickness_130mm.png",
+   "bytes": 669282,
+   "sha256": "ff80696bee21b74e08278bb588b9e6c1f3ef0fb9b335dd2891d8bfac28e6f351"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV28/QV28_width_850mm.png",
+   "bytes": 683643,
+   "sha256": "53447959b3807deff8aeba60191417a37081e0ebde48f5d921e40261ac37f05d"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV29/QV29_height_3600mm.png",
+   "bytes": 668390,
+   "sha256": "4c3f870a5a431071ae24c67b51869cb1826ae477f7efb10cb964b28beaffca1b"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV29/QV29_length_2375mm.png",
+   "bytes": 542650,
+   "sha256": "48ce23d7cd8d33f9a620ce212a0578703dc8776500db5f6338e67dcca4c2d36c"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV29/QV29_thickness_250mm.png",
+   "bytes": 541820,
+   "sha256": "d60395524899c485e3ea79523f9e4e0229824026262ec58640b600bc93d30b51"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV30/QV30_height_2800mm.png",
+   "bytes": 663594,
+   "sha256": "b3245b8e7c748d35a5941eeed212944c23c7e121e213707e72c61891982a916e"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV30/QV30_length_1000mm.png",
+   "bytes": 541322,
+   "sha256": "67dd5dd23d164601cbd2a83b79a2aa0976ea23c92523f179ca32ee6f318dd9ce"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV30/QV30_thickness_200mm.png",
+   "bytes": 540947,
+   "sha256": "e71d9990b1fd4d8bb3cfc84c9ee1ebccbb0bb53d3799290d568b83fa6ec4bb9a"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV32/QV32_height_3600mm.png",
+   "bytes": 648089,
+   "sha256": "d8570cecfae13043e3e7dfb1eb3d4b4f0e1be607bfd7723c76ce5390d31a7370"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV32/QV32_length_1625mm.png",
+   "bytes": 538667,
+   "sha256": "1ce3c20961fcc1a2717dc78d0b3053c473fc0b9b56757815d9bd98b577b364c4"
+  },
+  {
+   "path": "research/teammateB_handover/evidence/QV32/QV32_thickness_250mm.png",
+   "bytes": 665009,
+   "sha256": "5ba7881bfa693f10efa5c83718337f6e32ca9f1bdb17ceb6b805780fd86194ac"
+  },
+  {
+   "path": "research/teammateB_handover/review/desktop.ini",
+   "bytes": 79,
+   "sha256": "f7cc353e55a76574714b8df51dbf70e99ee99eeb637ff59c4aad1bdd330f6310"
+  },
+  {
+   "path": "research/teammateB_handover/review/Teammate_B_Decision_Log.xlsx",
+   "bytes": 13932,
+   "sha256": "73068bddc3acff3986ea54037b2654ed86fd592a5da87d80b633e2cf416454b6"
+  },
+  {
+   "path": "research/teammateB_handover/workbooks/B1_quantity_validation_worksheet.xlsx",
+   "bytes": 15925,
+   "sha256": "1a477f8164c1217bf51648f96db091c1206b03acda24e5d83ca21ae5d99d30c0"
+  },
+  {
+   "path": "research/teammateB_handover/workbooks/B4_Formwork_Rules.xlsx",
+   "bytes": 13084,
+   "sha256": "b55bfaa580f0ea01f38162cee53555097d4d1ac731905a24ee3512582fc88262"
+  },
+  {
+   "path": "research/teammateB_handover/workbooks/B5_Reinforcement_BOQ.xlsx",
+   "bytes": 12704,
+   "sha256": "9e4970fab01ee3253049e22abccdbee26cfe9462c61dd2629e7d3288baea5777"
+  },
+  {
+   "path": "research/teammateB_handover/workbooks/B6_Resource_Crosswalk.xlsx",
+   "bytes": 16608,
+   "sha256": "88028148b44d51ae8602059efea24477c17e1e9212ba6607c4993800288f2aa3"
+  },
+  {
+   "path": "research/teammateB_handover/workbooks/B6_Resource_Inputs.xlsx",
+   "bytes": 12942,
+   "sha256": "02c989e6019805112a58f30a88fd795fb9c13cef77a525e25dece07df4e1e72d"
+  },
+  {
+   "path": "research/teammateB_handover/workbooks/B7_Baseline_Gantt_HYPOTHETICAL.xlsx",
+   "bytes": 18322,
+   "sha256": "668f7ee1d82c4c92ff8400c71160190c3dd36406ce9f7fb76ae6672e6c384125"
+  },
+  {
+   "path": "research/teammateB_handover/workbooks/B7_Baseline_Gantt_v2_HYPOTHETICAL.xlsx",
+   "bytes": 22554,
+   "sha256": "654310fd472a3d7a7d1398a7e8d1737fe7e9384e3eb3577be8db3193ff7ddcd4"
+  },
+  {
+   "path": "research/teammateB_handover/workbooks/B8_Review_Register.xlsx",
+   "bytes": 22198,
+   "sha256": "4c476e419c919fa891df470d20dc9c3ebb154bb9b12ee50d8557957eb3dfb170"
+  }
+ ]
+}

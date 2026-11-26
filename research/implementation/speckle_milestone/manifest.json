@@ -1,0 +1,150 @@
+{
+  "project_id": "PMI-SPECKLE-HYP",
+  "engineering": {
+    "concrete_specification": "HA-25/P/20/XC2",
+    "crews": {
+      "HYP-FORM": {
+        "OF. 1ª ENCOFRADOR": 2,
+        "PEÓN ESPECIAL": 1
+      },
+      "HYP-REBAR": {
+        "OF. 1ª FERRALLISTA": 2
+      },
+      "HYP-CONC": {
+        "PEÓN ESPECIAL": 2,
+        "OFICIAL 1ª": 1
+      }
+    },
+    "crew_by_operation": {
+      "FORM": "HYP-FORM",
+      "REBAR": "HYP-REBAR",
+      "CONC": "HYP-CONC",
+      "STRIP": "HYP-FORM"
+    },
+    "equipment": {
+      "VIBRADOR": 1,
+      "CRANE": 0,
+      "CONCRETE_PUMP": 0,
+      "CONCRETE_DELIVERY": 0
+    },
+    "catalogue": {
+      "COL-REBAR": "05HAC00015",
+      "BEAM-REBAR": "05HAC00015",
+      "SLAB-REBAR": "05HAC00015",
+      "COL-FORM": "05HEM00001",
+      "BEAM-FORM": "05HEM00051",
+      "SLAB-FORM": "05HEM00101",
+      "COL-CONC": "05HHP00003",
+      "BEAM-CONC": "05HHJ00003",
+      "SLAB-CONC": "05HHL00003",
+      "FRM-STRIP": "05HED00001"
+    },
+    "input_state": "hypothetical_fixture",
+    "source_sha256": "d06a3a78649e0e401be7faeaf148321a317dcfb8aa11ba13211a38fc2680b467",
+    "reference_sha256": "5dcab26ecbe0576764667ac5b3072e2bc597e5fefe1a8edee6fcfea6a8dbe68b",
+    "elements": {
+      "0b56u5pCnRbe33Aez3hi2f": {
+        "formwork_m2": 5.44,
+        "reinforcement_kg": 37,
+        "sequence": "cage_first",
+        "formwork_rule": "Synthetic contact area declared for the milestone.",
+        "reinforcement_boq": "Synthetic mass declaration; no kg/m3 conversion.",
+        "inspection_elapsed_hours": 0.5,
+        "curing_elapsed_hours": 24,
+        "striking_elapsed_hours_from_pour": 24,
+        "inspection_condition": "Hypothetical inspection time only",
+        "curing_condition": "Hypothetical elapsed time only",
+        "striking_condition": "Hypothetical elapsed criterion only",
+        "manual_handling_and_staged_supply": true
+      },
+      "0ZZMJVbznS0AyFF$UNPOM7": {
+        "formwork_m2": 5.6,
+        "reinforcement_kg": 54,
+        "sequence": "formwork_first",
+        "formwork_rule": "Synthetic contact area declared for the milestone.",
+        "reinforcement_boq": "Synthetic mass declaration; no kg/m3 conversion.",
+        "inspection_elapsed_hours": 0.5,
+        "curing_elapsed_hours": 24,
+        "striking_elapsed_hours_from_pour": 72,
+        "inspection_condition": "Hypothetical inspection time only",
+        "curing_condition": "Hypothetical elapsed time only",
+        "striking_condition": "Hypothetical elapsed criterion only",
+        "manual_handling_and_staged_supply": true
+      },
+      "1VYC9IiFjLyO3arc872xsK": {
+        "formwork_m2": 14.8,
+        "reinforcement_kg": 88,
+        "sequence": "formwork_first",
+        "formwork_rule": "Synthetic contact area declared for the milestone.",
+        "reinforcement_boq": "Synthetic mass declaration; no kg/m3 conversion.",
+        "inspection_elapsed_hours": 0.5,
+        "curing_elapsed_hours": 24,
+        "striking_elapsed_hours_from_pour": 96,
+        "inspection_condition": "Hypothetical inspection time only",
+        "curing_condition": "Hypothetical elapsed time only",
+        "striking_condition": "Hypothetical elapsed criterion only",
+        "manual_handling_and_staged_supply": true
+      }
+    },
+    "support_links": [
+      {
+        "predecessor_gid": "0b56u5pCnRbe33Aez3hi2f",
+        "predecessor": "RELEASE",
+        "successor_gid": "0ZZMJVbznS0AyFF$UNPOM7",
+        "successor": "FORM"
+      },
+      {
+        "predecessor_gid": "0ZZMJVbznS0AyFF$UNPOM7",
+        "predecessor": "RELEASE",
+        "successor_gid": "1VYC9IiFjLyO3arc872xsK",
+        "successor": "FORM"
+      }
+    ]
+  },
+  "scheduling": {
+    "calendar": {
+      "timezone": "Europe/Paris",
+      "working_windows": [
+        {
+          "weekday": 1,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 2,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 3,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 4,
+          "start": "08:00",
+          "end": "16:00"
+        },
+        {
+          "weekday": 5,
+          "start": "08:00",
+          "end": "16:00"
+        }
+      ],
+      "date_exceptions": [],
+      "evidence_ref": "Registered hypothetical milestone calendar"
+    },
+    "start": "2027-01-04T08:00",
+    "horizon": "2027-01-29T16:00",
+    "tick": 5,
+    "evidence_ref": "Registered hypothetical milestone resource capacities",
+    "resource_capacity": {
+      "OF_1A_ENCOFRADOR": 2,
+      "PEON_ESPECIAL": 2,
+      "OF_1A_FERRALLISTA": 2,
+      "OFICIAL_1A": 1,
+      "VIBRADOR": 1,
+      "INSPECTOR": 1
+    }
+  }
+}

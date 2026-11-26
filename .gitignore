@@ -34,4 +34,4 @@ models/**/*.joblib
 # PMI planning environment
 .venv-planning/
 # Microsoft Office temporary lock files
-~$*
+~$*/.venv-speckle/
